@@ -1,0 +1,57 @@
+{{ 'ew-collection-list.css' | asset_url | stylesheet_tag }}
+<section class="ew-collection-list-section ew-collection-list-section={{ section.id }}" id="ew-collection-list">
+  <div class="ew-collection-list-row">
+    <div class="page-width">
+      <div class="ew-collection-list">
+        {% for block in section.blocks %}
+          {% render 'ew-collection-card', position: forloop.index, collection_card: block.settings.collection %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "<> Collection List",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "blocks": [
+    {
+      "type": "single_colleciton",
+      "name": "Single Collection",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile Image"
+        },
+        {
+          "type": "header",
+          "content": "Collection"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "<> Collection List"
+    }
+  ],
+}
+{% endschema %}

@@ -1,0 +1,57 @@
+.ew-hero-video-block video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.ew-hero-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: flex-end;
+}
+
+.ew-hero-wrap>* {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.ew-hero-text-block h3 {
+  margin: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "Abhaya Libre Medium";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px;
+  margin: 0;
+}
+
+.ew-hero-text-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.ew-hero-text-block-left {
+  align-items: flex-start;
+}
+
+.ew-hero-text-block-right {
+  align-items: flex-end;
+}
+
+.ew-hero-text-row {
+  position: relative;
+  bottom: 80px;
+}
+
+@media(max-width:600px) {
+  .ew-hero-text-block h3 {
+    font-size: 32px;
+  }
+
+  .ew-hero-text-row {
+    bottom: 40px;
+  }
+}

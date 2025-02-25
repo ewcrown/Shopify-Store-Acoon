@@ -1,0 +1,67 @@
+{{ 'ew-collection-slider.css' | asset_url | stylesheet_tag }}
+{{ 'ew-product-card.css' | asset_url | stylesheet_tag }}
+{% assign s = section.settings %}
+<section class="ew-collection-slider-section ew-collection-slider-section={{ section.id }}" id="ew-collection-slider">
+  <div class="ew-collection-row">
+    <div class="page-width">
+      <div class="ew-collection-wrap">
+        <h3 class="ew-title">{{ s.collection.title }}</h3>
+        <div class="ew-collection-slider">
+          <div class="splide" data-name="Collection Slider">
+            <div class="splide__track">
+              <div class="splide__list">
+                {% for product in s.collection.products %}
+                  <div class="splide__slide">
+                    {% render 'ew-product-card', card_product: product %}
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ew-btn ew-text-center">
+          <a class="ew-btn-secondary" href="{% if s.button_link != blank %}{{ s.button_link }}{% else %}{{ s.collection.url }}{% endif %}">{{ s.button_text }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "<> Collection Slider",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Collection"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Shop The Drop"
+    }
+  ],
+  "presets": [
+    {
+      "name": "<> Collection Slider"
+    }
+  ],
+}
+{% endschema %}

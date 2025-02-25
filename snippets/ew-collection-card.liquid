@@ -1,0 +1,15 @@
+{% comment %}
+  Renders a collection card
+  
+  Accepts:
+  - card_collection: {Object} Collection Liquid object (optional)
+  - position: Forloop.index
+{% endcomment %}
+
+<div class="ew-collection-card ew-collection-card-position-{{ position }}">
+  <a href="{{ card_collection.url }}">
+    <div class="ew-colleciton-featured-image">
+      
+    </div>
+  </a>
+</div>

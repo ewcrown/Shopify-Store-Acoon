@@ -1,0 +1,39 @@
+{% comment %}
+  Renders a product card
+  
+  Accepts:
+  - card_product: {Object} Product Liquid object (optional)
+{% endcomment %}
+<div class="ew-product-card">
+  <a href="{{ card_product.url }}" class="ew-pc-link {% if card_product.images[1] %}ew-image-hover-true{% endif %}">
+    <div class="ew-pc-media">
+      <div class="ew-pc-featured-image">
+        {{
+          card_product.featured_image
+          | image_url: width: 430
+          | image_tag:
+            loading: 'lazy',
+            widths: '430, 620, 800, 1100',
+            height: 620,
+            alt: card_product.title
+        }}
+      </div>
+      {% if card_product.images[1] %}
+      <div class="ew-pc-hover-image">
+          {{
+            card_product.images[1]
+            | image_url: width: 430
+            | image_tag:
+              loading: 'lazy',
+              widths: '430, 620, 800, 1100',
+              height: 620,
+              alt: card_product.title
+          }}
+        </div>
+      {% endif %}
+    </div>
+    <div class="ew-pc-content-block">
+      {{ card_product.title }}
+    </div>
+  </a>
+</div>
