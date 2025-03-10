@@ -228,6 +228,10 @@ li::marker {
 
 .newsletter-form__field-wrapper .field__input:focus,
 .newsletter-form__field-wrapper .select__select:focus,
-.localization-form__select:focus.localization-form__select:after {
+.localization-form__select:focus.localization-form__select:after,
+.newsletter-form__field-wrapper .field:hover.field:after,
+.newsletter-form__field-wrapper .select:hover.select:after,
+.select__select:hover.select__select:after,
+.localization-form__select:hover.localization-form__select:after {
   box-shadow: unset !important;
 }
