@@ -102,6 +102,7 @@ ul.menu-drawer__menu {
 .accon-footer-links-list.flex {
     gap: 16px;
     flex-direction: column;
+  padding:0;
 }
 
 .accon-footer-links.flex {
