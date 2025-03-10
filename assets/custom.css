@@ -7,7 +7,7 @@
 .accon-drawer-menu-footer {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 .accon-drawer-menu-footer a {
   font-weight: 400;
