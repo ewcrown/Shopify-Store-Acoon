@@ -221,6 +221,7 @@ li::marker {
 .newsletter-form__field-wrapper .field__input {
     font-weight: 400;
     font-size: 14px;
+  border-radius: 2px;
 }
 
 .newsletter-form__field-wrapper .field__input:focus, .newsletter-form__field-wrapper .select__select:focus, .localization-form__select:focus.localization-form__select:after {
