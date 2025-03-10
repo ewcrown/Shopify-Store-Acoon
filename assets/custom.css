@@ -183,3 +183,7 @@ li::marker {
     display: flex;
     gap: 20px;
 }
+
+.field.accon-newsletter-select select {
+    padding: 0 0 0 15px;
+}
