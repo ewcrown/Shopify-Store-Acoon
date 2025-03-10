@@ -92,22 +92,35 @@
                 </div>
 
                 <div class="field">
-                  <label for="customer-select" class="field__label">Select an Option</label>
-                  <select id="customer-select" name="customer_option" class="field__input">
-                    <option value="" disabled selected>Select an option</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+                  <label for="language-select" class="field__label">Select Language</label>
+                  <select id="language-select" name="locale_code" class="field__input" onchange="this.form.submit()">
+                    {% for language in localization.available_languages %}
+                      <option
+                        value="{{ language.iso_code }}"
+                        {% if language.iso_code == localization.language.iso_code %}
+                          selected
+                        {% endif %}
+                      >
+                        {{ language.endonym_name }}
+                      </option>
+                    {% endfor %}
                   </select>
                 </div>
 
+                <!-- Shopify Country Selector -->
                 <div class="field">
-                  <label for="customer-select" class="field__label">Select an Option</label>
-                  <select id="customer-select" name="customer_option" class="field__input">
-                    <option value="" disabled selected>Select an option</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+                  <label for="country-select" class="field__label">Select Country</label>
+                  <select id="country-select" name="country_code" class="field__input" onchange="this.form.submit()">
+                    {% for country in localization.available_countries %}
+                      <option
+                        value="{{ country.iso_code }}"
+                        {% if country.iso_code == localization.country.iso_code %}
+                          selected
+                        {% endif %}
+                      >
+                        {{ country.name }}
+                      </option>
+                    {% endfor %}
                   </select>
                 </div>
 
