@@ -189,7 +189,8 @@ li::marker {
 }
 
 .content-container--full-width:after {
-    background-color: #DFDFDF;
+    background-color: #dfdfdf;
+    border-bottom: 1px solid #00000080;
 }
 
 .newsletter-form__field-wrapper .field:after, .newsletter-form__field-wrapper .select:after, .localization-form__select:after {
