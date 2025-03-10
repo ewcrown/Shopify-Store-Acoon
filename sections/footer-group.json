@@ -47,6 +47,24 @@
     "accon_footer_R4taxi": {
       "type": "accon-footer",
       "blocks": {
+        "footer_shop_UYy4VX": {
+          "type": "footer_shop",
+          "settings": {
+            "shop_img": "shopify://shop_images/Layer_1_2.png"
+          }
+        },
+        "footer_shop_dzcTbm": {
+          "type": "footer_shop",
+          "settings": {
+            "shop_img": "shopify://shop_images/Layer_1_2.png"
+          }
+        },
+        "footer_shop_6ERFGy": {
+          "type": "footer_shop",
+          "settings": {
+            "shop_img": "shopify://shop_images/Layer_1_2.png"
+          }
+        },
         "link_list_iL4ciW": {
           "type": "link_list",
           "settings": {
@@ -70,6 +88,9 @@
         }
       },
       "block_order": [
+        "footer_shop_UYy4VX",
+        "footer_shop_dzcTbm",
+        "footer_shop_6ERFGy",
         "link_list_iL4ciW",
         "link_list_hiTVYQ",
         "link_list_BThLxt"
