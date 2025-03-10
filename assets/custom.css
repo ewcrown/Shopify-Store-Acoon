@@ -164,10 +164,7 @@ ul.menu-drawer__menu {
 }
 
 li::marker {
-  display: none;
-}
-
-li::marker {
   content: "";
+  padding: 0;
 }
 
