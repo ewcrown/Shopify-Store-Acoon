@@ -19,3 +19,9 @@
   font-weight: 400;
   font-size: 26px;
 }
+
+ul.menu-drawer__menu {
+  border-bottom: 1px solid #000;
+  padding-bottom: 96px;
+  margin-bottom: 64px;
+}
