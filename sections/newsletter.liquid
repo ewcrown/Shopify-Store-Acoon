@@ -90,6 +90,27 @@
                     </span>
                   </button>
                 </div>
+
+                <div class="field">
+                  <label for="customer-select" class="field__label">Select an Option</label>
+                  <select id="customer-select" name="customer_option" class="field__input">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="customer-select" class="field__label">Select an Option</label>
+                  <select id="customer-select" name="customer_option" class="field__input">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                  </select>
+                </div>
+
                 {%- if form.errors -%}
                   <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
                     <span class="svg-wrapper">
