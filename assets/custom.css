@@ -187,3 +187,7 @@ li::marker {
 .field.accon-newsletter-select select {
     padding: 0 0 0 15px;
 }
+
+.content-container--full-width:after {
+    background-color: #DFDFDF;
+}
