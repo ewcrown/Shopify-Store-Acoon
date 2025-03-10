@@ -47,7 +47,7 @@
         </div>
 
         <div class="accon-footer-logo">
-          <img src="img/Layer_1.png" alt="">
+          <img src="{{ section.settings.logo }}" alt="">
         </div>
       </div>
     </div>
@@ -57,7 +57,13 @@
 {% schema %}
 {
   "name": "<> Footer",
-  "settings": [],
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Footer Logo"
+    }
+  ],
   "blocks": [
     {
       "type": "link_list",
