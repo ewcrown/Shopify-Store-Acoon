@@ -229,5 +229,5 @@ li::marker {
 .newsletter-form__field-wrapper .field__input:focus,
 .newsletter-form__field-wrapper .select__select:focus,
 .localization-form__select:focus.localization-form__select:after {
-  box-shadow: unset;
+  box-shadow: unset !important;
 }
