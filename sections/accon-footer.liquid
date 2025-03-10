@@ -48,7 +48,7 @@
 
         {% if section.settings.logo != blank %}
           <div class="accon-footer-logo">
-            <img src="{{ section.settings.logo }}" alt="">
+            <img src="{{ section.settings.logo | img_url: 'master' }}" alt="">
           </div>
         {% endif %}
       </div>
