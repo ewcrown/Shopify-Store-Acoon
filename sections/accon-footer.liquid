@@ -42,13 +42,15 @@
           </div>
 
           <div class="accon-footer-bottom-right">
-            <img src="img/Frame 1000007344.png" alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0602/8545/2422/files/Frame_1000007344.png?v=1741634555" alt="">
           </div>
         </div>
 
-        <div class="accon-footer-logo">
-          <img src="{{ section.settings.logo }}" alt="">
-        </div>
+        {% if section.settings.logo != blank %}
+          <div class="accon-footer-logo">
+            <img src="{{ section.settings.logo }}" alt="">
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>
