@@ -178,3 +178,7 @@ li::marker {
     grid-template-columns: 60% 40%;
 }
 
+.accon-country-lang-wrap {
+    display: flex;
+    gap: 20px;
+}
