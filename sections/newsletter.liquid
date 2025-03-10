@@ -54,8 +54,8 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                <div>
-                  Be The First to Know
+                <div class="accon-newsletter-form">
+                  <span class="accon-newsletter-title">>Be The First to Know</span>
                   <div class="field">
                     <input
                       id="NewsletterForm--{{ section.id }}"
@@ -97,35 +97,51 @@
 
                 <div class="accon-country-lang-wrap">
                   <!-- Shopify Country Selector -->
-                  <div class="field accon-newsletter-select">
-                    <label for="country-select" class="field__label">Country/Region</label>
-                    <select id="country-select" name="country_code" class="field__input" onchange="this.form.submit()">
-                      {% for country in localization.available_countries %}
-                        <option
-                          value="{{ country.iso_code }}"
-                          {% if country.iso_code == localization.country.iso_code %}
-                            selected
-                          {% endif %}
-                        >
-                          {{ country.name }}
-                        </option>
-                      {% endfor %}
-                    </select>
+                  <div class="accon-newsletter-form">
+                    <span class="accon-newsletter-title">>Be The First to Know</span>
+                    <div class="field accon-newsletter-select">
+                      <label for="country-select" class="field__label">Country/Region</label>
+                      <select
+                        id="country-select"
+                        name="country_code"
+                        class="field__input"
+                        onchange="this.form.submit()"
+                      >
+                        {% for country in localization.available_countries %}
+                          <option
+                            value="{{ country.iso_code }}"
+                            {% if country.iso_code == localization.country.iso_code %}
+                              selected
+                            {% endif %}
+                          >
+                            {{ country.name }}
+                          </option>
+                        {% endfor %}
+                      </select>
+                    </div>
                   </div>
-                  <div class="field accon-newsletter-select">
-                    <label for="language-select" class="field__label">Language</label>
-                    <select id="language-select" name="locale_code" class="field__input" onchange="this.form.submit()">
-                      {% for language in localization.available_languages %}
-                        <option
-                          value="{{ language.iso_code }}"
-                          {% if language.iso_code == localization.language.iso_code %}
-                            selected
-                          {% endif %}
-                        >
-                          {{ language.endonym_name }}
-                        </option>
-                      {% endfor %}
-                    </select>
+                  <div class="accon-newsletter-form">
+                    <span class="accon-newsletter-title">>Be The First to Know</span>
+                    <div class="field accon-newsletter-select">
+                      <label for="language-select" class="field__label">Language</label>
+                      <select
+                        id="language-select"
+                        name="locale_code"
+                        class="field__input"
+                        onchange="this.form.submit()"
+                      >
+                        {% for language in localization.available_languages %}
+                          <option
+                            value="{{ language.iso_code }}"
+                            {% if language.iso_code == localization.language.iso_code %}
+                              selected
+                            {% endif %}
+                          >
+                            {{ language.endonym_name }}
+                          </option>
+                        {% endfor %}
+                      </select>
+                    </div>
                   </div>
                 </div>
 
