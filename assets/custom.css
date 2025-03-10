@@ -191,3 +191,7 @@ li::marker {
 .content-container--full-width:after {
     background-color: #DFDFDF;
 }
+
+.newsletter-form__field-wrapper .field:after, .newsletter-form__field-wrapper .select:after, .localization-form__select:after {
+    box-shadow: unset;
+}
