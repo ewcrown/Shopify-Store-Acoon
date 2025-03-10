@@ -218,3 +218,8 @@ li::marker {
     display: inline-block;
 }
 
+.newsletter-form__field-wrapper .field__input {
+    font-weight: 400;
+    font-size: 14px;
+}
+
