@@ -195,3 +195,11 @@ li::marker {
 .newsletter-form__field-wrapper .field:after, .newsletter-form__field-wrapper .select:after, .localization-form__select:after {
     box-shadow: unset;
 }
+ 
+.newsletter-form__field-wrapper .field__button {
+    background-color: #000 !important;
+  color: #fff;
+    height: 4.5rem;
+    top: 1px;
+    width: 185px;
+}
