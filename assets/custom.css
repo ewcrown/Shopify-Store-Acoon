@@ -1,4 +1,5 @@
 .header__icon--cart .svg-wrapper,
 .header__icon--cart svg{
   width: unset;
+  height: unset;
 }
