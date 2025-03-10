@@ -14,27 +14,12 @@
     "newsletter_FpTVaf": {
       "type": "newsletter",
       "blocks": {
-        "heading_DcRKYf": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe to our emails",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph_NRygih": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
-          }
-        },
         "email_form_M8pNHE": {
           "type": "email_form",
           "settings": {}
         }
       },
       "block_order": [
-        "heading_DcRKYf",
-        "paragraph_NRygih",
         "email_form_M8pNHE"
       ],
       "settings": {
