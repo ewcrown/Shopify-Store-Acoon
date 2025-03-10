@@ -109,28 +109,21 @@
                   </div>
 
                   <!-- Shopify Country Selector -->
-                  <div class="accon-newsletter-select">
+                  <div class="field accon-newsletter-select">
                     <span>Select Country</span>
-                    <div class="field accon-newsletter-select">
-                      <label for="country-select" class="field__label">Select Country</label>
-                      <select
-                        id="country-select"
-                        name="country_code"
-                        class="field__input"
-                        onchange="this.form.submit()"
-                      >
-                        {% for country in localization.available_countries %}
-                          <option
-                            value="{{ country.iso_code }}"
-                            {% if country.iso_code == localization.country.iso_code %}
-                              selected
-                            {% endif %}
-                          >
-                            {{ country.name }}
-                          </option>
-                        {% endfor %}
-                      </select>
-                    </div>
+                    <label for="country-select" class="field__label">Select Country</label>
+                    <select id="country-select" name="country_code" class="field__input" onchange="this.form.submit()">
+                      {% for country in localization.available_countries %}
+                        <option
+                          value="{{ country.iso_code }}"
+                          {% if country.iso_code == localization.country.iso_code %}
+                            selected
+                          {% endif %}
+                        >
+                          {{ country.name }}
+                        </option>
+                      {% endfor %}
+                    </select>
                   </div>
                 </div>
 
