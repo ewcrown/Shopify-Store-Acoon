@@ -162,3 +162,7 @@ ul.menu-drawer__menu {
 .accon-footer-bottom-copyright{
   margin: 0
 }
+
+li::marker {
+  display: none;
+}
