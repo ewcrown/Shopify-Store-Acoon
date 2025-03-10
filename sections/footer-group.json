@@ -121,6 +121,7 @@
         "text_gpVNzk",
         "brand_information_qR7ADp"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
@@ -138,8 +139,8 @@
     }
   },
   "order": [
-    "accon_footer_R4taxi",
     "newsletter_FpTVaf",
+    "accon_footer_R4taxi",
     "footer"
   ]
 }
