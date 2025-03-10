@@ -92,7 +92,7 @@
                 </div>
 
                 <div class="accon-country-lang-wrap">
-                  <div class="field accon-newsletter-select">
+                  <div class="field ">
                     <label for="language-select" class="field__label">Select Language</label>
                     <select id="language-select" name="locale_code" class="field__input" onchange="this.form.submit()">
                       {% for language in localization.available_languages %}
@@ -109,7 +109,7 @@
                   </div>
 
                   <!-- Shopify Country Selector -->
-                  <div class="field accon-newsletter-select">
+                  <div class="field">
                     <label for="country-select" class="field__label">Select Country</label>
                     <select id="country-select" name="country_code" class="field__input" onchange="this.form.submit()">
                       {% for country in localization.available_countries %}
