@@ -153,3 +153,7 @@ ul.menu-drawer__menu {
     line-height: 21px;
     color: #000;
 }
+
+.accon-footer-links-list-item ::marker{
+  display: none;
+}
