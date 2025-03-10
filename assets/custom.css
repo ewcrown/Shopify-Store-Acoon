@@ -1,11 +1,16 @@
 .header__icon--cart .svg-wrapper,
-.header__icon--cart svg{
+.header__icon--cart svg {
   width: unset;
   height: unset;
 }
 
 .accon-drawer-menu-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.accon-drawer-menu-footer a {
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
 }
