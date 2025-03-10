@@ -157,3 +157,8 @@ ul.menu-drawer__menu {
 .accon-footer-links-list-item ::marker{
   display: none;
 }
+
+.accon-footer-bottom-list,
+.accon-footer-bottom-copyright{
+  margin: 0
+}
