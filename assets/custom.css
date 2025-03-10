@@ -3,3 +3,9 @@
   width: unset;
   height: unset;
 }
+
+.accon-drawer-menu-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
