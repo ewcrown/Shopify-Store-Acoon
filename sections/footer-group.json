@@ -11,12 +11,88 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "newsletter_FpTVaf": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_DcRKYf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_NRygih": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_M8pNHE": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_DcRKYf",
+        "paragraph_NRygih",
+        "email_form_M8pNHE"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "link_list_mppXFy": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "link_list_iGU9MP": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "link_list_bh4Yag": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "text_gpVNzk": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
+          }
+        },
+        "brand_information_qR7ADp": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "link_list_mppXFy",
+        "link_list_iGU9MP",
+        "link_list_bh4Yag",
+        "text_gpVNzk",
+        "brand_information_qR7ADp"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "Be The First to Know",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
@@ -30,6 +106,7 @@
     }
   },
   "order": [
+    "newsletter_FpTVaf",
     "footer"
   ]
 }
