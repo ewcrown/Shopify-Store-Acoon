@@ -92,6 +92,11 @@ span.accon-contact-subHeading {
   margin-top: 3rem;
 }
 
+@media screen and (max-width: 767px) {
+.accon-contact-wrapper {
+    grid-template-columns: 1fr;
+}
+}
 @media screen and (min-width: 750px) {
   .contact__button {
     margin-top: 4rem;
