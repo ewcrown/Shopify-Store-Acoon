@@ -134,4 +134,9 @@
 .accon-collapsible-content.flex {
     flex-direction: column;
     align-items: center;
+  gap: 130px;
+}
+
+.collapsible-content__grid{
+  width: 100%;
 }
