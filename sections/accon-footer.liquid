@@ -41,6 +41,15 @@
             </div>
             <div class="accon-footer-bottom-col">
               <ul class="accon-footer-bottom-list flex">
+                {% for block in section.blocks %}
+                  {% if block.type == 'link_list' %}
+                    {%- for link in block.settings.menu.links -%}
+                      <li class="accon-footer-bottom-list-item">
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                      </li>
+                    {%- endfor -%}
+                  {% endif %}
+                {% endfor %}
                 <li class="accon-footer-bottom-list-item"><a href="#">Privacy Policy</a></li>
                 <li class="accon-footer-bottom-list-item"><a href="#">Terms & Conditions</a></li>
               </ul>
