@@ -18,18 +18,18 @@
             {% endfor %}
           </div>
 
-          {% if block.type == 'footer_shop' %}
-            <div class="accon-footer-shop">
-              <h6 class="accon-footer-shop-heading">{{ section.settings.shop_ttl }}</h6>
-              <div class="accon-footer-shop-logo flex">
-                {% for block in section.blocks %}
+          <div class="accon-footer-shop">
+            <h6 class="accon-footer-shop-heading">{{ section.settings.shop_ttl }}</h6>
+            <div class="accon-footer-shop-logo flex">
+              {% for block in section.blocks %}
+                {% if block.type == 'footer_shop' %}
                   <img src="{{ block.settings.shop_img | image_url: width: 500 }}" alt="">
-                {% endfor %}
-                <img src="https://acoon-store.myshopify.com/cdn/shop/files/Layer_1_2.png?v=1741635810" alt="">
-                <img src="https://acoon-store.myshopify.com/cdn/shop/files/Layer_1_2.png?v=1741635810" alt="">
-              </div>
+                {% endif %}
+              {% endfor %}
+              <img src="https://acoon-store.myshopify.com/cdn/shop/files/Layer_1_2.png?v=1741635810" alt="">
+              <img src="https://acoon-store.myshopify.com/cdn/shop/files/Layer_1_2.png?v=1741635810" alt="">
             </div>
-          {% endif %}
+          </div>
         </div>
 
         <div class="accon-footer-bottom flex justify-content-between align-items-center">
