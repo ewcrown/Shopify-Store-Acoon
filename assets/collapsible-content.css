@@ -142,3 +142,7 @@
   width: 100% !important;
 }
 
+.accordion__title {
+    font-weight: 400;
+    font-size: 26px;
+}
