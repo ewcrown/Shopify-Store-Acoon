@@ -41,7 +41,7 @@ span.accon-contact-subHeading {
     vertical-align: middle;
 }
 
-.accon-contact-wrap .contact__button{
+.accon-contact-wrap .contact__button .button{
   max-width: 424px;
     width: 100%;
 }
