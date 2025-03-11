@@ -1,11 +1,11 @@
 .collapsible-content__wrapper{
   background-color: #fff;
-  padding-bottom:100px;
 }
 
 .collapsible-content {
   position: relative;
   z-index: 0;
+  margin-bottom: 100px;
 }
 
 .collapsible-section-layout {
