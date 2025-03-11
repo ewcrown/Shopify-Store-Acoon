@@ -37,7 +37,7 @@
         <div class="accon-footer-bottom flex justify-content-between align-items-center">
           <div class="accon-footer-bottom-left flex ">
             <div class="accon-footer-bottom-col">
-              <p class="accon-footer-bottom-copyright">&copy; 2020 Accon. All rights reserved.</p>
+              <p class="accon-footer-bottom-copyright">{{ section.settings.copyright_txt }}</p>
             </div>
             <div class="accon-footer-bottom-col">
               <ul class="accon-footer-bottom-list flex">
@@ -89,6 +89,12 @@
       "id": "shop_ttl",
       "label": "Logo Title",
       "default":"Shop Acoon at"
+    },
+    {
+      "type": "text",
+      "id": "copyright_txt",
+      "label": "Copyright Text",
+      "default": "&copy; 2020 Accon. All rights reserved."
     }
 
   ],
