@@ -162,3 +162,7 @@
 .accon-collapsible-content .accordion summary{
   padding: 2rem 0;
 }
+
+.accon-collapsible-content .accordion{
+  border-top: unset;
+}
