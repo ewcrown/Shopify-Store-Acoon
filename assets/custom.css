@@ -267,4 +267,9 @@ li::marker {
     margin-bottom: 40px;
     flex-direction: column;
   }
+
+  .accon-footer-bottom {
+    margin-bottom: 20px;
+    flex-direction: column;
+}
 }
