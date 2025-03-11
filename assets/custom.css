@@ -281,7 +281,8 @@ li::marker {
   }
 
   .accon-footer-bottom {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    gap: 15px;
     flex-direction: column;
 }
   .accon-footer-logo img {
