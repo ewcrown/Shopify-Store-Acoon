@@ -5,16 +5,18 @@
         <div class="accon-footer-content flex justify-content-between">
           <div class="accon-footer-links flex">
             {% for block in section.blocks %}
-              <div class="accon-footer-links-col">
-                <h3>{{ block.settings.heading }}</h3>
-                <ul class="accon-footer-links-list flex">
-                  {%- for link in block.settings.menu.links -%}
-                    <li class="accon-footer-links-list-item">
-                      <a href="{{ link.url }}">{{ link.title }}</a>
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              </div>
+              {% if block.type == 'footer_shop' %}
+                <div class="accon-footer-links-col">
+                  <h3>{{ block.settings.heading }}</h3>
+                  <ul class="accon-footer-links-list flex">
+                    {%- for link in block.settings.menu.links -%}
+                      <li class="accon-footer-links-list-item">
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              {% endif %}
             {% endfor %}
           </div>
 
