@@ -258,8 +258,12 @@ li::marker {
     width: 100%;
   }
 
+  .accon-footer-shop-logo.flex img {
+    width: 45%;
+}
+  
   .accon-footer-shop-logo.flex {
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 25px;
   }
 
