@@ -100,7 +100,7 @@ span.accon-contact-subHeading {
   }
   .accon-contact-wrapper {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 0px;
   }
   .contact-socail-list {
     display: inline-flex;
