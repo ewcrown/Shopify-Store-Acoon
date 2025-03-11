@@ -23,7 +23,11 @@
 span.accon-contact-subHeading {
     font-weight: 400;
     font-size: 18px;
-    color: #969696;;
+    color: #969696;; 
+}
+
+.accon-contact-wrap .title{
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 750px) {
