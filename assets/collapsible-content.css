@@ -97,7 +97,7 @@
 
 .collapsible-row-layout .accordion summary,
 .collapsible-row-layout .accordion .accordion__content {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .collapsible-row-layout .accordion .accordion__content {
@@ -157,4 +157,8 @@
 .accon-collapsible-content summary .icon-caret {
     height: 1rem;
     stroke: #000;
+}
+
+.accon-collapsible-content .accordion summary{
+  padding: 2rem 0;
 }
