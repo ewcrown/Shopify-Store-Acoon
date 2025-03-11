@@ -16,6 +16,7 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
+    <span class="accon-contact-subHeading">{{ section.settings.subHeading }}</span>
     {%- if section.settings.heading != blank -%}
       <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         {{ section.settings.heading }}
@@ -23,6 +24,9 @@
     {%- else -%}
       <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
     {%- endif -%}
+
+    <div class="accon-contact-desc">{{ section.settings.desc }}</div>
+
     {%- liquid
       assign contact_form_class = 'isolate'
       if settings.animations_reveal_on_scroll
@@ -145,10 +149,20 @@
   },
   "settings": [
     {
+      "type": "text",
+      "id": "subHeading",
+      "label": "Sub Heading"
+    },
+    {
       "type": "inline_richtext",
       "id": "heading",
       "default": "t:sections.contact-form.settings.title.default",
       "label": "t:sections.contact-form.settings.title.label"
+    },
+    {
+      "type": "richtext",
+      "id": "desc",
+      "label": "Description"
     },
     {
       "type": "select",
