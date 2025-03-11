@@ -167,3 +167,9 @@
 .accon-collapsible-content .accordion{
   border-top: unset;
 }
+
+.collapsible-content__header p{
+font-weight: 400;
+font-size: 18px;
+
+}
