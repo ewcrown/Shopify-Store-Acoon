@@ -235,3 +235,15 @@ li::marker {
 .localization-form__select:hover.localization-form__select:after {
   box-shadow: unset !important;
 }
+
+.accon-footer-bottom-copyright a {
+    margin-left: 40px;
+}
+
+.accon-footer-bottom-copyright p,
+.accon-footer-bottom-copyright a{
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
