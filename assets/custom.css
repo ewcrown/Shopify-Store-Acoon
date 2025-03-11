@@ -247,3 +247,10 @@ li::marker {
     font-size: 16px;
     line-height: 21px;
 }
+
+@media(max-width: 767px){
+.newsletter-form__field-wrapper {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+}
