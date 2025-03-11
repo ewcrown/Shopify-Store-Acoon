@@ -21,33 +21,47 @@
 }
 
 span.accon-contact-subHeading {
-    font-weight: 400;
-    font-size: 18px;
-    color: #969696;; 
+  font-weight: 400;
+  font-size: 18px;
+  color: #969696;
 }
 
-
-
-.accon-contact-wrap .title{
+.accon-contact-wrap .title {
   margin-bottom: 10px;
 }
 
 .accon-contact-desc p {
-    font-family: Abhaya Libre;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
+  font-family: Abhaya Libre;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
 }
 
-.accon-contact-wrap .contact__button .button{
+.accon-contact-wrap .contact__button .button {
   max-width: 424px;
-    width: 100%;
+  width: 100%;
 }
 
-.accon-contact-wrap .field:after, .accon-contact-wrap .select:after, .accon-contact-wrap .customer .field:after, .accon-contact-wrap .customer select:after,.accon-contact-wrap .localization-form__select:after {
-    box-shadow:unset;
+.accon-contact-wrap .field:after,
+.accon-contact-wrap .select:after,
+.accon-contact-wrap .customer .field:after,
+.accon-contact-wrap .customer select:after,
+.accon-contact-wrap .localization-form__select:after,
+.accon-contact-wrap .field__input:focus,
+.accon-contact-wrap .select__select:focus,
+.accon-contact-wrap .customer .field input:focus,
+.accon-contact-wrap .customer select:focus,
+.accon-contact-wrap
+  .localization-form__select:focus.localization-form__select:after {
+  box-shadow: unset;
+}
+.accon-contact-wrap .field:after,
+.accon-contact-wrap .select:after,
+.accon-contact-wrap .customer .field:after,
+.accon-contact-wrap .customer select:after,
+.accon-contact-wrap .localization-form__select:after {
   border-bottom-color: #000;
 }
 
@@ -57,7 +71,7 @@ span.accon-contact-subHeading {
   }
   #ContactForm {
     padding: 108px 0;
-}
+  }
 }
 
 .contact__button {
