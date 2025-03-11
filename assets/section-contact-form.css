@@ -67,7 +67,7 @@ span.accon-contact-subHeading {
   border-bottom-color: #000;
 }
 
-..accon-contact-wrap .field__label {
+.accon-contact-wrap .field__label {
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
