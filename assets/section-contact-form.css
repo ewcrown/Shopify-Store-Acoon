@@ -81,6 +81,15 @@ span.accon-contact-subHeading {
   left: 10px;
 }
 
+.contact-socail-list {
+  display: inline-flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: 0;
+}
+
 @media screen and (min-width: 750px) {
   .contact .field {
     margin-bottom: 2rem;
@@ -103,12 +112,8 @@ span.accon-contact-subHeading {
     gap: 0px;
   }
   .contact-socail-list {
-    display: inline-flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
     width: 100%;
-    padding-left: 0;
   }
 
   .accon-contact-desc p {
