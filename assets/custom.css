@@ -267,6 +267,10 @@ li::marker {
     gap: 25px;
   }
 
+  .accon-footer-bottom-copyright a {
+    margin-left: 2px;
+}
+
   .accon-footer-content {
     margin-bottom: 40px;
     flex-direction: column;
