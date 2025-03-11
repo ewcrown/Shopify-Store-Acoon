@@ -20,6 +20,12 @@
   justify-content: space-between;
 }
 
+span.accon-contact-subHeading {
+    font-weight: 400;
+    font-size: 18px;
+    color: #969696;;
+}
+
 @media screen and (min-width: 750px) {
   .contact .field {
     margin-bottom: 2rem;
