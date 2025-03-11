@@ -82,15 +82,18 @@
       <div class="accon-footer-col">
         <div class="accon-footer-content flex justify-content-between">
           <div class="accon-footer-links flex">
-            <div class="accon-footer-links-col">
-              <h3>Company</h3>
-              <ul class="accon-footer-links-list flex">
-                <li class="accon-footer-links-list-item"><a href="#">About Us</a></li>
-                <li class="accon-footer-links-list-item"><a href="#">Careers</a></li>
-                <li class="accon-footer-links-list-item"><a href="#">Press</a></li>
-                <li class="accon-footer-links-list-item"><a href="#">Blog</a></li>
-              </ul>
-            </div>
+            {% for block in section.blocks %}
+              <div class="accon-footer-links-col">
+                <h3>Company</h3>
+                <ul class="accon-footer-links-list flex">
+                  {%- for link in block.settings.menu.links -%}
+                    <li class="accon-footer-links-list-item">
+                      <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            {% endfor %}
             <div class="accon-footer-links-col">
               <h3>Services</h3>
               <ul class="accon-footer-links-list flex">
