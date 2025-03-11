@@ -27,7 +27,16 @@ span.accon-contact-subHeading {
 }
 
 .accon-contact-wrap .title{
-  margin-bottom: 0;
+  margin-bottom: 10px;
+}
+
+.accon-contact-desc p {
+    font-family: Abhaya Libre;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
 }
 
 @media screen and (min-width: 750px) {
