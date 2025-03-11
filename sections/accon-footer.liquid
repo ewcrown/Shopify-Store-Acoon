@@ -39,19 +39,6 @@
             <div class="accon-footer-bottom-col">
               <p class="accon-footer-bottom-copyright">{{ section.settings.copyright_txt }}</p>
             </div>
-            <div class="accon-footer-bottom-col">
-              <ul class="accon-footer-bottom-list flex">
-                {% for block in section.blocks %}
-                  {% if block.type == 'link_list' %}
-                    {%- for link in block.settings.menu.links -%}
-                      <li class="accon-footer-bottom-list-item">
-                        <a href="{{ link.url }}">{{ link.title }}</a>
-                      </li>
-                    {%- endfor -%}
-                  {% endif %}
-                {% endfor %}
-              </ul>
-            </div>
           </div>
 
           <div class="accon-footer-bottom-right">
@@ -98,10 +85,10 @@
       "default":"Shop Acoon at"
     },
     {
-      "type": "text",
+      "type": "richtext",
       "id": "copyright_txt",
       "label": "Copyright Text",
-      "default": "&copy; 2020 Accon. All rights reserved."
+      "default": "<p>&copy; 2020 Accon. All rights reserved.</p>"
     }
 
   ],
