@@ -130,3 +130,8 @@
     }
   }
 }
+
+.accon-collapsible-content.flex {
+    flex-direction: column;
+    align-items: center;
+}
