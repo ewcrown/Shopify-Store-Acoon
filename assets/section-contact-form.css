@@ -48,6 +48,7 @@ span.accon-contact-subHeading {
 
 .accon-contact-wrap .field:after, .accon-contact-wrap .select:after, .accon-contact-wrap .customer .field:after, .accon-contact-wrap .customer select:after,.accon-contact-wrap .localization-form__select:after {
     box-shadow:unset;
+  border-bottom-color: #000;
 }
 
 @media screen and (min-width: 750px) {
