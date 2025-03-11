@@ -31,12 +31,9 @@ span.accon-contact-subHeading {
 }
 
 .accon-contact-desc p {
-  font-family: Abhaya Libre;
   font-weight: 400;
   font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  vertical-align: middle;
+  margin: 0;
 }
 
 .accon-contact-wrap .contact__button .button {
