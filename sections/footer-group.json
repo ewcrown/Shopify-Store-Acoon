@@ -52,33 +52,12 @@
             "heading": "Quick links",
             "menu": "footer"
           }
-        },
-        "footer_shop_UYy4VX": {
-          "type": "footer_shop",
-          "settings": {
-            "shop_img": "shopify://shop_images/Layer_1_2.png"
-          }
-        },
-        "footer_shop_dzcTbm": {
-          "type": "footer_shop",
-          "settings": {
-            "shop_img": "shopify://shop_images/Layer_1_2.png"
-          }
-        },
-        "footer_shop_6ERFGy": {
-          "type": "footer_shop",
-          "settings": {
-            "shop_img": "shopify://shop_images/Layer_1_2.png"
-          }
         }
       },
       "block_order": [
         "link_list_iL4ciW",
         "link_list_hiTVYQ",
-        "link_list_BThLxt",
-        "footer_shop_UYy4VX",
-        "footer_shop_dzcTbm",
-        "footer_shop_6ERFGy"
+        "link_list_BThLxt"
       ],
       "settings": {
         "logo": "shopify://shop_images/Layer_1_99adb27a-632b-4a95-a8f0-fff8b2249340.png"
