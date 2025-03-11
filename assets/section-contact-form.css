@@ -56,7 +56,7 @@ span.accon-contact-subHeading {
 .accon-contact-wrap
   .localization-form__select:focus.localization-form__select:after,
 .field__input:focus-visible,
-.field:hover.field:after{
+.field:hover.field:after {
   box-shadow: unset;
 }
 .accon-contact-wrap .field:after,
@@ -67,16 +67,21 @@ span.accon-contact-subHeading {
   border-bottom-color: #000;
 }
 
-.accon-contact-wrap .field__input:focus~.field__label, .accon-contact-wrap .field__input:not(:placeholder-shown)~.field__label,.accon-contact-wrap .field__input:-webkit-autofill~.field__label,.accon-contact-wrap .customer .field input:focus~label,.accon-contact-wrap .customer .field input:not(:placeholder-shown)~label, .customer .field input:-webkit-autofill~label {
-    top: calc(var(--inputs-border-width) + -0.8rem);
+.accon-contact-wrap .field__input:focus ~ .field__label,
+.accon-contact-wrap .field__input:not(:placeholder-shown) ~ .field__label,
+.accon-contact-wrap .field__input:-webkit-autofill ~ .field__label,
+.accon-contact-wrap .customer .field input:focus ~ label,
+.accon-contact-wrap .customer .field input:not(:placeholder-shown) ~ label,
+.customer .field input:-webkit-autofill ~ label {
+  top: calc(var(--inputs-border-width) + -0.8rem);
 }
 
 .accon-contact-wrap .field__label {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    top: 0;
-    left: 10px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  top: 0;
+  left: 10px;
 }
 
 @media screen and (min-width: 750px) {
@@ -93,9 +98,17 @@ span.accon-contact-subHeading {
 }
 
 @media screen and (max-width: 767px) {
-.accon-contact-wrapper {
+  .accon-contact-wrapper {
     grid-template-columns: 1fr;
-}
+    gap: 0;
+  }
+  .contact-socail-list {
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 750px) {
   .contact__button {
