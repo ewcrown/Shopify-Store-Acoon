@@ -67,6 +67,10 @@ span.accon-contact-subHeading {
   border-bottom-color: #000;
 }
 
+.accon-contact-wrap .field__input:focus~.field__label, .accon-contact-wrap .field__input:not(:placeholder-shown)~.field__label,.accon-contact-wrap .field__input:-webkit-autofill~.field__label,.accon-contact-wrap .customer .field input:focus~label,.accon-contact-wrap .customer .field input:not(:placeholder-shown)~label, .customer .field input:-webkit-autofill~label {
+    top: calc(var(--inputs-border-width) + -0.5rem);
+}
+
 .accon-contact-wrap .field__label {
     font-weight: 400;
     font-size: 24px;
