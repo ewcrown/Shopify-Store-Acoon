@@ -54,7 +54,8 @@ span.accon-contact-subHeading {
 .accon-contact-wrap .customer .field input:focus,
 .accon-contact-wrap .customer select:focus,
 .accon-contact-wrap
-  .localization-form__select:focus.localization-form__select:after {
+  .localization-form__select:focus.localization-form__select:after,
+.field__input:focus-visible{
   box-shadow: unset;
 }
 .accon-contact-wrap .field:after,
