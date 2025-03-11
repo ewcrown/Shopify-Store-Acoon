@@ -138,6 +138,18 @@
         </div>
       {%- endform -%}
     </div>
+
+    <div class="contact-socail">
+      <ul class="contact-socail-list">
+        {% for block in section.blocks %}
+          <li class="contact-socail-list-item">
+            <a href="{{ block.settings.social_url }}">
+              <img src="{{  block.settings.social_img | image_url: width: 500  }}" alt="Icon">
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -223,6 +235,25 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "social_icon",
+      "name": "icon",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "scoial_icon",
+          "label": "Social Icon"
+        },
+        {
+          "type": "url",
+          "id": "scoial_url",
+          "label": "Social URL"
+        }
+      ]
     }
   ],
   "presets": [
