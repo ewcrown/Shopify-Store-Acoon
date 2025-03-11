@@ -84,7 +84,7 @@
           <div class="accon-footer-links flex">
             {% for block in section.blocks %}
               <div class="accon-footer-links-col">
-                <h3>Company</h3>
+                <h3>{{ block.settings.heading }}</h3>
                 <ul class="accon-footer-links-list flex">
                   {%- for link in block.settings.menu.links -%}
                     <li class="accon-footer-links-list-item">
