@@ -19,6 +19,34 @@
     },
     "form": {
       "type": "contact-form",
+      "blocks": {
+        "social_icon_QwKPhU": {
+          "type": "social_icon",
+          "settings": {
+            "scoial_icon": "shopify://shop_images/fb.svg",
+            "scoial_url": ""
+          }
+        },
+        "social_icon_nPdEz8": {
+          "type": "social_icon",
+          "settings": {
+            "scoial_icon": "shopify://shop_images/insta.svg",
+            "scoial_url": ""
+          }
+        },
+        "social_icon_ijKgwR": {
+          "type": "social_icon",
+          "settings": {
+            "scoial_icon": "shopify://shop_images/twitter.svg",
+            "scoial_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "social_icon_QwKPhU",
+        "social_icon_nPdEz8",
+        "social_icon_ijKgwR"
+      ],
       "settings": {
         "subHeading": "contact",
         "heading": "Get in Touch",
