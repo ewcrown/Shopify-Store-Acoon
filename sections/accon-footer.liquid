@@ -19,9 +19,11 @@
           </div>
 
           <div class="accon-footer-shop">
-            <h6 class="accon-footer-shop-heading">Shop Acoon at</h6>
+            <h6 class="accon-footer-shop-heading">{{ section.settings.shop_ttl }}</h6>
             <div class="accon-footer-shop-logo flex">
-              <img src="https://acoon-store.myshopify.com/cdn/shop/files/Layer_1_2.png?v=1741635810" alt="">
+              {% for block in section.blocks %}
+                <img src="{{ block.settings.shop_img | image_url: width: 500 }}" alt="">
+              {% endfor %}
               <img src="https://acoon-store.myshopify.com/cdn/shop/files/Layer_1_2.png?v=1741635810" alt="">
               <img src="https://acoon-store.myshopify.com/cdn/shop/files/Layer_1_2.png?v=1741635810" alt="">
             </div>
@@ -77,7 +79,13 @@
       "type": "image_picker",
       "id": "logo",
       "label": "Footer Logo"
+    },
+    {
+      "type": "text",
+      "id": "shop_ttl",
+      "label": "Logo Title"
     }
+
   ],
   "blocks": [
     {
