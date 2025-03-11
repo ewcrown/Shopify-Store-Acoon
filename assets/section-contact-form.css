@@ -107,6 +107,12 @@ span.accon-contact-subHeading {
     width: 100%;
     padding-left: 0;
   }
+
+  .accon-contact-desc p {
+    font-size: 18px;
+    margin: 0;
+    line-height: 25px;
+}
 }
 @media screen and (min-width: 750px) {
   .contact__button {
