@@ -41,12 +41,17 @@ span.accon-contact-subHeading {
     vertical-align: middle;
 }
 
+.accon-contact-wrap .contact__button{
+  max-width: 424px;
+    width: 100%;
+}
+
 @media screen and (min-width: 750px) {
   .contact .field {
     margin-bottom: 2rem;
   }
   #ContactForm {
-    padding-top: 108px;
+    padding: 108px 0;
 }
 }
 
