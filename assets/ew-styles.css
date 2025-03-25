@@ -136,57 +136,6 @@ ul.menu-drawer__menu {
   margin-bottom: 64px;
 }
 
-.flex {
-  display: flex;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.justify-content-center {
-  justify-content: center;
-}
-
-.align-items-left {
-  align-items: left;
-}
-
-.justify-content-left {
-  justify-content: left;
-}
-
-.align-items-right {
-  align-items: right;
-}
-
-.justify-content-right {
-  justify-content: right;
-}
-
-.align-items-baseline {
-  align-items: baseline;
-}
-
-.justify-content-baseline {
-  justify-content: baseline;
-}
-
-.justify-content-between {
-  justify-content: space-between;
-}
-
-.justify-content-around {
-  justify-content: space-around;
-}
-
-.justify-content-evenly {
-  justify-content: space-evenly;
-}
-
-.grid {
-  display: grid;
-}
 
 .accon-footer-row {
   background: #dfdfdf;
