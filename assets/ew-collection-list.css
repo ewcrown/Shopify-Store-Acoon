@@ -1,3 +1,9 @@
 .ew-collection-list-row {
   padding: 140px 0;
 }
+
+.ew-collection-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}

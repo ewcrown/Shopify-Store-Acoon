@@ -1,15 +1,15 @@
-.ew-pc-media img {
+.ew-product-card .ew-pc-media img {
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.ew-pc-media {
+.ew-product-card .ew-pc-media {
   position: relative;
   display: inline-block;
 }
 
-.ew-pc-hover-image {
+.ew-product-card .ew-pc-hover-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -18,20 +18,183 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.ew-pc-featured-image {
+.ew-product-card .ew-pc-featured-image {
   opacity: 1;
   z-index: 2;
 }
 
-.ew-pc-hover-image {
+.ew-product-card .ew-pc-hover-image {
   opacity: 0;
   z-index: 1;
 }
 
-.ew-image-hover-true:hover .ew-pc-featured-image {
+.ew-product-card .ew-image-hover-true:hover .ew-pc-featured-image {
   opacity: 0;
 }
 
-.ew-image-hover-true:hover .ew-pc-hover-image {
+.ew-product-card .ew-image-hover-true:hover .ew-pc-hover-image {
   opacity: 1;
+}
+
+.ew-product-card {
+  position: relative;
+}
+
+.ew-product-card .ew-pc-content-block-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  display: block;
+  z-index: 1;
+}
+
+
+.ew-product-card .ew-pc-title {
+  color: #000;
+  font-family: "Abhaya Libre";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.707px;
+  letter-spacing: 0.543px;
+  text-transform: uppercase;
+}
+
+.ew-product-card .price-item--regular {
+  color: #000;
+  text-align: right;
+  font-family: "Abhaya Libre";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.707px;
+  letter-spacing: 0.543px;
+  text-transform: uppercase;
+}
+
+.ew-product-card .ew-pc-price {
+  flex-shrink: 0;
+}
+
+.ew-product-card .ew-pc-content-block-hover-false {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.ew-product-card .ew-pc-content-block-hover-true {
+  display: none;
+}
+
+.ew-product-card:hover .ew-pc-content-block-hover-true {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.ew-product-card:hover .ew-pc-content-block-hover-false {
+  display: none;
+}
+
+.ew-pc-content-block-cart-icon {
+  flex-shrink: 0;
+  display: flex;
+}
+
+.ew-pc-content-block-cart-icon button svg {
+  pointer-events: none;
+}
+
+.ew-pc-content-block-cart-icon button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.ew-product-variant {
+  display: flex;
+  gap: 8px;
+}
+
+.ew-product-color-radio-single input {
+  display: none;
+}
+
+.ew-product-color-radio-single label span {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+}
+
+.ew-product-color-radio-single[data-available="false"] {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.ew-product-color-radio-single[data-available="false"] span {
+  opacity: 0.8;
+  position: relative;
+}
+
+.ew-product-color-radio-single[data-available="false"] span::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ff0000;
+  transform: rotate(34deg);
+  right: 0;
+  margin: auto;
+}
+
+.ew-product-card .ew-pc-link {
+  cursor: default;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ew-pc-loader-wrap {
+  background: #000;
+  border-radius: 15px;
+  padding: 5px;
+  display: none;
+}
+
+.ew-pc-loader {
+  border-top: 2px solid #ddd;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #ddd;
+  border-left: 2px solid #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  display: block !important;
+  margin: auto;
+}
+
+.ew-pc-content-block-wrap.is-loading .ew-pc-content-block:not(.ew-pc-content-block-loader) {
+  display: none;
+}
+
+.ew-pc-content-block-wrap.is-loading .ew-pc-loader-wrap {
+  display: block !important;
 }

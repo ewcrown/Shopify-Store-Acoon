@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
@@ -18,8 +19,38 @@
     },
     "form": {
       "type": "contact-form",
+      "blocks": {
+        "social_icon_QwKPhU": {
+          "type": "social_icon",
+          "settings": {
+            "scoial_icon": "shopify://shop_images/fb.svg",
+            "scoial_url": ""
+          }
+        },
+        "social_icon_nPdEz8": {
+          "type": "social_icon",
+          "settings": {
+            "scoial_icon": "shopify://shop_images/insta.svg",
+            "scoial_url": ""
+          }
+        },
+        "social_icon_ijKgwR": {
+          "type": "social_icon",
+          "settings": {
+            "scoial_icon": "shopify://shop_images/twitter.svg",
+            "scoial_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "social_icon_QwKPhU",
+        "social_icon_nPdEz8",
+        "social_icon_ijKgwR"
+      ],
       "settings": {
-        "heading": "",
+        "subHeading": "contact",
+        "heading": "Get in Touch",
+        "desc": "<p>Please tell us more about your inquiry using the form below and click to submit your information.</p>",
         "heading_size": "h1",
         "color_scheme": "scheme-1",
         "padding_top": 36,

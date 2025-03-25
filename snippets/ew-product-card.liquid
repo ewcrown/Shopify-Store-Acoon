@@ -32,8 +32,52 @@
         </div>
       {% endif %}
     </div>
-    <div class="ew-pc-content-block">
-      {{ card_product.title }}
+    <div class="ew-pc-content-block-wrap">
+      <div class="ew-pc-content-block ew-pc-content-block-hover-false">
+        <div class="ew-pc-title">
+          {{ card_product.title }}
+        </div>
+        <div class="ew-pc-price">
+          {% render 'price', product: card_product  %}
+        </div>
+      </div>
+      
+      <div class="ew-pc-content-block ew-pc-content-block-hover-true">
+        <div class="ew-pc-content-block-cart-icon">
+          <button data-cart-input data-variant-id="{{ card_product.selected_or_first_available_variant.id }}">
+            {% render 'ew-plus-icon' %}
+          </button>
+        </div>
+        <div class="ew-pc-content-block-variants">
+          {% for option in card_product.options_with_values %}
+            <div class="ew-product-variant ew-product-variant-{{ option.name | handleize }}">
+              {% if option.name contains 'Col' %}
+                {% for value in option.values %}
+                  <div class="ew-product-color-radio-single ew-product-color-radio-single-{{ value | handleize }}" data-available="{%- for variant in card_product.variants -%}{%- if variant.title == value -%}{%- if variant.available -%}true{% else %}false{%- endif -%}{%- endif -%}{%- endfor -%}">    
+                    <input type="radio" data-cart-input id="{{ value | handleize }}-{{ card_product.id }}-{{ section.id }}" name="{{ option.name | handleize }}" value="{{ value }}" {% if forloop.index == 1 %}checked{% endif %} data-variant-id="
+                      {%- for variant in card_product.variants -%}
+                        {%- if variant.title == value -%}
+                          {{ variant.id -}}
+                          {%- endif -%}
+                      {%- endfor -%}
+                      ">
+                    <label for="{{ value | handleize }}-{{ card_product.id }}-{{ section.id }}">
+                      <span class="active-ball" style="background:var(--{{ value | handleize }})"></span>
+                    </label>
+                  </div>
+                {% endfor %}
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="ew-pc-content-block ew-pc-content-block-loader">
+        <div class="ew-pc-loader-wrap">
+          <div class="ew-pc-loader"></div>
+        </div>
+      </div>
+
     </div>
   </a>
 </div>

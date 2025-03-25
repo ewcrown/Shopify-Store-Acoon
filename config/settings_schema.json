@@ -8,6 +8,16 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name": "Color Swatches",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "color_swatches",
+        "label": "Color Swatches"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.logo.name",
     "settings": [
       {

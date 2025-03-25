@@ -2,14 +2,50 @@
   Renders a collection card
   
   Accepts:
-  - card_collection: {Object} Collection Liquid object (optional)
+  - collection_card: {Object} Collection Liquid object (optional)
   - position: Forloop.index
+  - image: Image Show (if collection doesn't have image),
+  - mobile_image: Self Explained,
 {% endcomment %}
 
 <div class="ew-collection-card ew-collection-card-position-{{ position }}">
-  <a href="{{ card_collection.url }}">
+  <a href="{{ collection_card.url }}" class="ew-collection-card-link">
     <div class="ew-colleciton-featured-image">
-      
+      {% if collection_card.featured_image != blank %}
+        <picture>
+          <img 
+            class="ew-img-fluid"
+            src="{{ collection_card.featured_image | image_url: width: 1920 }}" 
+            loading="lazy" 
+            srcset="
+              {{ collection_card.featured_image | image_url: width: 620 }} 620w,
+              {{ collection_card.featured_image | image_url: width: 800 }} 800w,
+              {{ collection_card.featured_image | image_url: width: 1100 }} 1100w,
+              {{ collection_card.featured_image | image_url: width: 1280 }} 1280w"
+            sizes="(max-width: 600px) 600px, 100vw"
+            alt="{{ collection_card.title }}">
+        </picture>
+        {% else  %}
+        <picture>
+        {% if mobile_image != blank %}
+          <source media="(max-width: 600px)" srcset="{{ mobile_image | image_url: width: 600 }}">
+        {% endif %}
+        <img 
+          class="ew-img-fluid"
+          src="{{ image | image_url: width: 1280 }}" 
+          loading="lazy" 
+          srcset="
+            {{ image | image_url: width: 620 }} 620w,
+            {{ image | image_url: width: 800 }} 800w,
+            {{ image | image_url: width: 1100 }} 1100w,
+            {{ image | image_url: width: 1280 }} 1280w"
+          sizes="(max-width: 600px) 600px, 100vw"
+          alt="{{ collection_card.title }}">
+        </picture>
+      {% endif %}
+    </div>
+    <div class="ew-collectino-text-content">
+      <p>{{ collection_card.title }}</p>
     </div>
   </a>
 </div>

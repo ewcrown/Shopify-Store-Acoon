@@ -14,9 +14,89 @@
   margin-bottom: 1.5rem;
 }
 
+.accon-contact-wrapper {
+  display: grid;
+  grid-template-columns: 80% 10%;
+  justify-content: space-between;
+}
+
+span.accon-contact-subHeading {
+  font-weight: 400;
+  font-size: 18px;
+  color: #969696;
+}
+
+.accon-contact-wrap .title {
+  margin-bottom: 10px;
+}
+
+.accon-contact-desc p {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 0;
+}
+
+.accon-contact-wrap .contact__button .button {
+  max-width: 424px;
+  width: 100%;
+}
+
+.accon-contact-wrap .field:after,
+.accon-contact-wrap .select:after,
+.accon-contact-wrap .customer .field:after,
+.accon-contact-wrap .customer select:after,
+.accon-contact-wrap .localization-form__select:after,
+.accon-contact-wrap .field__input:focus,
+.accon-contact-wrap .select__select:focus,
+.accon-contact-wrap .customer .field input:focus,
+.accon-contact-wrap .customer select:focus,
+.accon-contact-wrap
+  .localization-form__select:focus.localization-form__select:after,
+.field__input:focus-visible,
+.field:hover.field:after {
+  box-shadow: unset;
+}
+.accon-contact-wrap .field:after,
+.accon-contact-wrap .select:after,
+.accon-contact-wrap .customer .field:after,
+.accon-contact-wrap .customer select:after,
+.accon-contact-wrap .localization-form__select:after {
+  border-bottom-color: #000;
+}
+
+.accon-contact-wrap .field__input:focus ~ .field__label,
+.accon-contact-wrap .field__input:not(:placeholder-shown) ~ .field__label,
+.accon-contact-wrap .field__input:-webkit-autofill ~ .field__label,
+.accon-contact-wrap .customer .field input:focus ~ label,
+.accon-contact-wrap .customer .field input:not(:placeholder-shown) ~ label,
+.customer .field input:-webkit-autofill ~ label {
+  top: calc(var(--inputs-border-width) + -0.8rem);
+}
+
+.accon-contact-wrap .field__label {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  top: 0;
+  left: 10px;
+}
+
+.contact-socail-list {
+  display: inline-flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: 0;
+}
+
 @media screen and (min-width: 750px) {
   .contact .field {
     margin-bottom: 2rem;
+  }
+  #ContactForm {
+    padding: 108px 0;
   }
 }
 
@@ -24,6 +104,25 @@
   margin-top: 3rem;
 }
 
+@media screen and (max-width: 767px) {
+  #ContactForm {
+    padding: 50px 0;
+  }
+  .accon-contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .contact-socail-list {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .accon-contact-desc p {
+    font-size: 18px;
+    margin: 0;
+    line-height: 25px;
+  }
+}
 @media screen and (min-width: 750px) {
   .contact__button {
     margin-top: 4rem;
@@ -33,7 +132,7 @@
 @media screen and (min-width: 750px) {
   .contact__fields {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2rem;
   }
 }

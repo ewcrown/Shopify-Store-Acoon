@@ -10,7 +10,7 @@ sliders.forEach(slider => {
       perPage: 4,
       perMove: 1,
       gap: 10,
-      autoplay: true,
+      autoplay: false,
       interval: 3000,
       arrows: false,
       pagination: true,
@@ -19,6 +19,28 @@ sliders.forEach(slider => {
         768: { perPage: 1 }
       }
     }).mount();
+  } else if (sliderName == 'Featured Tabs') {
+    let splide = new Splide('#splideTabs', {
+      perPage: 3,
+      focus: 'center',
+      pagination: false,
+      arrows: true,
+    });
+
+    splide.mount();
+
+    document.querySelectorAll('.splide__slide').forEach((tab) => {
+      tab.addEventListener('click', function () {
+        let activeTab = this.getAttribute('data-tab');
+
+        document.querySelectorAll('.tab-pane').forEach((pane) => {
+          pane.classList.remove('active');
+        });
+
+        document.getElementById(activeTab).classList.add('active');
+      });
+    });
+
   } else {
     new Splide(slider, {
       type: 'loop',

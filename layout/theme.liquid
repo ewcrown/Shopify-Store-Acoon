@@ -47,6 +47,7 @@
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
     %}
 
+    {% render 'ew-fonts' %}
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer="defer"></script>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
@@ -223,6 +224,8 @@
         --variant-pills-shadow-horizontal-offset: {{ settings.variant_pills_shadow_horizontal_offset }}px;
         --variant-pills-shadow-vertical-offset: {{ settings.variant_pills_shadow_vertical_offset }}px;
         --variant-pills-shadow-blur-radius: {{ settings.variant_pills_shadow_blur }}px;
+
+        {{ settings.color_swatches }}
       }
 
       *,
@@ -258,8 +261,10 @@
       }
     {% endstyle %}
 
+    
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'ew-styles.css' | asset_url | stylesheet_tag }}
+    {{ 'ew-header.css' | asset_url | stylesheet_tag }}
 
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -301,7 +306,6 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-    
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
@@ -381,5 +385,6 @@
 
     <script src="{{ 'ew-custom.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'ew-splide.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'ew-cart.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>

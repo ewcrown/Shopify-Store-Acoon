@@ -11,12 +11,117 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "newsletter_FpTVaf": {
+      "type": "newsletter",
+      "blocks": {
+        "email_form_M8pNHE": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "email_form_M8pNHE"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "accon_footer_R4taxi": {
+      "type": "accon-footer",
+      "blocks": {
+        "link_list_iL4ciW": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "link_list_hiTVYQ": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links 2",
+            "menu": "footer"
+          }
+        },
+        "link_list_BThLxt": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "footer_shop_L7FkDi": {
+          "type": "footer_shop",
+          "settings": {
+            "shop_img": "shopify://shop_images/Layer_1_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_iL4ciW",
+        "link_list_hiTVYQ",
+        "link_list_BThLxt",
+        "footer_shop_L7FkDi"
+      ],
+      "settings": {
+        "logo": "shopify://shop_images/Layer_1_99adb27a-632b-4a95-a8f0-fff8b2249340.png",
+        "shop_ttl": "Shop Acoon at",
+        "copyright_txt": "<p>© 2020 Accon. All rights reserved. <a href=\"/pages/contact\" title=\"Contact\">Privacy Policy</a> <a href=\"/products/black-leather-bag\" title=\"Black Leather Bag\">Terms & Conditions</a>  <a href=\"/pages/contact\" title=\"Contact\">Shipping</a></p>"
+      }
+    },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "link_list_mppXFy": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "link_list_iGU9MP": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "link_list_bh4Yag": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "text_gpVNzk": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
+          }
+        },
+        "brand_information_qR7ADp": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "link_list_mppXFy",
+        "link_list_iGU9MP",
+        "link_list_bh4Yag",
+        "text_gpVNzk",
+        "brand_information_qR7ADp"
+      ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "Be The First to Know",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
@@ -30,6 +135,8 @@
     }
   },
   "order": [
+    "newsletter_FpTVaf",
+    "accon_footer_R4taxi",
     "footer"
   ]
 }

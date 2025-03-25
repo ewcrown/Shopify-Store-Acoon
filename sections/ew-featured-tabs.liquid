@@ -1,0 +1,35 @@
+{{ 'ew-featured-tabs.css' | asset_url | stylesheet_tag }}
+
+<div class="splide splide-tabs" id="splideTabs">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide" data-tab="for-him">For Him</li>
+      <li class="splide__slide" data-tab="for-her">For Her</li>
+      <li class="splide__slide" data-tab="jewelry">Jewelry</li>
+    </ul>
+  </div>
+</div>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="for-him">
+    <p>Content for Him</p>
+  </div>
+  <div class="tab-pane" id="for-her">
+    <p>Content for Her</p>
+  </div>
+  <div class="tab-pane" id="jewelry">
+    <p>Jewelry Collection</p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "<> Featured Tabs",
+  "settings": [],
+  "presets": [
+    {
+      "name": "<> Featured Tabs"
+    }
+  ]
+}
+{% endschema %}

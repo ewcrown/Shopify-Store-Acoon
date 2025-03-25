@@ -1,10 +1,16 @@
 {{ 'ew-collection-list.css' | asset_url | stylesheet_tag }}
+{{ 'ew-collection-card.css' | asset_url | stylesheet_tag }}
 <section class="ew-collection-list-section ew-collection-list-section={{ section.id }}" id="ew-collection-list">
   <div class="ew-collection-list-row">
     <div class="page-width">
       <div class="ew-collection-list">
         {% for block in section.blocks %}
-          {% render 'ew-collection-card', position: forloop.index, collection_card: block.settings.collection %}
+          {% render 'ew-collection-card', 
+            image: block.settings.image,
+            mobile_image: block.settings.mobile_image,
+            position: forloop.index, 
+            collection_card: block.settings.collection
+           %}
         {% endfor %}
       </div>
     </div>
@@ -21,6 +27,7 @@
     {
       "type": "single_colleciton",
       "name": "Single Collection",
+      "limit": 5,
       "settings": [
         {
           "type": "header",
