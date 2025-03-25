@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ew_richtext_BFx73H": {
+      "type": "ew-richtext",
+      "blocks": {
+        "text_block_QgKykB": {
+          "type": "text_block",
+          "settings": {
+            "description": "<p>The essence of Acoon</p><p>A statement of who you are and who you aspire to be</p><p>Acoon (أكون (is a luxury fashion brand that embodies the essence of \"to be\" and \"to become.\" Acoon stands as a tribute to the modern woman—celebrating her journey, her strength, and her evolving identity. </p><p>Each piece is a carefully crafted statement, designed to empower women to embrace their true selves while stepping confidently into the future they aspire to shape. We believe that fashion is more than an expression of style; it is a reflection of the woman you are today and the one you are becoming</p>"
+          }
+        },
+        "image_block_hz7jiJ": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/image_4.png"
+          }
+        },
+        "text_block_ae8xmm": {
+          "type": "text_block",
+          "settings": {
+            "description": "<p>“We create the silhouettes of dreams, inspiring every woman to become who she is meant to be.”</p><p>Acoon</p>"
+          }
+        },
+        "text_block_TemPRQ": {
+          "type": "text_block",
+          "settings": {
+            "description": "<p>Our Story</p><p>Journey of Become</p><p>The story of Acoon begins with a young girl and her love for fashion—Muna Al Othaiman, whose journey into the world of style started with a simple, yet profound habit: collecting fashion magazines. </p><p>Flipping through those glossy pages, Muna was captivated by the world of elegance, design, and artistry. Yet, even amidst the allure, there was an inner voice that whispered, “These pieces could be more relatable.” Muna felt a deep desire for styles that spoke to her, that reflected the values she cherished as a young woman growing up in the GCC. This realization sparked a new passion within her—not just to admire fashion, but to create it. </p><p>She began sketching her own designs, dreaming of pieces that matched her standards and silhouettes that carried a deeper meaning. Every design she created was a step toward the woman she aspired to be—one who could honor tradition while embracing the modern world. This process of creation became more than just a craft; it became a journey of self-discovery, a way for Muna to embody her future self. And so, the vision for Acoon was born.</p>"
+          }
+        },
+        "image_block_F48mrA": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/image_1fb071cf-5a7e-49e1-87e1-cd5459c5c182.png"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_QgKykB",
+        "image_block_hz7jiJ",
+        "text_block_ae8xmm",
+        "text_block_TemPRQ",
+        "image_block_F48mrA"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "ew_richtext_BFx73H"
+  ]
+}
