@@ -1,34 +1,102 @@
 {{ 'ew-featured-tabs.css' | asset_url | stylesheet_tag }}
 
-<div class="splide splide-tabs" id="splideTabs">
-  <div class="splide__track">
-    <ul class="splide__list">
-      <li class="splide__slide" data-tab="for-him">For Him</li>
-      <li class="splide__slide" data-tab="for-her">For Her</li>
-      <li class="splide__slide" data-tab="jewelry">Jewelry</li>
-    </ul>
+<div class="ew-featured-tabs-section ew-featured-tabs-{{ section.id }}" id="ew-featured-tabs-section">
+  <div class="ew-featured-tabs-row">
+
+      <div class="splide" data-name="Featured Video Tabs">
+        <div class="splide__track">
+          <div class="splide__list">
+              {%  for block in section.blocks %}
+              <div class="splide__slide" data-title="{{ block.settings.title }}">
+                {% if block.settings.video != blank %}
+                  <div class="mobile-hide">
+                    {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: 1920 }}
+                  </div>
+                  {% if block.settings.mobile_video != blank %}
+                    <div class="desktop-hide">
+                      {{ block.settings.mobile_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: 1920 }}
+                    </div>
+                  {% endif %}
+                {% else  %}
+                  {% if block.settings.image != blank %}
+                  <picture>
+                    {% if block.settings.mobile_image != blank %}
+                    <source media="(max-width: 600px)" srcset="{{ block.settings.mobile_image | image_url: width: 600 }}">
+                    {% endif %}
+                    <img 
+                      class="ew-img-fluid"
+                      src="{{ block.settings.image | image_url: width: 1280 }}" 
+                      loading="lazy" 
+                      srcset="
+                        {{ block.settings.image | image_url: width: 620 }} 620w,
+                        {{ block.settings.image | image_url: width: 800 }} 800w,
+                        {{ block.settings.image | image_url: width: 1100 }} 1100w,
+                        {{ block.settings.image | image_url: width: 1280 }} 1280w"
+                      sizes="(max-width: 600px) 600px, 100vw"
+                      alt="{{ block.settings.title }}">
+                  </picture>
+                {% endif %}
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
   </div>
 </div>
 
-<div class="tab-content">
-  <div class="tab-pane active" id="for-him">
-    <p>Content for Him</p>
-  </div>
-  <div class="tab-pane" id="for-her">
-    <p>Content for Her</p>
-  </div>
-  <div class="tab-pane" id="jewelry">
-    <p>Jewelry Collection</p>
-  </div>
-</div>
 
 {% schema %}
 {
-  "name": "<> Featured Tabs",
+  "name": "<> Featured Video Tabs",
   "settings": [],
+  "blocks": [
+    {
+      "name":"Video Slide",
+      "type": "video_slider",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title Here",
+          "default": "For him"
+        },
+        {
+          "type": "header",
+          "content": "Video"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "A Shopify-hosted desktop video"
+        },
+        {
+          "type": "video",
+          "id": "mobile_video",
+          "label": "A Shopify-hosted mobile video"
+        },
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile Image"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "<> Featured Tabs"
+      "name": "<> Featured Video Tabs"
     }
   ]
 }

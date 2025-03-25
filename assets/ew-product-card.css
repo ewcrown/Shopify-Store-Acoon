@@ -99,32 +99,32 @@
   display: none;
 }
 
-.ew-pc-content-block-cart-icon {
+.ew-product-card .ew-pc-content-block-cart-icon {
   flex-shrink: 0;
   display: flex;
 }
 
-.ew-pc-content-block-cart-icon button svg {
+.ew-product-card .ew-pc-content-block-cart-icon button svg {
   pointer-events: none;
 }
 
-.ew-pc-content-block-cart-icon button {
+.ew-product-card .ew-pc-content-block-cart-icon button {
   cursor: pointer;
   background: none;
   border: none;
   padding: 0;
 }
 
-.ew-product-variant {
+.ew-product-card .ew-product-variant {
   display: flex;
   gap: 8px;
 }
 
-.ew-product-color-radio-single input {
+.ew-product-card .ew-product-color-radio-single input {
   display: none;
 }
 
-.ew-product-color-radio-single label span {
+.ew-product-card .ew-product-color-radio-single label span {
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -134,17 +134,17 @@
   position: relative;
 }
 
-.ew-product-color-radio-single[data-available="false"] {
+.ew-product-card .ew-product-color-radio-single[data-available="false"] {
   cursor: not-allowed;
   pointer-events: none;
 }
 
-.ew-product-color-radio-single[data-available="false"] span {
+.ew-product-card .ew-product-color-radio-single[data-available="false"] span {
   opacity: 0.8;
   position: relative;
 }
 
-.ew-product-color-radio-single[data-available="false"] span::before {
+.ew-product-card .ew-product-color-radio-single[data-available="false"] span::before {
   content: '';
   width: 2px;
   height: 100%;
@@ -161,24 +161,14 @@
   cursor: default;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.ew-pc-loader-wrap {
+.ew-product-card .ew-pc-loader-wrap {
   background: #000;
   border-radius: 15px;
   padding: 5px;
   display: none;
 }
 
-.ew-pc-loader {
+.ew-product-card .ew-pc-loader {
   border-top: 2px solid #ddd;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #ddd;
@@ -191,10 +181,10 @@
   margin: auto;
 }
 
-.ew-pc-content-block-wrap.is-loading .ew-pc-content-block:not(.ew-pc-content-block-loader) {
+.ew-product-card .ew-pc-content-block-wrap.is-loading .ew-pc-content-block:not(.ew-pc-content-block-loader) {
   display: none;
 }
 
-.ew-pc-content-block-wrap.is-loading .ew-pc-loader-wrap {
+.ew-product-card .ew-pc-content-block-wrap.is-loading .ew-pc-loader-wrap {
   display: block !important;
 }

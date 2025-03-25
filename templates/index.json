@@ -84,6 +84,38 @@
       ],
       "settings": {}
     },
+    "ew_featured_tabs_38eaXP": {
+      "type": "ew-featured-tabs",
+      "blocks": {
+        "video_slider_HH3G4a": {
+          "type": "video_slider",
+          "settings": {
+            "title": "For him",
+            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4"
+          }
+        },
+        "video_slider_MWFbJe": {
+          "type": "video_slider",
+          "settings": {
+            "title": "For her",
+            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4"
+          }
+        },
+        "video_slider_4kJCgm": {
+          "type": "video_slider",
+          "settings": {
+            "title": "Jewellery",
+            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_slider_HH3G4a",
+        "video_slider_MWFbJe",
+        "video_slider_4kJCgm"
+      ],
+      "settings": {}
+    },
     "ew_collection_slider_TqJAQw": {
       "type": "ew-collection-slider",
       "settings": {
@@ -91,10 +123,6 @@
         "button_link": "",
         "button_text": "Shop The Drop"
       }
-    },
-    "ew_featured_tabs_38eaXP": {
-      "type": "ew-featured-tabs",
-      "settings": {}
     }
   },
   "order": [
@@ -102,7 +130,7 @@
     "ew_collection_slider_ayfG74",
     "ew_hero_section_aKjcD7",
     "ew_collection_list_txCPCr",
-    "ew_collection_slider_TqJAQw",
-    "ew_featured_tabs_38eaXP"
+    "ew_featured_tabs_38eaXP",
+    "ew_collection_slider_TqJAQw"
   ]
 }
