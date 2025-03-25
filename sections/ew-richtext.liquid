@@ -6,21 +6,25 @@
       <div class="ew-richtext-wrap">
         {% for block in section.blocks %}
           {% if block.type == 'image_block' %}
-            <img 
-              class="ew-img-fluid"
-              src="{{ block.settings.image | image_url: width: 1920 }}" 
-              loading="lazy" 
-              srcset="
-                {{ block.settings.image | image_url: width: 620 }} 620w,
-                {{ block.settings.image | image_url: width: 800 }} 800w,
-                {{ block.settings.image | image_url: width: 1100 }} 1100w,
-                {{ block.settings.image | image_url: width: 1280 }} 1280w"
-              sizes="(max-width: 600px) 600px, 100vw"
-              alt="Acoon Image {{ forloop.index }}">
+            <div class="ew-richtext-image-block">
+              <img 
+                class="ew-img-fluid"
+                src="{{ block.settings.image | image_url: width: 1920 }}" 
+                loading="lazy" 
+                srcset="
+                  {{ block.settings.image | image_url: width: 620 }} 620w,
+                  {{ block.settings.image | image_url: width: 800 }} 800w,
+                  {{ block.settings.image | image_url: width: 1100 }} 1100w,
+                  {{ block.settings.image | image_url: width: 1280 }} 1280w"
+                sizes="(max-width: 600px) 600px, 100vw"
+                alt="Acoon Image {{ forloop.index }}">
+            </div>
           {% endif %}
 
           {% if block.type == 'text_block' %}
+            <div class="ew-richtext-text-block">
             {{ block.settings.description }}
+            </div>
           {% endif %}
         {% endfor %}
       </div>

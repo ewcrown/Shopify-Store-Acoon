@@ -361,3 +361,14 @@ li::marker {
     transform: rotate(360deg);
   }
 }
+
+.main-page-title {
+  color: #000;
+  text-align: center;
+  font-family: "Abhaya Libre";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 125px 0;
+}
