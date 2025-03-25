@@ -1,0 +1,70 @@
+{{ 'ew-faqs-section.css' | asset_url | stylesheet_tag }}
+
+<section class="ew-faqs-section ew-faqs-section-{{ section.id }}" id="ew-faqs-section" data-faqs>
+  <div class="ew-faqs-row">
+    <div class="page-width">
+      <div class="ew-faqs-wrap">
+        <div class="ew-faq">
+          {% for block in section.blocks %}
+            <div class="ew-faq-item">
+              <button class="ew-faq-question">
+                {{ block.settings.question }}
+                <span class="ew-faq-icon">+</span>
+              </button>
+              <div class="ew-faq-answer">
+                <p>{{ block.settings.answer }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "<> FAQs",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "<> FAQs",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "faq",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "We accept returns within 30 days of purchase."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "question": "Do you offer free shipping?",
+            "answer": "Yes, free shipping is available on orders over $50."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
