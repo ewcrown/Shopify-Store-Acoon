@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "main-page",
@@ -23,49 +23,59 @@
         "collapsible_row_68rw3z": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Shipping Methods",
             "icon": "none",
-            "row_content": "<p>content 1</p>",
+            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.</p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.</p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bwpxgX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Shipping Charges",
+            "icon": "none",
+            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.</p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.</p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.</p>",
             "page": ""
           }
         },
         "collapsible_row_Gz7UkX": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Estimated Delivery Dates",
             "icon": "none",
-            "row_content": "<p>content 1</p>",
+            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.</p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.</p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.</p>",
             "page": ""
           }
         },
         "collapsible_row_UKkGWa": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Item Availability",
             "icon": "none",
-            "row_content": "<p>content 1</p>",
+            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.</p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.</p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.</p>",
             "page": ""
           }
         },
         "collapsible_row_33nqj6": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Shipping Rules & Restrictions",
             "icon": "none",
-            "row_content": "<p>content 1</p>",
+            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.</p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.</p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.</p>",
             "page": ""
           }
         }
       },
       "block_order": [
         "collapsible_row_68rw3z",
+        "collapsible_row_bwpxgX",
         "collapsible_row_Gz7UkX",
         "collapsible_row_UKkGWa",
         "collapsible_row_33nqj6"
       ],
       "settings": {
-        "caption": "FAQS",
-        "heading": "Everything You Need to Know",
+        "caption": "",
+        "heading": "Shipping",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
