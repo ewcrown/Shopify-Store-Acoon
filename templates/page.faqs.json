@@ -11,10 +11,9 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": 28,
-        "padding_bottom": 28
+        "padding_bottom": 0
       }
     },
     "collapsible_content_Xf8LbB": {
@@ -23,49 +22,69 @@
         "collapsible_row_68rw3z": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "What is your return and exchange policy?",
             "icon": "none",
-            "row_content": "<p>content 1</p>",
+            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.</p>",
             "page": ""
           }
         },
-        "collapsible_row_Gz7UkX": {
+        "collapsible_row_UqaDPN": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How long will it take to receive my order?",
             "icon": "none",
-            "row_content": "<p>content 1</p>",
+            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.</p>",
             "page": ""
           }
         },
-        "collapsible_row_UKkGWa": {
+        "collapsible_row_TMBVhr": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Do you offer international shipping?",
             "icon": "none",
-            "row_content": "<p>content 1</p>",
+            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.</p>",
             "page": ""
           }
         },
-        "collapsible_row_33nqj6": {
+        "collapsible_row_NGGGjX": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "What sizes are available, and how can I find my size?",
             "icon": "none",
-            "row_content": "<p>content 1</p>",
+            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Y7FNzV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I track my order?",
+            "icon": "none",
+            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_iT88T7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What payment methods do you accept?",
+            "icon": "none",
+            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.</p>",
             "page": ""
           }
         }
       },
       "block_order": [
         "collapsible_row_68rw3z",
-        "collapsible_row_Gz7UkX",
-        "collapsible_row_UKkGWa",
-        "collapsible_row_33nqj6"
+        "collapsible_row_UqaDPN",
+        "collapsible_row_TMBVhr",
+        "collapsible_row_NGGGjX",
+        "collapsible_row_Y7FNzV",
+        "collapsible_row_iT88T7"
       ],
       "settings": {
-        "caption": "FAQS",
-        "heading": "Everything You Need to Know",
+        "caption": "",
+        "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",

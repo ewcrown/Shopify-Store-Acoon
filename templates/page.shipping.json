@@ -11,10 +11,9 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": 28,
-        "padding_bottom": 28
+        "padding_bottom": 0
       }
     },
     "collapsible_content_Xf8LbB": {
@@ -75,7 +74,7 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "Shipping",
+        "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",

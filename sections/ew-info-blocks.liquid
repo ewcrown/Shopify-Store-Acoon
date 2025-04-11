@@ -1,0 +1,32 @@
+<section class="ew-contact-blocks ew-contact-blocks-{{ section.id }}" id="ew-contact-blocks">
+  <div class="ew-contact-blocks-row">
+    <div class="page-width">
+      <div class="ew-contact-blocks-wrap">
+
+        {% for block in section.blocks %}
+          <div>
+
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "<> Info Blocks",
+  "settings": [
+    {
+      "type": "header"
+    }
+  ],
+  "presets": [
+    {
+      "name": "<> Info Blocks"
+    }
+  ]
+}
+{% endschema %}

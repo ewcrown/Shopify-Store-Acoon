@@ -1,0 +1,92 @@
+.ew-contact-form-row {
+  padding: 132px 0;
+}
+
+.ew-contact-form-inner {
+  width: 80%;
+  margin-right: auto;
+}
+
+.ew-contact-form-inner h6 {
+  color: #969696;
+  font-family: "Abhaya Libre";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.ew-contact-form-inner h3 {
+  color: #000;
+  font-family: "Abhaya Libre";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+
+.ew-contact-form-inner p {
+  color: #000;
+  font-family: "Abhaya Libre";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.ew-contact-form-fields {
+  padding: 100px 0;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.ew-contact-form-fields .ew-contact-form-field:not(:nth-child(4)) {
+  flex-basis: 31%;
+}
+
+.ew-contact-form-fields .ew-contact-form-field:not(:nth-child(4)) input {
+  flex-basis: 100%;
+}
+
+.ew-contact-form-fields .ew-contact-form-field input,
+.ew-contact-form-fields .ew-contact-form-field textarea {
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #CACACA;
+  padding: 20px 20px 30px;
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.ew-contact-form-fields .ew-contact-form-field {
+  flex-basis: 100%;
+}
+
+.ew-contact-form-field textarea {
+  min-height: 150px;
+}
+
+.ew-contact__button button {
+  min-width: 424px;
+  padding: 18px 31px;
+  background: #000;
+  color: #FFF;
+  font-family: "Abhaya Libre", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
