@@ -18,6 +18,16 @@
     ]
   },
   {
+    "name": "Splash Screen",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "splash_image",
+        "label": "Splash Image"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.logo.name",
     "settings": [
       {

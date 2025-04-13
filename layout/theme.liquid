@@ -309,6 +309,10 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+    {% if template.name contains 'index' %}
+      {% render 'ew-splash-section' %}
+    {% endif %}
+
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -386,5 +390,6 @@
     <script src="{{ 'ew-custom.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'ew-splide.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'ew-cart.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'ew-splash-screen.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>
