@@ -9,12 +9,41 @@
 
 #ew-splash-intro img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  will-change: opacity, transform;
+}
+
+#ew-splash-intro .ew-splash-content-inner {
   transition: opacity 0.3s ease, transform 0.3s ease;
   will-change: opacity, transform;
 }
 
 #MainContent {
   margin-top: 0;
+}
+
+.ew-splash-content {
+  position: relative;
+}
+
+.ew-splash-content-inner {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  max-width: 600px;
+  margin: auto;
+}
+
+.ew-splash-content-inner h3{
+  color: #FFF;
+text-align: center;
+font-family: "Abhaya Libre Medium";
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: 42px; /* 87.5% */
 }

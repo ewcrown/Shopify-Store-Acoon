@@ -1,15 +1,57 @@
 {{ 'ew-splash-screen.css' | asset_url | stylesheet_tag }}
-
 <div id="ew-splash-intro">
-  <img 
-    class="ew-img-fluid"
-    src="{{ settings.splash_image | image_url: width: 1920 }}" 
-    loading="lazy" 
-    srcset="
-      {{ settings.splash_image | image_url: width: 620 }} 620w,
-      {{ settings.splash_image | image_url: width: 800 }} 800w,
-      {{ settings.splash_image | image_url: width: 1100 }} 1100w,
-      {{ settings.splash_image | image_url: width: 1280 }} 1280w"
-    sizes="(max-width: 600px) 600px, 100vw"
-    alt="Splash Banner">
+  {% capture eng_content %}
+    <div class="ew-splash-content">
+      <img 
+        class="ew-img-fluid"
+        src="{{ settings.splash_image | image_url: width: 1920 }}" 
+        loading="lazy" 
+        srcset="
+          {{ settings.splash_image | image_url: width: 620 }} 620w,
+          {{ settings.splash_image | image_url: width: 800 }} 800w,
+          {{ settings.splash_image | image_url: width: 1100 }} 1100w,
+          {{ settings.splash_image | image_url: width: 1280 }} 1280w"
+        sizes="(max-width: 600px) 600px, 100vw"
+        alt="Splash Banner" />
+
+      <div class="ew-splash-content-inner">
+        <h3>{{ settings.heading }}</h3>
+        <div class="ew-btn ew-text-center">
+          {% if settings.button_link != blank %}
+            <a class="ew-btn-primary" href="{{ settings.button_link }}">{{ settings.button_text }}</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endcapture %}
+
+  {% capture ar_content %}
+    <div class="ew-splash-content">
+      <img 
+        class="ew-img-fluid"
+        src="{{ settings.ar_splash_image | image_url: width: 1920 }}" 
+        loading="lazy" 
+        srcset="
+          {{ settings.ar_splash_image | image_url: width: 620 }} 620w,
+          {{ settings.ar_splash_image | image_url: width: 800 }} 800w,
+          {{ settings.ar_splash_image | image_url: width: 1100 }} 1100w,
+          {{ settings.ar_splash_image | image_url: width: 1280 }} 1280w"
+        sizes="(max-width: 600px) 600px, 100vw"
+        alt="Splash Banner" />
+
+      <div class="ew-splash-content-inner">
+        <h3>{{ settings.ar_heading }}</h3>
+        <div class="ew-btn ew-text-center">
+          {% if settings.ar_button_link != blank %}
+            <a class="ew-btn-primary" href="{{ settings.ar_button_link }}">{{ settings.ar_button_text }}</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endcapture %}
+
+  {% render 'ew-text-lang',
+    arabic_text: ar_content,
+    english_text: eng_content
+  %}
 </div>

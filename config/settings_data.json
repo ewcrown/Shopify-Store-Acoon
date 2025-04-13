@@ -10,7 +10,13 @@
 {
   "current": {
     "color_swatches": "--black: #000000;\n--red: #ff0000;",
-    "splash_image": "shopify://shop_images/SHOP_BY_CATEGORY-DENIM_copy.png",
+    "splash_image": "shopify://shop_images/Group_1606.png",
+    "heading": "ACOON Winter Holiday",
+    "button_link": "#",
+    "ar_splash_image": "shopify://shop_images/Group_1606.png",
+    "ar_heading": "بصمة من التفرّد",
+    "ar_button_link": "#",
+    "ar_button_text": "اكتشفي بصمتك",
     "logo": "shopify://shop_images/Layer_1_c875cfb0-be5d-4e6b-9041-08a94b6d0dc2.png",
     "logo_width": 140,
     "type_header_font": "assistant_n4",

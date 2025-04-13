@@ -6,7 +6,7 @@
 
         {% for block in section.blocks %}
           <div class="ew-contact-inner-block">
-            <h3>{% render 'ew-text-block', data_eng: block.settings.heading, data_ar: block.settings.heading_ar %}</h3>
+            <h3>{% render 'ew-text-lang', english_text: block.settings.heading, arabic_text: block.settings.heading_ar %}</h3>
 
             {% capture eng_link %}
               <a href="{%- if block.settings.email_phone contains '@' -%}
@@ -24,11 +24,11 @@
               {%- endif -%}">{{- block.settings.email_phone_ar -}}</a>
             {% endcapture %}
 
-            {% render 'ew-text-block', data_eng: eng_link, data_ar: ar_link %}
+            {% render 'ew-text-lang', english_text: eng_link, arabic_text: ar_link %}
 
             {% if block.settings.details != blank %}
               <div class="ew-contact-inner-details">
-                {% render 'ew-text-block', data_eng: block.settings.details, data_ar: block.settings.details_ar %}
+                {% render 'ew-text-lang', english_text: block.settings.details, arabic_text: block.settings.details_ar %}
               </div>
             {% endif %}
           </div>

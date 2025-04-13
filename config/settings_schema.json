@@ -21,9 +21,56 @@
     "name": "Splash Screen",
     "settings": [
       {
+        "type": "header",
+        "content": "ENG CONTENT"
+      },
+      {
         "type": "image_picker",
         "id": "splash_image",
         "label": "Splash Image"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Your Presence is Captivating"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+          "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Discover"
+      },
+      {
+        "type": "header",
+        "content": "AR CONTENT"
+      },
+      {
+        "type": "image_picker",
+        "id": "ar_splash_image",
+        "label": "Splash Image"
+      },
+      {
+        "type": "text",
+        "id": "ar_heading",
+        "label": "Heading",
+        "default": "Your Presence is Captivating"
+      },
+      {
+        "type": "url",
+        "id": "ar_button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "text",
+        "id": "ar_button_text",
+        "label": "Button Text",
+        "default": "Discover"
       }
     ]
   },
