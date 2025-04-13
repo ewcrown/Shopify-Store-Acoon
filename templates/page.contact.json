@@ -21,10 +21,55 @@
     "ew_contact_form_8bkMXy": {
       "type": "ew-contact-form",
       "settings": {}
+    },
+    "ew_info_blocks_cnjbpe": {
+      "type": "ew-info-blocks",
+      "blocks": {
+        "block_YwBGQ8": {
+          "type": "block",
+          "settings": {
+            "heading": "Email Address",
+            "email_phone": "help@info.com",
+            "details": "<p>Assistance hours: </p><p>Monday - Friday 6 am to 8 pm EST</p>",
+            "heading_ar": "Email Address",
+            "email_phone_ar": "help@info.com",
+            "details_ar": "<p>Assistance hours: </p><p>Monday - Friday 6 am to 8 pm EST</p>"
+          }
+        },
+        "block_nUVAAK": {
+          "type": "block",
+          "settings": {
+            "heading": "Number",
+            "email_phone": "(808) 998-34256",
+            "details": "<p>Assistance hours: </p><p>Monday - Friday 6 am to 8 pm EST</p>",
+            "heading_ar": "Email Address",
+            "email_phone_ar": "help@info.com",
+            "details_ar": "<p>Assistance hours: </p><p>Monday - Friday 6 am to 8 pm EST</p>"
+          }
+        },
+        "block_UhFyG4": {
+          "type": "block",
+          "settings": {
+            "heading": "Address",
+            "email_phone": "(808) 998-34256",
+            "details": "<p>Assistance hours: </p><p>Monday - Friday 6 am to 8 pm EST</p>",
+            "heading_ar": "Email Address",
+            "email_phone_ar": "help@info.com",
+            "details_ar": "<p>Assistance hours: </p><p>Monday - Friday 6 am to 8 pm EST</p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_YwBGQ8",
+        "block_nUVAAK",
+        "block_UhFyG4"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "ew_contact_form_8bkMXy"
+    "ew_contact_form_8bkMXy",
+    "ew_info_blocks_cnjbpe"
   ]
 }

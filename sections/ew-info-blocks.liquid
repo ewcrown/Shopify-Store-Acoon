@@ -1,11 +1,36 @@
+{{ 'ew-info-blocks.css' | asset_url | stylesheet_tag }}
 <section class="ew-contact-blocks ew-contact-blocks-{{ section.id }}" id="ew-contact-blocks">
   <div class="ew-contact-blocks-row">
     <div class="page-width">
       <div class="ew-contact-blocks-wrap">
 
         {% for block in section.blocks %}
-          <div>
+          <div class="ew-contact-inner-block">
+            <h3>{% render 'ew-text-block', data_eng: block.settings.heading, data_ar: block.settings.heading_ar %}</h3>
 
+            {% capture eng_link %}
+              <a href="{%- if block.settings.email_phone contains '@' -%}
+                mailto:{{- block.settings.email_phone -}}
+              {%- else -%}
+                tel:{{- block.settings.email_phone -}}
+              {%- endif -%}">{{- block.settings.email_phone -}}</a>
+            {% endcapture %}
+
+            {% capture ar_link %}
+              <a href="{%- if block.settings.email_phone_ar contains '@' -%}
+                mailto:{{- block.settings.email_phone_ar -}}
+              {%- else -%}
+                tel:{{- block.settings.email_phone_ar -}}
+              {%- endif -%}">{{- block.settings.email_phone_ar -}}</a>
+            {% endcapture %}
+
+            {% render 'ew-text-block', data_eng: eng_link, data_ar: ar_link %}
+
+            {% if block.settings.details != blank %}
+              <div class="ew-contact-inner-details">
+                {% render 'ew-text-block', data_eng: block.settings.details, data_ar: block.settings.details_ar %}
+              </div>
+            {% endif %}
           </div>
         {% endfor %}
 
@@ -14,13 +39,55 @@
   </div>
 </section>
 
-
 {% schema %}
 {
   "name": "<> Info Blocks",
-  "settings": [
+  "settings": [],
+  "blocks": [
     {
-      "type": "header"
+      "name": "Block",
+      "type": "block",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "header",
+          "content": "ENG"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Title Here"
+        },
+        {
+          "type": "text",
+          "id": "email_phone",
+          "label": "Email/Phone"
+        },
+        {
+          "type": "richtext",
+          "id": "details",
+          "label": "Details"
+        },
+        {
+          "type": "header",
+          "content": "AR"
+        },
+        {
+          "type": "text",
+          "id": "heading_ar",
+          "label": "Title Here"
+        },
+        {
+          "type": "text",
+          "id": "email_phone_ar",
+          "label": "Email/Phone"
+        },
+        {
+          "type": "richtext",
+          "id": "details_ar",
+          "label": "Details"
+        }
+      ]
     }
   ],
   "presets": [
