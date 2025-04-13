@@ -4,50 +4,104 @@
   <div class="ew-hero-row">
     <div class="ew-hero-wrap">
       <div class="ew-hero-video-block">
-        {% if s.video != blank %}
-          <div class="mobile-hide">
-            {{ s.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: 1920 }}
-          </div>
-          {% if s.mobile_video != blank %}
-            <div class="desktop-hide">
-              {{ s.mobile_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: 1920 }}
+        {% capture ar_media %}
+          {% if s.ar_video != blank %}
+            <div class="mobile-hide">
+              {{ s.ar_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: 1920 }}
             </div>
-          {% endif %}
-        {% else  %}
-          <picture>
-            <source media="(max-width: 600px)" srcset="{{ s.mobile_image | image_url: width: 600 }}">
-            <img 
-              class="ew-img-fluid"
-              src="{{ s.image | image_url: width: 1280 }}" 
-              loading="lazy" 
-              srcset="
-                {{ s.image | image_url: width: 620 }} 620w,
-                {{ s.image | image_url: width: 800 }} 800w,
-                {{ s.image | image_url: width: 1100 }} 1100w,
-                {{ s.image | image_url: width: 1280 }} 1280w"
-              sizes="(max-width: 600px) 600px, 100vw"
-              alt="{{ s.heading }}">
-          </picture>
-      {% endif %}
-        
-      </div>
-      <div class="ew-hero-text-row">
-        <div class="page-width">
-          <div class="ew-hero-text-block ew-hero-text-block-{{ s.content_alignment }}">
-            {% if s.heading != blank %}
-              <h3>{{ s.heading }}</h3>
-            {% endif %}
-            {% if s.button_link != blank %}
-              <div class="ew-btn ew-text-center">
-                <a class="ew-btn-primary" href="{{ s.button_link }}">{{ s.button_text }}</a>
+            {% if s.ar_mobile_video != blank %}
+              <div class="desktop-hide">
+                {{ s.ar_mobile_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: 1920 }}
               </div>
             {% endif %}
-          </div>
+          {% else %}
+            <picture>
+              <source media="(max-width: 600px)" srcset="{{ s.ar_mobile_image | image_url: width: 600 }}">
+              <img 
+                class="ew-img-fluid"
+                src="{{ s.ar_image | image_url: width: 1280 }}" 
+                loading="lazy" 
+                srcset="
+                  {{ s.ar_image | image_url: width: 620 }} 620w,
+                  {{ s.ar_image | image_url: width: 800 }} 800w,
+                  {{ s.ar_image | image_url: width: 1100 }} 1100w,
+                  {{ s.ar_image | image_url: width: 1280 }} 1280w"
+                sizes="(max-width: 600px) 600px, 100vw"
+                alt="{{ s.ar_heading }}">
+            </picture>
+          {% endif %}
+        {% endcapture %}
+        
+        {% capture eng_media %}
+          {% if s.video != blank %}
+            <div class="mobile-hide">
+              {{ s.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: 1920 }}
+            </div>
+            {% if s.mobile_video != blank %}
+              <div class="desktop-hide">
+                {{ s.mobile_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: 1920 }}
+              </div>
+            {% endif %}
+          {% else %}
+            <picture>
+              <source media="(max-width: 600px)" srcset="{{ s.mobile_image | image_url: width: 600 }}">
+              <img 
+                class="ew-img-fluid"
+                src="{{ s.image | image_url: width: 1280 }}" 
+                loading="lazy" 
+                srcset="
+                  {{ s.image | image_url: width: 620 }} 620w,
+                  {{ s.image | image_url: width: 800 }} 800w,
+                  {{ s.image | image_url: width: 1100 }} 1100w,
+                  {{ s.image | image_url: width: 1280 }} 1280w"
+                sizes="(max-width: 600px) 600px, 100vw"
+                alt="{{ s.heading }}">
+            </picture>
+          {% endif %}
+        {% endcapture %}
+
+        {% render 'ew-text-lang', 
+          arabic_text: ar_media,
+          english_text: eng_media %}
+      </div>
+
+      <div class="ew-hero-text-row">
+        <div class="page-width">
+          {% capture ar_button %}
+            <div class="ew-hero-text-block ew-hero-text-block-{{ s.ar_content_alignment }}">
+              {% if s.ar_heading != blank %}
+                <h3>{{ s.ar_heading }}</h3>
+              {% endif %}
+              {% if s.ar_button_link != blank %}
+                <div class="ew-btn ew-text-center">
+                  <a class="ew-btn-primary" href="{{ s.ar_button_link }}">{{ s.ar_button_text }}</a>
+                </div>
+              {% endif %}
+            </div>
+          {% endcapture %}
+
+          {% capture eng_button %}
+            <div class="ew-hero-text-block ew-hero-text-block-{{ s.content_alignment }}">
+              {% if s.heading != blank %}
+                <h3>{{ s.heading }}</h3>
+              {% endif %}
+              {% if s.button_link != blank %}
+                <div class="ew-btn ew-text-center">
+                  <a class="ew-btn-primary" href="{{ s.button_link }}">{{ s.button_text }}</a>
+                </div>
+              {% endif %}
+            </div>
+          {% endcapture %}
+
+          {% render 'ew-text-lang', 
+            arabic_text: ar_button,
+            english_text: eng_button %}
         </div>
       </div>
     </div>
   </div>
 </section>
+
 {% schema %}
 {
   "name": "<> Banner Text",
@@ -55,6 +109,10 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "header",
+      "content": "ENG Collection"
+    },
     {
       "type": "header",
       "content": "Title"
@@ -74,18 +132,9 @@
       "id": "content_alignment",
       "label": "Content Alignment",
       "options": [
-        {
-          "value": "left",
-          "label": "Left"
-        },
-        {
-          "value": "center",
-          "label": "Center"
-        },
-        {
-          "value": "right",
-          "label": "Right"
-        }
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
       ],
       "default": "center"
     },
@@ -131,12 +180,84 @@
       "id": "button_text",
       "label": "Button Text",
       "default": "Discover"
+    },
+    {
+      "type": "header",
+      "content": "AR Collection"
+    },
+    {
+      "type": "header",
+      "content": "Title"
+    },
+    {
+      "type": "text",
+      "id": "ar_heading",
+      "label": "Heading",
+      "default": "Your Presence is Captivating"
+    },
+    {
+      "type": "header",
+      "content": "Content Alignment"
+    },
+    {
+      "type": "select",
+      "id": "ar_content_alignment",
+      "label": "Content Alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "ar_image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "ar_mobile_image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "header",
+      "content": "Video"
+    },
+    {
+      "type": "video",
+      "id": "ar_video",
+      "label": "A Shopify-hosted desktop video"
+    },
+    {
+      "type": "video",
+      "id": "ar_mobile_video",
+      "label": "A Shopify-hosted mobile video"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "url",
+      "id": "ar_button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "ar_button_text",
+      "label": "Button Text",
+      "default": "Discover"
     }
   ],
   "presets": [
     {
       "name": "<> Banner Text"
     }
-  ],
+  ]
 }
 {% endschema %}

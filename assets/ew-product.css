@@ -1,0 +1,56 @@
+.product-media-container {
+  width: 100% !important;
+}
+
+.product__title h1 {
+  color: #000;
+  font-family: "Abhaya Libre Medium";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+.product-form__input {
+  margin-top: 70px !important;
+}
+
+#ew-product-set {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.ew-main-product-title-wrap {
+  padding: 80px 0px 60px;
+}
+
+.ew-main-product-title-wrap h6 {
+  color: #000;
+  font-family: "Abhaya Libre";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.ew-main-product-title-wrap p {
+  color: #000;
+  font-family: "Abhaya Libre";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.ew-main-product-details .product__accordion {
+  padding: 20px 0px;
+}
+
+.ew-main-product-details .accordion {
+  border-top: 0.1rem solid #000;
+  border-bottom: 0.1rem solid #000;
+}

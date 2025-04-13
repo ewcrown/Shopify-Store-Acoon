@@ -2,11 +2,12 @@
 
 <div class="ew-featured-tabs-section ew-featured-tabs-{{ section.id }}" id="ew-featured-tabs-section">
   <div class="ew-featured-tabs-row">
+    <div class="splide" data-name="Featured Video Tabs">
+      <div class="splide__track">
+        <div class="splide__list">
 
-      <div class="splide" data-name="Featured Video Tabs">
-        <div class="splide__track">
-          <div class="splide__list">
-              {%  for block in section.blocks %}
+          {% for block in section.blocks %}
+            {% capture eng_content %}
               <div class="splide__slide" data-title="{{ block.settings.title }}">
                 {% if block.settings.video != blank %}
                   <div class="mobile-hide">
@@ -17,11 +18,10 @@
                       {{ block.settings.mobile_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: 1920 }}
                     </div>
                   {% endif %}
-                {% else  %}
-                  {% if block.settings.image != blank %}
+                {% elsif block.settings.image != blank %}
                   <picture>
                     {% if block.settings.mobile_image != blank %}
-                    <source media="(max-width: 600px)" srcset="{{ block.settings.mobile_image | image_url: width: 600 }}">
+                      <source media="(max-width: 600px)" srcset="{{ block.settings.mobile_image | image_url: width: 600 }}">
                     {% endif %}
                     <img 
                       class="ew-img-fluid"
@@ -36,16 +36,68 @@
                       alt="{{ block.settings.title }}">
                   </picture>
                 {% endif %}
-              {% endif %}
-            </div>
-            {% endfor %}
-          </div>
+                <div class="ew-featured-tabs-inner-content">
+                  <h3>{{ block.settings.title }}</h3>
+                  {% if block.settings.button_link != blank %}
+                    <div class="ew-btn ew-text-center">
+                      <a class="ew-btn-primary" href="{{ block.settings.button_link }}">{{ block.settings.button_text }}</a>
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            {% endcapture %}
+
+            {% capture arabic_content %}
+              <div class="splide__slide" data-title="{{ block.settings.ar_title }}">
+                {% if block.settings.ar_video != blank %}
+                  <div class="mobile-hide">
+                    {{ block.settings.ar_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: 1920 }}
+                  </div>
+                  {% if block.settings.ar_mobile_video != blank %}
+                    <div class="desktop-hide">
+                      {{ block.settings.ar_mobile_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: 1920 }}
+                    </div>
+                  {% endif %}
+                {% elsif block.settings.ar_image != blank %}
+                  <picture>
+                    {% if block.settings.ar_mobile_image != blank %}
+                      <source media="(max-width: 600px)" srcset="{{ block.settings.ar_mobile_image | image_url: width: 600 }}">
+                    {% endif %}
+                    <img 
+                      class="ew-img-fluid"
+                      src="{{ block.settings.ar_image | image_url: width: 1280 }}" 
+                      loading="lazy" 
+                      srcset="
+                        {{ block.settings.ar_image | image_url: width: 620 }} 620w,
+                        {{ block.settings.ar_image | image_url: width: 800 }} 800w,
+                        {{ block.settings.ar_image | image_url: width: 1100 }} 1100w,
+                        {{ block.settings.ar_image | image_url: width: 1280 }} 1280w"
+                      sizes="(max-width: 600px) 600px, 100vw"
+                      alt="{{ block.settings.ar_title }}">
+                  </picture>
+                {% endif %}
+                <div class="ew-featured-tabs-inner-content">
+                  <h3>{{ block.settings.ar_title }}</h3>
+                  {% if block.settings.ar_button_link != blank %}
+                    <div class="ew-btn ew-text-center">
+                      <a class="ew-btn-primary" href="{{ block.settings.ar_button_link }}">{{ block.settings.ar_button_text }}</a>
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            {% endcapture %}
+
+            {% render 'ew-text-lang',
+              english_text: eng_content,
+              arabic_text: arabic_content
+            %}
+          {% endfor %}
+
         </div>
       </div>
-
+    </div>
   </div>
 </div>
-
 
 {% schema %}
 {
@@ -53,10 +105,14 @@
   "settings": [],
   "blocks": [
     {
-      "name":"Video Slide",
+      "name": "Video Slide",
       "type": "video_slider",
       "limit": 3,
       "settings": [
+        {
+          "type": "header",
+          "content": "ENG CONTENT"
+        },
         {
           "type": "text",
           "id": "title",
@@ -90,6 +146,74 @@
           "type": "image_picker",
           "id": "mobile_image",
           "label": "Mobile Image"
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Discover"
+        },
+        {
+          "type": "header",
+          "content": "AR CONTENT"
+        },
+        {
+          "type": "text",
+          "id": "ar_title",
+          "label": "Title Here",
+          "default": "For him"
+        },
+        {
+          "type": "header",
+          "content": "Video"
+        },
+        {
+          "type": "video",
+          "id": "ar_video",
+          "label": "A Shopify-hosted desktop video"
+        },
+        {
+          "type": "video",
+          "id": "ar_mobile_video",
+          "label": "A Shopify-hosted mobile video"
+        },
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "ar_image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "ar_mobile_image",
+          "label": "Mobile Image"
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "url",
+          "id": "ar_button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "text",
+          "id": "ar_button_text",
+          "label": "Button Text",
+          "default": "Discover"
         }
       ]
     }

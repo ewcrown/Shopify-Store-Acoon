@@ -12,19 +12,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
         },
-        "price": {
-          "type": "price",
+        "rating_qFFYGT": {
+          "type": "rating",
           "settings": {}
         },
         "variant_picker": {
@@ -41,45 +34,64 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "share": {
-          "type": "share",
+        "product_set_TYnYGi": {
+          "type": "product_set",
           "settings": {
-            "share_label": "Share"
+            "product_list": [
+              "blue-silk-tuxedo",
+              "chequered-red-shirt",
+              "classic-leather-jacket",
+              "classic-varsity-top"
+            ]
+          }
+        },
+        "collapsible_tab_iCRaw9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product Details",
+            "icon": "none",
+            "content": "<p>Aliquam maximus massa justo, et volutpat mauris volutpat non. Aliquam ullamcorper aliquet ipsum, in commodo magna tincidunt at. Nullam finibus consequat feugiat. Mauris a auctor arcu. In tellus augue, condimentum in urna nec, tempor sollicitudin nisl. Ut porttitor felis ac nunc pellentesque ornare. Curabitur dolor nibh, maximus sed turpis non, accumsan efficitur lorem. Nunc eget sollicitudin dolor. Aenean ac urna ac justo dignissim scelerisque. Cras tincidunt nulla vel urna ornare feugiat sit amet sed turpis. Vestibulum commodo hendrerit suscipit. Maecenas condimentum sed urna a ultrices.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_nfYU3b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping and Returns",
+            "icon": "none",
+            "content": "<p>Aliquam maximus massa justo, et volutpat mauris volutpat non. Aliquam ullamcorper aliquet ipsum, in commodo magna tincidunt at. Nullam finibus consequat feugiat. Mauris a auctor arcu. In tellus augue, condimentum in urna nec, tempor sollicitudin nisl. Ut porttitor felis ac nunc pellentesque ornare. Curabitur dolor nibh, maximus sed turpis non, accumsan efficitur lorem. Nunc eget sollicitudin dolor. Aenean ac urna ac justo dignissim scelerisque. Cras tincidunt nulla vel urna ornare feugiat sit amet sed turpis. Vestibulum commodo hendrerit suscipit. Maecenas condimentum sed urna a ultrices.</p>",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
-        "price",
+        "rating_qFFYGT",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "product_set_TYnYGi",
+        "collapsible_tab_iCRaw9",
+        "collapsible_tab_nfYU3b"
       ],
       "settings": {
-        "enable_sticky_info": true,
+        "enable_sticky_info": false,
         "color_scheme": "scheme-1",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
+        "gallery_layout": "columns",
         "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "related-products": {
@@ -96,8 +108,8 @@
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },

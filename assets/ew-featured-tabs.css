@@ -1,3 +1,8 @@
+.ew-featured-tabs-row img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .ew-featured-tabs-row video {
   width: 100%;
 }
@@ -60,11 +65,36 @@
   gap: 400px;
 }
 
+#ew-arabic-content .ew-featured-tabs-arrows-inner button {
+  transform: scaleX(-1);
+}
+
 .ew-featured-tabs-arrows-inner button {
   background: transparent;
   border: none;
   cursor: pointer;
 }
+
 .ew-featured-tabs-arrows-inner button[disabled] {
   opacity: .4;
+}
+
+.ew-featured-tabs-inner-content {
+  bottom: 40px;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+.ew-featured-tabs-inner-content h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Abhaya Libre SemiBold";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
 }

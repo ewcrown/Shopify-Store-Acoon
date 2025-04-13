@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="js" lang="{{ request.locale.iso_code }}">
+<html class="js" dir="{% if request.locale.iso_code contains 'ar' %}rtl{% endif %}" lang="{{ request.locale.iso_code }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -308,7 +308,8 @@
     </script>
   </head>
 
-  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}" id="{% if request.locale.iso_code contains 'ar' %}ew-arabic-content{% endif %}">
+
     {% if template.name contains 'index' %}
       {% render 'ew-splash-section' %}
     {% endif %}

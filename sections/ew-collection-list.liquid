@@ -1,21 +1,40 @@
 {{ 'ew-collection-list.css' | asset_url | stylesheet_tag }}
 {{ 'ew-collection-card.css' | asset_url | stylesheet_tag }}
-<section class="ew-collection-list-section ew-collection-list-section={{ section.id }}" id="ew-collection-list">
+
+<section class="ew-collection-list-section ew-collection-list-section-{{ section.id }}" id="ew-collection-list">
   <div class="ew-collection-list-row">
     <div class="page-width">
       <div class="ew-collection-list">
         {% for block in section.blocks %}
-          {% render 'ew-collection-card', 
-            image: block.settings.image,
-            mobile_image: block.settings.mobile_image,
-            position: forloop.index, 
-            collection_card: block.settings.collection
-           %}
+          
+          {% capture eng_content %}
+            {% render 'ew-collection-card', 
+              image: block.settings.image,
+              mobile_image: block.settings.mobile_image,
+              position: forloop.index, 
+              collection_card: block.settings.collection 
+            %}
+          {% endcapture %}
+
+          {% capture ar_content %}
+            {% render 'ew-collection-card', 
+              image: block.settings.ar_image,
+              mobile_image: block.settings.ar_mobile_image,
+              position: forloop.index, 
+              collection_card: block.settings.ar_collection 
+            %}
+          {% endcapture %}
+
+          {% render 'ew-text-lang',
+            arabic_text: ar_content,
+            english_text: eng_content 
+          %}
         {% endfor %}
       </div>
     </div>
   </div>
 </section>
+
 {% schema %}
 {
   "name": "<> Collection List",
@@ -29,6 +48,10 @@
       "name": "Single Collection",
       "limit": 5,
       "settings": [
+        {
+          "type": "header",
+          "content": "ENG CONTENT"
+        },
         {
           "type": "header",
           "content": "Image"
@@ -51,6 +74,33 @@
           "type": "collection",
           "id": "collection",
           "label": "Collection"
+        },
+        {
+          "type": "header",
+          "content": "AR CONTENT"
+        },
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "ar_image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "ar_mobile_image",
+          "label": "Mobile Image"
+        },
+        {
+          "type": "header",
+          "content": "Collection"
+        },
+        {
+          "type": "collection",
+          "id": "ar_collection",
+          "label": "Collection"
         }
       ]
     }
@@ -59,6 +109,6 @@
     {
       "name": "<> Collection List"
     }
-  ],
+  ]
 }
 {% endschema %}

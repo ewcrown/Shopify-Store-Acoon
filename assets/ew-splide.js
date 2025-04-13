@@ -1,11 +1,14 @@
 const sliders = document.querySelectorAll('.splide');
 
+const isArabic = window.location.pathname === '/ar' ? 'rtl' : 'ltr'
+
 sliders.forEach(slider => {
 
   const sliderName = slider.dataset.name
 
   if (sliderName == 'Collection Slider') {
     new Splide(slider, {
+      direction: isArabic,
       type: 'loop',
       perPage: 4,
       perMove: 1,
@@ -21,6 +24,7 @@ sliders.forEach(slider => {
     }).mount();
   } else if (sliderName == 'Featured Video Tabs') {
     const splide = new Splide(slider, {
+      direction: isArabic,
       type: "slide",
       focus: "center",
       perPage: 1,
@@ -116,6 +120,7 @@ sliders.forEach(slider => {
 
   } else {
     new Splide(slider, {
+      direction: isArabic,
       type: 'loop',
       perPage: 3,
       perMove: 1,

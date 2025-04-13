@@ -19,7 +19,12 @@
         "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
         "mobile_video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
         "button_link": "#",
-        "button_text": "Discover"
+        "button_text": "Discover",
+        "ar_heading": "ضوءك الداخلي يتألق",
+        "ar_content_alignment": "center",
+        "ar_image": "shopify://shop_images/top-banner_1.png",
+        "ar_button_link": "#",
+        "ar_button_text": "اكتشفي المجموعة"
       }
     },
     "ew_collection_slider_ayfG74": {
@@ -27,7 +32,10 @@
       "settings": {
         "collection": "frontpage",
         "button_link": "",
-        "button_text": "Shop The Drop"
+        "button_text": "Shop The Drop",
+        "ar_collection": "outfits",
+        "ar_button_link": "#",
+        "ar_button_text": "اكتشفي المزيد"
       }
     },
     "ew_hero_section_aKjcD7": {
@@ -38,7 +46,12 @@
         "image": "shopify://shop_images/image.png",
         "mobile_image": "shopify://shop_images/red-plaid-shirt_925x_828e23c1-f21c-4904-9109-ea1ecfc62771.jpg",
         "button_link": "#",
-        "button_text": "Discover"
+        "button_text": "Discover",
+        "ar_heading": "تفاصيل تعكس ذوقكِ الرفيع",
+        "ar_content_alignment": "left",
+        "ar_image": "shopify://shop_images/acoon_banner_2.png",
+        "ar_button_link": "#",
+        "ar_button_text": "تسوقي الآن"
       }
     },
     "ew_collection_list_txCPCr": {
@@ -47,31 +60,41 @@
         "single_colleciton_et9UCG": {
           "type": "single_colleciton",
           "settings": {
-            "collection": "collections"
+            "collection": "collections",
+            "ar_image": "shopify://shop_images/2024.12.04_Akoon341396_1.png",
+            "ar_collection": "outfits"
           }
         },
         "single_colleciton_a3nYaj": {
           "type": "single_colleciton",
           "settings": {
-            "collection": "the-collar"
+            "collection": "the-collar",
+            "ar_image": "shopify://shop_images/2024.12.04_Akoon341486_1.png",
+            "ar_collection": "collections"
           }
         },
         "single_colleciton_qTbkT9": {
           "type": "single_colleciton",
           "settings": {
-            "collection": "outfits"
+            "collection": "outfits",
+            "ar_image": "shopify://shop_images/2024.12.04_Akoon341776_1.png",
+            "ar_collection": "collections"
           }
         },
         "single_colleciton_6YVjFf": {
           "type": "single_colleciton",
           "settings": {
-            "collection": "sueded-stretch"
+            "collection": "sueded-stretch",
+            "ar_image": "shopify://shop_images/2024.12.04_Akoon341034_1.png",
+            "ar_collection": "sueded-stretch"
           }
         },
         "single_colleciton_eRGmjM": {
           "type": "single_colleciton",
           "settings": {
-            "collection": "sweat-tees"
+            "collection": "sweat-tees",
+            "ar_image": "shopify://shop_images/2024.12.04_Akoon341296_1.png",
+            "ar_collection": "the-collar"
           }
         }
       },
@@ -91,21 +114,33 @@
           "type": "video_slider",
           "settings": {
             "title": "For him",
-            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4"
+            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+            "ar_title": "إطلالات مميزة",
+            "ar_image": "shopify://shop_images/image_1.png",
+            "ar_button_link": "#",
+            "ar_button_text": "تسوقي الآن"
           }
         },
         "video_slider_MWFbJe": {
           "type": "video_slider",
           "settings": {
             "title": "For her",
-            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4"
+            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+            "ar_title": "لحظات متألقة",
+            "ar_image": "shopify://shop_images/3c1bcacd4d6745f330d3e9ee5b4d16e3.png",
+            "ar_button_link": "#",
+            "ar_button_text": "تسوقي الآن"
           }
         },
         "video_slider_4kJCgm": {
           "type": "video_slider",
           "settings": {
             "title": "Jewellery",
-            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4"
+            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+            "ar_title": "الإيقاع اليومي",
+            "ar_video": "shopify://files/videos/a7195a12c03c3b11a8ae6eb2ceba7cc356849146.mp4",
+            "ar_button_link": "#",
+            "ar_button_text": "تسوقي الآن"
           }
         }
       },
@@ -120,8 +155,11 @@
       "type": "ew-collection-slider",
       "settings": {
         "collection": "frontpage",
-        "button_link": "",
-        "button_text": "Shop The Drop"
+        "button_link": "#",
+        "button_text": "Shop The Drop",
+        "ar_collection": "collections",
+        "ar_button_link": "#",
+        "ar_button_text": "إكتشفي المزيد"
       }
     }
   },
