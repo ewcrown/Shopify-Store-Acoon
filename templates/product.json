@@ -27,15 +27,17 @@
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
+          }
+        },
+        "custom_liquid_gJW9Pf": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"ew-product-flat-rate\">\nFree Standard Shipping on $75+\n</div>"
           }
         },
         "product_set_TYnYGi": {
@@ -72,8 +74,8 @@
         "title",
         "rating_qFFYGT",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
+        "custom_liquid_gJW9Pf",
         "product_set_TYnYGi",
         "collapsible_tab_iCRaw9",
         "collapsible_tab_nfYU3b"

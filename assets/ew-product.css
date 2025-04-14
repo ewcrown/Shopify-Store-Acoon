@@ -54,3 +54,88 @@
   border-top: 0.1rem solid #000;
   border-bottom: 0.1rem solid #000;
 }
+
+.ew-product-set-wrap>h3 {
+  color: #000;
+  font-family: "Abhaya Libre";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.product__info-wrapper .ew-product-flat-rate {
+  color: #969696;
+  font-family: "Abhaya Libre";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 24px;
+  margin-bottom: 70px;
+}
+
+.ew-product-qty-cart-buttons {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  gap: 20px;
+  margin: 70px 0 30px 0 !important;
+}
+
+.quantity__input[type='number'] {
+  color: #000;
+  font-family: "Abhaya Libre";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.product-form__input--pill label {
+  cursor: pointer;
+}
+
+.product-form__input-color label {
+  width: 38px;
+  height: 38px;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  cursor: pointer;
+}
+
+.product-form__input-color .form__label {
+  color: #969696;
+  font-family: "Abhaya Libre";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.product-form__input--pill:not(.product-form__input-color) label {
+  padding: 14px 38px;
+  border-radius: 0 !important;
+  color: #969696 !important;
+  text-align: center;
+  font-family: "Abhaya Libre";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 2px solid #969696;
+  background: #fff !important;
+
+}
+
+
+.product-form__input--pill:not(.product-form__input-color) input:checked+label {
+  color: #000 !important;
+  border: 2px solid #000 !important;
+}
+
+#ew-product-set .ew-product-card .ew-pc-media img {
+  height: 400px;
+}
