@@ -721,6 +721,10 @@ li::marker {
   .menu-opening .mobile-facets__inner {
     overflow: visible;
   }
+
+  .cart__ctas>a {
+    display: none;
+  }
 }
 
 .drawer__inner {
