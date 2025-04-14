@@ -90,3 +90,36 @@
   font-weight: 400;
   line-height: normal;
 }
+
+@media(max-width:767px) {
+  .ew-contact-form-row {
+    padding: 30px 0;
+  }
+
+  .ew-contact-form-fields {
+    padding: 30px 0;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .ew-contact__button button {
+    min-width: 100%;
+    padding: 24px;
+    font-size: 16px;
+  }
+
+  .ew-contact-form-inner {
+    width: 100%;
+  }
+
+  .ew-contact-form-fields .ew-contact-form-field {
+    width: 100%;
+  }
+
+  .ew-contact-form-fields .ew-contact-form-field input,
+  .ew-contact-form-fields .ew-contact-form-field textarea {
+    padding: 12px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
