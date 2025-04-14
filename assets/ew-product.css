@@ -105,7 +105,7 @@
   cursor: pointer;
 }
 
-.product-form__input-color .form__label {
+.product-form__input--pill .form__label {
   color: #969696;
   font-family: "Abhaya Libre";
   font-size: 18px;
@@ -138,4 +138,43 @@
 
 #ew-product-set .ew-product-card .ew-pc-media img {
   height: 400px;
+}
+
+@media(max-width:767px) {
+  .ew-product-qty-cart-buttons {
+    grid-template-columns: 1fr !important;
+    margin: 30px 0 !important;
+  }
+
+  .product-form__input {
+    margin-top: 30px !important;
+  }
+
+  .product__title h1 {
+    font-size: 36px;
+  }
+
+  .related-products__heading {
+    font-size: 32px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .ew-main-product-title-wrap p {
+    font-size: 32px;
+  }
+
+  .ew-main-product-title-wrap { 
+    padding: 30px 0 0;
+  }
+
+  .ew-main-product-details .product__accordion {
+    padding: 10px 0;
+  }
+
+  .accordion__title {
+    font-size: 18px;
+  }
+  .product__info-wrapper {
+    padding-top: 40px;
+  }
 }
