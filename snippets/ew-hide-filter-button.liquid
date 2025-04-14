@@ -1,6 +1,11 @@
 <div class="ew-filter-button">
   <button data-filter-button>
-    <span>Hide Filters</span>
+    <span>
+      {% render 'ew-text-lang',
+        arabic_text: "إخفاء عوامل التصفية",
+        english_text: "Hide Filters"
+      %}
+    </span>
     {% render 'ew-filter-icon' %}
   </button>
 </div>

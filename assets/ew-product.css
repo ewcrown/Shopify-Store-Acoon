@@ -163,7 +163,7 @@
     font-size: 32px;
   }
 
-  .ew-main-product-title-wrap { 
+  .ew-main-product-title-wrap {
     padding: 30px 0 0;
   }
 
@@ -174,7 +174,12 @@
   .accordion__title {
     font-size: 18px;
   }
+
   .product__info-wrapper {
     padding-top: 40px;
   }
+}
+
+#ew-arabic-content .product.product--large {
+  flex-direction: row-reverse;
 }

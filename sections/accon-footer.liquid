@@ -105,7 +105,12 @@
           <div class="accon-footer-bottom">
             <div class="accon-footer-bottom-left ">
               <div class="accon-footer-bottom-col">
-                <span class="accon-footer-bottom-copyright">{{ section.settings.copyright_txt }}</span>
+                <span class="accon-footer-bottom-copyright">
+                  {% render 'ew-text-lang',
+                    arabic_text: section.settings.ar_copyright_txt.
+                    english_text: section.settings.copyright_txt
+                  %}
+                </span>
               </div>
             </div>
 
@@ -157,6 +162,16 @@
     {
       "type": "richtext",
       "id": "copyright_txt",
+      "label": "Copyright Text",
+      "default": "<p>Acoon by Beige The Label © 2024 – All Rights Reserved </p>"
+    },
+    {
+      "type":"header",
+      "content": "AR CONTENT"
+    },
+    {
+      "type": "richtext",
+      "id": "ar_copyright_txt",
       "label": "Copyright Text",
       "default": "<p>Acoon by Beige The Label © 2024 – All Rights Reserved </p>"
     }

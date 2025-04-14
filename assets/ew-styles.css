@@ -233,6 +233,10 @@ ul.menu-drawer__menu {
   text-align: center;
 }
 
+.accon-footer-logo img {
+  margin: auto;
+}
+
 .accon-footer-bottom-left {
   font-weight: 400;
   font-size: 16px;
@@ -505,6 +509,16 @@ li::marker {
   justify-content: space-between;
   padding-right: 30px;
 }
+
+#ew-arabic-content .ew-facet-left-side {
+  padding-right: 0px;
+  padding-left: 30px;
+}
+
+#ew-arabic-content .facet-filters__field {
+  gap: 10px;
+}
+
 
 .ew-facet-title {
   color: #000;
@@ -827,4 +841,8 @@ li::marker {
 #ew-arabic-content summary .icon-caret {
   left: 1.5rem;
   right: auto;
+}
+
+#ew-arabic-content .facet-filters__field .select__select {
+  text-align: left;
 }
