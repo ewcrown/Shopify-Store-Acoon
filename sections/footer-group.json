@@ -17,25 +17,37 @@
         "link_list_iL4ciW": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "PRODUCTS",
             "menu": "footer"
           }
         },
         "link_list_hiTVYQ": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links 2",
+            "heading": "ACOON",
             "menu": "footer"
           }
         },
         "link_list_BThLxt": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "Acoon Magazine",
             "menu": "footer"
           }
         },
         "footer_shop_L7FkDi": {
+          "type": "footer_shop",
+          "settings": {
+            "shop_img": "shopify://shop_images/image_2.png"
+          }
+        },
+        "footer_shop_c6aW4L": {
+          "type": "footer_shop",
+          "settings": {
+            "shop_img": "shopify://shop_images/Layer_1_2.png"
+          }
+        },
+        "footer_shop_tEJCqW": {
           "type": "footer_shop",
           "settings": {
             "shop_img": "shopify://shop_images/Layer_1_2.png"
@@ -46,7 +58,9 @@
         "link_list_iL4ciW",
         "link_list_hiTVYQ",
         "link_list_BThLxt",
-        "footer_shop_L7FkDi"
+        "footer_shop_L7FkDi",
+        "footer_shop_c6aW4L",
+        "footer_shop_tEJCqW"
       ],
       "settings": {
         "logo": "shopify://shop_images/Layer_1_99adb27a-632b-4a95-a8f0-fff8b2249340.png",

@@ -98,8 +98,6 @@
                     <img class="ew-img-fluid" src="{{ block.settings.shop_img | image_url: width: 500 }}" alt="">
                   {% endif %}
                 {% endfor %}
-                <img class="ew-img-fluid" src="https://acoon-store.myshopify.com/cdn/shop/files/Layer_1_2.png?v=1741635810" alt="">
-                <img class="ew-img-fluid" src="https://acoon-store.myshopify.com/cdn/shop/files/Layer_1_2.png?v=1741635810" alt="">
               </div>
             </div>
           </div>
@@ -131,7 +129,7 @@
 
           {%- if section.settings.logo != blank -%}
             <div class="accon-footer-logo">
-              <img src="{{ section.settings.logo | img_url: 'master' }}" alt="Footer Logo">
+              <img src="{{ section.settings.logo | img_url: 'master' }}" alt="Footer Logo" class="ew-img-fluid">
             </div>
           {%- endif -%}
         </div>

@@ -91,7 +91,7 @@
   position: static !important;
   clip: auto !important;
   width: auto;
-  overflow: auto;
+  overflow: inherit !important;
   height: auto;
   margin: 0 0 14px;
   color: #000;
