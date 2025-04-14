@@ -1,3 +1,103 @@
-.ew-newsletter-form {
-display: flex; 
+.ew-newsletter-form form {
+  display: flex;
+  align-items: center;
+}
+
+.ew-newsletter {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 100px;
+  align-items: flex-end;
+}
+
+.ew-newsletter-localization {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.ew-newsletter-form .ew-form-field label {
+  color: #000;
+  font-family: "Abhaya Libre";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.ew-newsletter-form .ew-form-field input::placeholder {
+  color: rgba(0, 0, 0, 0.50) !important;
+}
+
+
+.ew-newsletter-form .ew-form-field {
+  width: 100%;
+}
+
+.ew-newsletter-form .ew-form-field input {
+  color: #000;
+  font-family: "Abhaya Libre";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  width: 100%;
+  padding: 14px 24px;
+  border-radius: 2px 0px 0px 2px;
+  background: #FFF;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.ew-form-fields-wrap {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+.ew-newsletter-form .ew-form-field button span {
+  color: #FFF;
+  text-align: center;
+  font-family: "Abhaya Libre";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  /* 100% */
+  letter-spacing: 0.42px;
+}
+
+.ew-newsletter-form .ew-form-field button {
+  border-radius: 0px 2px 2px 0px;
+  border: 1px solid #000;
+  background: #000;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ew-newsletter-localization .disclosure__button {
+  margin: 0;
+  padding: 12px 24px;
+  justify-content: space-between;
+}
+
+.ew-newsletter-localization form .visually-hidden {
+  position: static !important;
+  clip: auto !important;
+  width: auto;
+  overflow: auto;
+  height: auto;
+  margin: 0 0 14px;
+  color: #000;
+  font-family: "Abhaya Libre";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
 }

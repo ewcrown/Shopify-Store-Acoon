@@ -140,33 +140,36 @@ ul.menu-drawer__menu {
 
 .accon-footer-row {
   background: #dfdfdf;
-  padding-top: 46px;
+  padding-top: 100px;
   padding-bottom: 34px;
 }
 
 .accon-footer-links-col h3 {
-  font-weight: 400;
+  color: #000;
+  font-family: "Abhaya Libre";
   font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 21px;
+  text-transform: uppercase;
   margin-bottom: 26px;
+  margin-top: 0;
 }
 
 .accon-footer-links-col a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
   color: #000;
-  text-decoration: none;
+  font-family: "Abhaya Libre";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 131.25% */
 }
 
-.accon-footer-links-list.flex {
+.accon-footer-links-list {
   gap: 16px;
   flex-direction: column;
   padding: 0;
-}
-
-.accon-footer-links.flex {
-  width: 50%;
+  display: flex;
 }
 
 .accon-footer-links-col {
@@ -175,18 +178,33 @@ ul.menu-drawer__menu {
 
 .accon-footer-content {
   margin-bottom: 123px;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 100px;
 }
 
 .accon-footer-shop-heading {
-  font-weight: 400;
+  color: #000;
+  font-family: "Abhaya Libre";
   font-size: 14px;
-  line-height: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 100% */
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 36px;
 }
 
-.accon-footer-shop-logo.flex {
+.accon-footer-shop-logo {
   gap: 61px;
+  display: flex;
+}
+
+.accon-footer-bottom {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
 }
 
 .accon-footer-bottom-left,
@@ -286,6 +304,13 @@ li::marker {
   border-radius: 2px;
 }
 
+.accon-footer-links {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  max-width: 550px;
+}
+
 .newsletter-form__field-wrapper .field__input:focus,
 .newsletter-form__field-wrapper .select__select:focus,
 .localization-form__select:focus.localization-form__select:after,
@@ -300,12 +325,19 @@ li::marker {
   margin-left: 40px;
 }
 
+.accon-footer-bottom-copyright p {
+  margin: 0;
+}
+
 .accon-footer-bottom-copyright p,
 .accon-footer-bottom-copyright a {
   color: #000;
-  font-weight: 400;
+  font-family: "Abhaya Libre";
   font-size: 16px;
-  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 131.25% */
+  letter-spacing: 0.42px;
 }
 
 @media (max-width: 768px) {
@@ -314,16 +346,16 @@ li::marker {
     gap: 15px;
   }
 
-  .accon-footer-links.flex {
+  .accon-footer-links {
     flex-direction: column;
     width: 100%;
   }
 
-  .accon-footer-shop-logo.flex img {
+  .accon-footer-shop-logo img {
     width: 45%;
   }
 
-  .accon-footer-shop-logo.flex {
+  .accon-footer-shop-logo {
     flex-wrap: wrap;
     gap: 25px;
   }
@@ -596,6 +628,17 @@ li::marker {
   }
 
   .header {
-    padding: 10px 15px;
+    padding: 10px 15px !important;
+  }
+
+  .header__search {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  #ew-arabic-content .facets-vertical .facets-wrapper {
+    padding-left: 3rem;
+    padding-right: 0;
   }
 }

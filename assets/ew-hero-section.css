@@ -40,6 +40,10 @@
   align-items: flex-end;
 }
 
+.ew-hero-text-block-center {
+  align-items: center;
+}
+
 .ew-hero-text-row {
   position: relative;
   bottom: 80px;

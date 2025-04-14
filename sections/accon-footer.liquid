@@ -11,11 +11,11 @@
             <input type="hidden" name="contact[tags]" value="newsletter">
             <div class="ew-form-field">
               <label class="ew-form-label" for="NewsletterForm--{{ section.id }}">Be The First to Know</label>
+              <div class="ew-form-fields-wrap">
               <input
                 id="NewsletterForm--{{ section.id }}"
                 type="email"
                 name="contact[email]"
-                class="field__input"
                 value="{{ form.email }}"
                 aria-required="true"
                 autocorrect="off"
@@ -31,36 +31,54 @@
                 placeholder="Enter your e-mail"
                 required
               >
-            </div>            
-            <div class="ew-form-field-submit">
-              <button
-                type="submit"
-                aria-label="{{ 'newsletter.button_label' | t }}"
-              >
-                <span class="svg-wrapper">
-                  {{- 'icon-arrow.svg' | inline_asset_content -}}
-                </span>
-                <span class="accon-newsletter-btn"> Subscribe </span>
-              </button>
+                <button
+                  type="submit"
+                  aria-label="{{ 'newsletter.button_label' | t }}"
+                >
+                  <span class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10001 4.43662C8.18037 4.35636 8.28929 4.31128 8.40286 4.31128C8.51644 4.31128 8.62536 4.35636 8.70572 4.43662L12.54 8.27033L8.70572 12.1035C8.62448 12.1792 8.51702 12.2204 8.40599 12.2184C8.29497 12.2165 8.18903 12.1715 8.11051 12.093C8.03199 12.0145 7.98701 11.9085 7.98505 11.7975C7.98309 11.6865 8.0243 11.579 8.10001 11.4978L11.3274 8.27033L8.10001 5.0429C8.01975 4.96254 7.97467 4.85362 7.97467 4.74005C7.97467 4.62647 8.01975 4.51697 8.10001 4.43662Z" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4 7.85718H11.4286V8.71432H4V7.85718Z" fill="white"/>
+                    </svg>
+                  </span>
+                  <span class="accon-newsletter-btn"> Subscribe </span>
+                </button>
+            </div>
             </div>
           {% endform %}
         </div>
         
         <div class="ew-newsletter-localization">
+          <localization-form>
+            {%- form 'localization' -%}
+              <div>
+                <h2 class="visually-hidden" id="FooterCountryLabel">{{ 'localization.country_label' | t }}</h2>
+                {%- render 'country-localization', localPosition: 'HeaderCountry' -%}
+              </div>
+            {%- endform -%}
+          </localization-form>
 
+          <localization-form>
+            {%- form 'localization' -%}
+              <div>
+                <h2 class="visually-hidden" id="HeaderLanguageLabel">{{ 'localization.language_label' | t }}</h2>
+                {%- render 'language-localization', localPosition: 'HeaderLanguage' -%}
+              </div>
+            {%- endform -%}
+          </localization-form>
         </div>
 
       </div>
 
       <div class="accon-footer-row">
         <div class="accon-footer-col">
-          <div class="accon-footer-content flex justify-content-between">
-            <div class="accon-footer-links flex">
+          <div class="accon-footer-content">
+            <div class="accon-footer-links">
               {% for block in section.blocks %}
                 {% if block.type == 'link_list' %}
                   <div class="accon-footer-links-col">
                     <h3>{{ block.settings.heading }}</h3>
-                    <ul class="accon-footer-links-list flex">
+                    <ul class="accon-footer-links-list">
                       {%- for link in block.settings.menu.links -%}
                         <li class="accon-footer-links-list-item">
                           <a href="{{ link.url }}">{{ link.title }}</a>
@@ -74,27 +92,27 @@
 
             <div class="accon-footer-shop">
               <h6 class="accon-footer-shop-heading">{{ section.settings.shop_ttl }}</h6>
-              <div class="accon-footer-shop-logo flex">
+              <div class="accon-footer-shop-logo">
                 {% for block in section.blocks %}
                   {% if block.type == 'footer_shop' %}
-                    <img src="{{ block.settings.shop_img | image_url: width: 500 }}" alt="">
+                    <img class="ew-img-fluid" src="{{ block.settings.shop_img | image_url: width: 500 }}" alt="">
                   {% endif %}
                 {% endfor %}
-                <img src="https://acoon-store.myshopify.com/cdn/shop/files/Layer_1_2.png?v=1741635810" alt="">
-                <img src="https://acoon-store.myshopify.com/cdn/shop/files/Layer_1_2.png?v=1741635810" alt="">
+                <img class="ew-img-fluid" src="https://acoon-store.myshopify.com/cdn/shop/files/Layer_1_2.png?v=1741635810" alt="">
+                <img class="ew-img-fluid" src="https://acoon-store.myshopify.com/cdn/shop/files/Layer_1_2.png?v=1741635810" alt="">
               </div>
             </div>
           </div>
 
-          <div class="accon-footer-bottom flex justify-content-between align-items-center">
-            <div class="accon-footer-bottom-left flex ">
+          <div class="accon-footer-bottom">
+            <div class="accon-footer-bottom-left ">
               <div class="accon-footer-bottom-col">
                 <span class="accon-footer-bottom-copyright">{{ section.settings.copyright_txt }}</span>
               </div>
             </div>
 
             <div class="accon-footer-bottom-right">
-              <img src="https://cdn.shopify.com/s/files/1/0602/8545/2422/files/Frame_1000007344.png?v=1741634555" alt="">
+              <img class="ew-img-fluid" src="https://cdn.shopify.com/s/files/1/0602/8545/2422/files/Frame_1000007344.png?v=1741634555" alt="">
             </div>
 
             {%- if section.settings.payment_enable -%}
@@ -144,7 +162,6 @@
       "label": "Copyright Text",
       "default": "<p>Acoon by Beige The Label © 2024 – All Rights Reserved </p>"
     }
-
   ],
   "blocks": [
     {

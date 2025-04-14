@@ -5,65 +5,113 @@
     <div class="page-width">
       <div class="ew-richtext-wrap">
         {% for block in section.blocks %}
+          
           {% if block.type == 'image_block' %}
             <div class="ew-richtext-image-block">
-              <img 
-                class="ew-img-fluid"
-                src="{{ block.settings.image | image_url: width: 1920 }}" 
-                loading="lazy" 
-                srcset="
-                  {{ block.settings.image | image_url: width: 620 }} 620w,
-                  {{ block.settings.image | image_url: width: 800 }} 800w,
-                  {{ block.settings.image | image_url: width: 1100 }} 1100w,
-                  {{ block.settings.image | image_url: width: 1280 }} 1280w"
-                sizes="(max-width: 600px) 600px, 100vw"
-                alt="Acoon Image {{ forloop.index }}">
+              {% capture eng_content %}
+                {% if block.settings.image != blank %}
+                  <img 
+                    class="ew-img-fluid"
+                    src="{{ block.settings.image | image_url: width: 1920 }}" 
+                    loading="lazy" 
+                    srcset="
+                      {{ block.settings.image | image_url: width: 620 }} 620w,
+                      {{ block.settings.image | image_url: width: 800 }} 800w,
+                      {{ block.settings.image | image_url: width: 1100 }} 1100w,
+                      {{ block.settings.image | image_url: width: 1280 }} 1280w"
+                    sizes="(max-width: 600px) 600px, 100vw"
+                    alt="Image {{ forloop.index | escape }}">
+                {% endif %}
+              {% endcapture %}
+
+              {% capture ar_content %}
+                {% if block.settings.ar_image != blank %}
+                  <img 
+                    class="ew-img-fluid"
+                    src="{{ block.settings.ar_image | image_url: width: 1920 }}" 
+                    loading="lazy" 
+                    srcset="
+                      {{ block.settings.ar_image | image_url: width: 620 }} 620w,
+                      {{ block.settings.ar_image | image_url: width: 800 }} 800w,
+                      {{ block.settings.ar_image | image_url: width: 1100 }} 1100w,
+                      {{ block.settings.ar_image | image_url: width: 1280 }} 1280w"
+                    sizes="(max-width: 600px) 600px, 100vw"
+                    alt="صورة {{ forloop.index | escape }}">
+                {% endif %}
+              {% endcapture %}
+            
+              {% render 'ew-text-lang',
+                arabic_text: ar_content,
+                english_text: eng_content
+              %}
             </div>
           {% endif %}
 
           {% if block.type == 'text_block' %}
-            <div class="ew-richtext-text-block">
-            {{ block.settings.description }}
+            <div class="ew-richtext-text-block">              
+              {% render 'ew-text-lang',
+                arabic_text: block.settings.ar_description,
+                english_text: block.settings.description
+              %}
             </div>
           {% endif %}
+
         {% endfor %}
       </div>
     </div>
   </div>
 </section>
 
-{% schema  %}
+{% schema %}
 {
-  "name":"<> Richtext",
-  "settings":[],
-  "blocks":[
+  "name": "<> Richtext",
+  "settings": [],
+  "blocks": [
     {
-      "type":"image_block",
-      "name":"Image Block",
+      "type": "image_block",
+      "name": "Image Block",
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "ar_image",
+          "label": "Arabic Image"
         }
       ]
     },
     {
-      "type":"text_block",
-      "name":"Text Block",
+      "type": "text_block",
+      "name": "Text Block",
       "settings": [
+        {
+          "type": "header",
+          "content": "ENG Collection"
+        },
         {
           "type": "richtext",
           "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "header",
+          "content": "AR Collection"
+        },
+        {
+          "type": "richtext",
+          "id": "ar_description",
           "label": "Description"
         }
       ]
     }
   ],
-  "presets":[
+  "presets": [
     {
-      "name":"<> Richtext"
+      "name": "<> Richtext"
     }
   ]
 }
-{% endschema  %}
+{% endschema %}

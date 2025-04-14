@@ -33,7 +33,7 @@ sliders.forEach(slider => {
       arrows: false,
       pagination: false,
       breakpoints: {
-        768: { padding: "2rem", },
+        768: { padding: "4rem", },
       }
     });
 

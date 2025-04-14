@@ -23,31 +23,36 @@
         "text_block_QgKykB": {
           "type": "text_block",
           "settings": {
-            "description": "<h6>The essence of Acoon</h6><h3>A statement of who you are and who you aspire to be</h3><p>Acoon (أكون (is a luxury fashion brand that embodies the essence of \"to be\" and \"to become.\" Acoon stands as a tribute to the modern woman—celebrating her journey, her strength, and her evolving identity. </p><p>Each piece is a carefully crafted statement, designed to empower women to embrace their true selves while stepping confidently into the future they aspire to shape. We believe that fashion is more than an expression of style; it is a reflection of the woman you are today and the one you are becoming</p>"
+            "description": "<h6>The essence of Acoon</h6><h3>A statement of who you are and who you aspire to be</h3><p>Acoon (أكون (is a luxury fashion brand that embodies the essence of \"to be\" and \"to become.\" Acoon stands as a tribute to the modern woman—celebrating her journey, her strength, and her evolving identity. </p><p>Each piece is a carefully crafted statement, designed to empower women to embrace their true selves while stepping confidently into the future they aspire to shape. We believe that fashion is more than an expression of style; it is a reflection of the woman you are today and the one you are becoming</p>",
+            "ar_description": "<h6>جوهرنا</h6><h3>تجسيد لهويتِك ... وطموحاتِك</h3><p>أكون (أكون) هي علامة تجارية فاخرة للأزياء تجسد جوهر \"أن تكون\" و\"أن تصبح\". تقف أكون بمثابة تكريم للمرأة العصرية - تحتفل برحلتها وقوتها وهويتها المتطورة. </p><p>كل قطعة عبارة عن بيان تم تصميمه بعناية، وهو مصمم لتمكين النساء من احتضان ذواتهن الحقيقية بينما يخطو بثقة إلى المستقبل الذي يطمحن إلى تشكيله. نحن نؤمن بأن الموضة هي أكثر من مجرد تعبير عن الأسلوب؛ إنه انعكاس للمرأة التي أنت عليها اليوم والتي أصبحت عليها</p>"
           }
         },
         "image_block_hz7jiJ": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/image_4.png"
+            "image": "shopify://shop_images/image_4.png",
+            "ar_image": "shopify://shop_images/image_4_bb9d5328-db1c-4700-9408-34bbc228d47b.png"
           }
         },
         "text_block_ae8xmm": {
           "type": "text_block",
           "settings": {
-            "description": "<h2>“We create the silhouettes of dreams, inspiring every woman to become who she is meant to be.”</h2><h6>Acoon</h6>"
+            "description": "<h2>“We create the silhouettes of dreams, inspiring every woman to become who she is meant to be.”</h2><h6>Acoon</h6>",
+            "ar_description": "<h2>“نرسم ملامح الأحلام، ونلهم كل امرأة لتجسد ذاتها الحقيقية”</h2><h6>منى العثيمان</h6>"
           }
         },
         "text_block_TemPRQ": {
           "type": "text_block",
           "settings": {
-            "description": "<h6>Our Story</h6><h3>Journey of Become</h3><p>The story of Acoon begins with a young girl and her love for fashion—Muna Al Othaiman, whose journey into the world of style started with a simple, yet profound habit: collecting fashion magazines. </p><p>Flipping through those glossy pages, Muna was captivated by the world of elegance, design, and artistry. Yet, even amidst the allure, there was an inner voice that whispered, “These pieces could be more relatable.” Muna felt a deep desire for styles that spoke to her, that reflected the values she cherished as a young woman growing up in the GCC. This realization sparked a new passion within her—not just to admire fashion, but to create it. </p><p>She began sketching her own designs, dreaming of pieces that matched her standards and silhouettes that carried a deeper meaning. Every design she created was a step toward the woman she aspired to be—one who could honor tradition while embracing the modern world. This process of creation became more than just a craft; it became a journey of self-discovery, a way for Muna to embody her future self. And so, the vision for Acoon was born.</p>"
+            "description": "<h6>Our Story</h6><h3>Journey of Become</h3><p>The story of Acoon begins with a young girl and her love for fashion—Muna Al Othaiman, whose journey into the world of style started with a simple, yet profound habit: collecting fashion magazines. </p><p>Flipping through those glossy pages, Muna was captivated by the world of elegance, design, and artistry. Yet, even amidst the allure, there was an inner voice that whispered, “These pieces could be more relatable.” Muna felt a deep desire for styles that spoke to her, that reflected the values she cherished as a young woman growing up in the GCC. This realization sparked a new passion within her—not just to admire fashion, but to create it. </p><p>She began sketching her own designs, dreaming of pieces that matched her standards and silhouettes that carried a deeper meaning. Every design she created was a step toward the woman she aspired to be—one who could honor tradition while embracing the modern world. This process of creation became more than just a craft; it became a journey of self-discovery, a way for Muna to embody her future self. And so, the vision for Acoon was born.</p>",
+            "ar_description": "<h6>قصتنا</h6><h3>رحلة تصبح</h3><p>تبدأ قصة أكون مع فتاة صغيرة وحبها للموضة، منى العثيمان، التي بدأت رحلتها إلى عالم الموضة بعادة بسيطة وعميقة: جمع مجلات الموضة. </p><p>أثناء تقليبها لتلك الصفحات اللامعة، انبهرت منى بعالم الأناقة والتصميم والبراعة الفنية. ومع ذلك، حتى وسط الجاذبية، كان هناك صوت داخلي يهمس: \"يمكن أن تكون هذه القطع أكثر ارتباطًا\". شعرت منى برغبة عميقة في الأساليب التي تناسبها، والتي تعكس القيم التي تعتز بها كامرأة شابة نشأت في دول مجلس التعاون الخليجي. أثار هذا الإدراك شغفًا جديدًا بداخلها، ليس فقط للإعجاب بالموضة، بل لابتكارها. </p><p>بدأت برسم تصاميمها الخاصة، وحلمت بقطع تتوافق مع معاييرها وتصاميم تحمل معنى أعمق. كان كل تصميم ابتكرته بمثابة خطوة نحو المرأة التي تطمح إلى أن تكونها - امرأة يمكنها احترام التقاليد واحتضان العالم الحديث. أصبحت عملية الخلق هذه أكثر من مجرد حرفة؛ لقد أصبحت رحلة لاكتشاف الذات، ووسيلة لتجسيد منى لذاتها المستقبلية. وهكذا ولدت رؤية أكون.</p>"
           }
         },
         "image_block_F48mrA": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/image_1fb071cf-5a7e-49e1-87e1-cd5459c5c182.png"
+            "image": "shopify://shop_images/image_1fb071cf-5a7e-49e1-87e1-cd5459c5c182.png",
+            "ar_image": "shopify://shop_images/image_3.png"
           }
         }
       },

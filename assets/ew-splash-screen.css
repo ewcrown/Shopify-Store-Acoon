@@ -31,6 +31,7 @@
 .ew-splash-content-inner {
   position: absolute;
   bottom: 60px;
+  padding: 15px;
   left: 0;
   right: 0;
   z-index: 9999;
@@ -38,12 +39,12 @@
   margin: auto;
 }
 
-.ew-splash-content-inner h3{
+.ew-splash-content-inner h3 {
   color: #FFF;
-text-align: center;
-font-family: "Abhaya Libre Medium";
-font-size: 48px;
-font-style: normal;
-font-weight: 500;
-line-height: 42px; /* 87.5% */
+  text-align: center;
+  font-family: "Abhaya Libre Medium";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px;
 }

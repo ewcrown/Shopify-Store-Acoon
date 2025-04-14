@@ -11,24 +11,6 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "newsletter_FpTVaf": {
-      "type": "newsletter",
-      "blocks": {
-        "email_form_M8pNHE": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "email_form_M8pNHE"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "accon_footer_R4taxi": {
       "type": "accon-footer",
       "blocks": {
@@ -135,7 +117,6 @@
     }
   },
   "order": [
-    "newsletter_FpTVaf",
     "accon_footer_R4taxi",
     "footer"
   ]
