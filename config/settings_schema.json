@@ -30,6 +30,11 @@
         "label": "Splash Image"
       },
       {
+        "type": "image_picker",
+        "id": "splash_image_mob",
+        "label": "Splash Image Mobile"
+      },
+      {
         "type": "text",
         "id": "heading",
         "label": "Heading",
@@ -54,6 +59,11 @@
         "type": "image_picker",
         "id": "ar_splash_image",
         "label": "Splash Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "ar_splash_image_mob",
+        "label": "Splash Image Mob"
       },
       {
         "type": "text",

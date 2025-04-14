@@ -19,7 +19,6 @@ sliders.forEach(slider => {
       pagination: true,
       breakpoints: {
         1024: { perPage: 2 },
-        768: { perPage: 1 }
       }
     }).mount();
   } else if (sliderName == 'Featured Video Tabs') {
@@ -31,8 +30,11 @@ sliders.forEach(slider => {
       padding: "10rem",
       perMove: 1,
       gap: "1rem",
-      arrows: false, // ❌ Disable default arrows
-      pagination: false, // ❌ Disable default pagination
+      arrows: false,
+      pagination: false,
+      breakpoints: {
+        768: { padding: "2rem", },
+      }
     });
 
     const blocks = slider.querySelectorAll(".splide__slide");

@@ -97,4 +97,40 @@
   font-style: normal;
   font-weight: 600;
   line-height: 42px;
+  margin: 0;
+}
+
+@media(max-width:767px) {
+  #ew-featured-tabs-section {
+    margin-bottom: 60px;
+  }
+
+  .ew-featured-tabs-arrows-inner {
+    bottom: -110px;
+    gap: 20px;
+  }
+
+  .ew-featured-tabs-row video {
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .ew-featured-tabs-inner-content h3 {
+    font-size: 32px;
+    line-height: normal;
+  }
+
+  .ew-featured-tabs-inner-content .ew-btn {
+    margin-top: 24px;
+  }
+
+  .ew-featured-tabs-inner-content .ew-btn-primary {
+    max-width: 150px;
+    min-width: 250px;
+    padding: 10px 0px;
+  }
+
+  .ew-featured-tabs-pagination-inner button {
+    font-size: 16px;
+  }
 }

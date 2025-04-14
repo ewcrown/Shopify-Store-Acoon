@@ -569,3 +569,33 @@ li::marker {
   text-transform: capitalize;
   margin-bottom: 60px !important;
 }
+
+.header__search svg {
+  width: 22px;
+}
+
+.header__search {
+  padding: 0 10px 0 20px;
+}
+
+#HeaderLanguageForm button {
+  gap: 10px;
+}
+
+@media(max-width:767px) {
+
+  .ew-btn-primary,
+  .ew-btn-secondary {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 15px 0px;
+  }
+
+  .ew-btn {
+    width: 100%;
+  }
+
+  .header {
+    padding: 10px 15px;
+  }
+}

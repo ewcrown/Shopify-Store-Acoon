@@ -13,8 +13,14 @@
     aria-controls="{{ localPosition }}List"
     aria-describedby="{{ localPosition }}Label"
   >
-    <span>{{ localization.language.endonym_name | capitalize }}</span>
-    {{ 'icon-caret.svg' | inline_asset_content }}
+    <span>
+      {% if localization.language.endonym_name contains 'English' %}
+        ENG
+      {% elsif localization.language.endonym_name contains 'العربية' %}
+        AR
+      {% endif %}
+    </span>
+    {{ 'ew-icon-caret.svg' | inline_asset_content }}
   </button>
   <div class="disclosure__list-wrapper language-selector" hidden>
     <ul id="{{ localPosition }}List" role="list" class="disclosure__list list-unstyled">
@@ -38,7 +44,11 @@
               {{- 'icon-checkmark.svg' | inline_asset_content -}}
             </span>
             <span>
-              {{ language.endonym_name | capitalize }}
+              {% if language.endonym_name contains 'English' %}
+                ENG
+              {% elsif language.endonym_name contains 'العربية' %}
+                AR
+              {% endif %}
             </span>
           </a>
         </li>

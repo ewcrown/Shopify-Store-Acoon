@@ -188,3 +188,15 @@
 .ew-product-card .ew-pc-content-block-wrap.is-loading .ew-pc-loader-wrap {
   display: block !important;
 }
+
+
+@media(max-width:767px) {
+  .ew-product-card .ew-pc-media img {
+    height: 400px;
+  }
+  .ew-product-card .ew-pc-content-block-hover-false {
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+  }
+}

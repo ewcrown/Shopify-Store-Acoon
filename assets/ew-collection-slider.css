@@ -9,3 +9,9 @@
 .ew-btn {
   margin-top: 50px;
 }
+
+@media(max-width:767px) {
+  .ew-collection-row {
+    padding: 40px 0px;
+  }
+}

@@ -16,7 +16,9 @@
             {% endif %}
           {% else %}
             <picture>
-              <source media="(max-width: 600px)" srcset="{{ s.ar_mobile_image | image_url: width: 600 }}">
+              {% if s.ar_mobile_image != blank %}
+                <source media="(max-width: 600px)" srcset="{{ s.ar_mobile_image | image_url: width: 600 }}">
+              {% endif %}
               <img 
                 class="ew-img-fluid"
                 src="{{ s.ar_image | image_url: width: 1280 }}" 
@@ -44,7 +46,9 @@
             {% endif %}
           {% else %}
             <picture>
-              <source media="(max-width: 600px)" srcset="{{ s.mobile_image | image_url: width: 600 }}">
+              {% if s.mobile_image != blank %}
+                <source media="(max-width: 600px)" srcset="{{ s.mobile_image | image_url: width: 600 }}">
+              {% endif %}
               <img 
                 class="ew-img-fluid"
                 src="{{ s.image | image_url: width: 1280 }}" 

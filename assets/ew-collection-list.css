@@ -7,3 +7,13 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
 }
+
+@media(max-width:767px) {
+  .ew-collection-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ew-collection-list-row {
+    padding: 40px 0;
+  }
+}

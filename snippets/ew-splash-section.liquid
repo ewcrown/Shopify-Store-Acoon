@@ -1,18 +1,26 @@
 {{ 'ew-splash-screen.css' | asset_url | stylesheet_tag }}
+
 <div id="ew-splash-intro">
   {% capture eng_content %}
     <div class="ew-splash-content">
-      <img 
-        class="ew-img-fluid"
-        src="{{ settings.splash_image | image_url: width: 1920 }}" 
-        loading="lazy" 
-        srcset="
-          {{ settings.splash_image | image_url: width: 620 }} 620w,
-          {{ settings.splash_image | image_url: width: 800 }} 800w,
-          {{ settings.splash_image | image_url: width: 1100 }} 1100w,
-          {{ settings.splash_image | image_url: width: 1280 }} 1280w"
-        sizes="(max-width: 600px) 600px, 100vw"
-        alt="Splash Banner" />
+      {% if settings.splash_image != blank %}
+        <picture>
+          {% if settings.splash_image_mob != blank %}
+            <source media="(max-width: 600px)" srcset="{{ settings.splash_image_mob | image_url: width: 1920 }}">
+          {% endif %}
+          <img 
+            class="ew-img-fluid"
+            src="{{ settings.splash_image | image_url: width: 1280 }}" 
+            loading="lazy" 
+            srcset="
+              {{ settings.splash_image | image_url: width: 620 }} 620w,
+              {{ settings.splash_image | image_url: width: 800 }} 800w,
+              {{ settings.splash_image | image_url: width: 1100 }} 1100w,
+              {{ settings.splash_image | image_url: width: 1280 }} 1280w"
+            sizes="(max-width: 600px) 600px, 100vw"
+            alt="{{ settings.heading | escape }}">
+        </picture>
+      {% endif %}
 
       <div class="ew-splash-content-inner">
         <h3>{{ settings.heading }}</h3>
@@ -27,17 +35,24 @@
 
   {% capture ar_content %}
     <div class="ew-splash-content">
-      <img 
-        class="ew-img-fluid"
-        src="{{ settings.ar_splash_image | image_url: width: 1920 }}" 
-        loading="lazy" 
-        srcset="
-          {{ settings.ar_splash_image | image_url: width: 620 }} 620w,
-          {{ settings.ar_splash_image | image_url: width: 800 }} 800w,
-          {{ settings.ar_splash_image | image_url: width: 1100 }} 1100w,
-          {{ settings.ar_splash_image | image_url: width: 1280 }} 1280w"
-        sizes="(max-width: 600px) 600px, 100vw"
-        alt="Splash Banner" />
+      {% if settings.ar_splash_image != blank %}
+        <picture>
+          {% if settings.ar_splash_image_mob != blank %}
+            <source media="(max-width: 600px)" srcset="{{ settings.ar_splash_image_mob | image_url: width: 1920 }}">
+          {% endif %}
+          <img 
+            class="ew-img-fluid"
+            src="{{ settings.ar_splash_image | image_url: width: 1280 }}" 
+            loading="lazy" 
+            srcset="
+              {{ settings.ar_splash_image | image_url: width: 620 }} 620w,
+              {{ settings.ar_splash_image | image_url: width: 800 }} 800w,
+              {{ settings.ar_splash_image | image_url: width: 1100 }} 1100w,
+              {{ settings.ar_splash_image | image_url: width: 1280 }} 1280w"
+            sizes="(max-width: 600px) 600px, 100vw"
+            alt="{{ settings.ar_heading | escape }}">
+        </picture>
+      {% endif %}
 
       <div class="ew-splash-content-inner">
         <h3>{{ settings.ar_heading }}</h3>
