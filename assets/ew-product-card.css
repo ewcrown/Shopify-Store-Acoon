@@ -157,10 +157,6 @@
   margin: auto;
 }
 
-.ew-product-card .ew-pc-link {
-  cursor: default;
-}
-
 .ew-product-card .ew-pc-loader-wrap {
   background: #000;
   border-radius: 15px;

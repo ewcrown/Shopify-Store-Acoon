@@ -520,6 +520,7 @@ li::marker {
   margin-bottom: 67px;
 }
 
+.mobile-facets__open-label,
 .product-count__text span {
   color: #000;
   font-family: "Abhaya Libre Medium";
@@ -562,10 +563,14 @@ li::marker {
 
 #main-collection-filters {
   width: 280px;
-  /* or whatever fixed width */
   transition: all 0.3s ease;
   opacity: 1;
-  transform: translateX(0);
+}
+
+@media(min-width:768px){
+  #main-collection-filters {
+    transform: translateX(0);
+  }
 }
 
 #main-collection-filters.is-hiding {
@@ -703,8 +708,17 @@ li::marker {
   #menu-drawer .menu-drawer__menu-item {
     padding: 0 15px !important;
   }
+
   ul.menu-drawer__menu {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  #main-collection-filters {
+    width: 100%;
+  }
+
+  .menu-opening .mobile-facets__inner {
+    overflow: visible;
   }
 }
