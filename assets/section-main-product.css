@@ -198,6 +198,9 @@ product-info {
   font-weight: 400;
   line-height: normal;
   margin: 0;
+  pointer-events: unset !important;
+  opacity: 1 !important;
+  cursor: pointer !important;
 }
 
 .product-form {

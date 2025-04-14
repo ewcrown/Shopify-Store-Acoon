@@ -567,7 +567,7 @@ li::marker {
   opacity: 1;
 }
 
-@media(min-width:768px){
+@media(min-width:768px) {
   #main-collection-filters {
     transform: translateX(0);
   }
@@ -721,4 +721,101 @@ li::marker {
   .menu-opening .mobile-facets__inner {
     overflow: visible;
   }
+}
+
+.drawer__inner {
+  background: #000;
+}
+
+.cart-drawer .cart-item__image {
+  height: 100%;
+  object-fit: cover;
+}
+
+#CartDrawer .totals__total-value,
+#CartDrawer .totals>h2 {
+  color: #FFF;
+  font-family: "Abhaya Libre";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cart-drawer .tax-note {
+  color: #FFF;
+  font-family: "Abhaya Libre";
+  font-size: 14;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#CartDrawer .cart__ctas {
+  flex-direction: column;
+}
+
+#CartDrawer .cart__ctas>a {
+  background: #000;
+  color: #fff;
+  font-family: "Abhaya Libre";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 18px;
+  text-decoration: none;
+  border: 2px solid #fff;
+}
+
+#CartDrawer .cart__ctas>button {
+  background: #FFF;
+  color: #000;
+  font-family: "Abhaya Libre";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 18px;
+  text-decoration: none;
+}
+
+#CartDrawer .drawer__heading {
+  color: #FFF;
+  font-family: "Abhaya Libre";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#CartDrawer .drawer__close {
+  color: #fff;
+}
+
+#CartDrawer .cart-item__name {
+  color: #FFF;
+  font-family: "Abhaya Libre";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#CartDrawer .product-option {
+  color: #FFF;
+  font-family: "Abhaya Libre";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#CartDrawer .drawer__cart-items-wrapper thead {
+  display: none;
+}
+
+#CartDrawer .price,
+#CartDrawer cart-remove-button .button {
+  color: #fff;
 }
