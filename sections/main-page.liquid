@@ -16,9 +16,24 @@
 
 <div class="page-width section-{{ section.id }}-padding">
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-    {% if section.settings.sub_heading != blank %}
-      <span class="main-page-title-subtitle">{{ section.settings.sub_heading }}</span>
-    {% endif %}
+  
+    {% capture eng_content %}
+      {% if section.settings.sub_heading != blank %}
+        <span class="main-page-title-subtitle">{{ section.settings.sub_heading }}</span>
+      {% endif %}
+    {% endcapture %}
+  
+    {% capture ar_content %}
+      {% if section.settings.ar_sub_heading != blank %}
+        <span class="main-page-title-subtitle">{{ section.settings.ar_sub_heading }}</span>
+      {% endif %}
+    {% endcapture %}
+
+    {% render 'ew-text-lang', 
+      english_text: eng_content,
+      arabic_text: ar_content
+    %}
+
     {{ page.title | escape }}
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -39,6 +54,11 @@
     {
       "type": "text",
       "id": "sub_heading",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "ar_sub_heading",
       "label": "Subtitle"
     },
     {

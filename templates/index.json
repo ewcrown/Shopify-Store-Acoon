@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "ew_hero_section_gMFnVw": {
@@ -14,15 +5,15 @@
       "settings": {
         "heading": "Your Presence is Captivating",
         "content_alignment": "center",
-        "image": "shopify://shop_images/image.png",
-        "mobile_image": "shopify://shop_images/red-plaid-shirt_925x_828e23c1-f21c-4904-9109-ea1ecfc62771.jpg",
-        "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
-        "mobile_video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+        "image": "shopify:\/\/shop_images\/image.png",
+        "mobile_image": "shopify:\/\/shop_images\/red-plaid-shirt_925x_828e23c1-f21c-4904-9109-ea1ecfc62771.jpg",
+        "video": "shopify:\/\/files\/videos\/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+        "mobile_video": "shopify:\/\/files\/videos\/cafae12fffda29e71029a92136dede0e245448c6.mp4",
         "button_link": "#",
         "button_text": "Discover",
         "ar_heading": "ضوءك الداخلي يتألق",
         "ar_content_alignment": "center",
-        "ar_image": "shopify://shop_images/top-banner_1.png",
+        "ar_image": "shopify:\/\/shop_images\/top-banner_1.png",
         "ar_button_link": "#",
         "ar_button_text": "اكتشفي المجموعة"
       }
@@ -43,13 +34,13 @@
       "settings": {
         "heading": "ACOON Winter Holiday",
         "content_alignment": "left",
-        "image": "shopify://shop_images/image.png",
-        "mobile_image": "shopify://shop_images/red-plaid-shirt_925x_828e23c1-f21c-4904-9109-ea1ecfc62771.jpg",
+        "image": "shopify:\/\/shop_images\/image.png",
+        "mobile_image": "shopify:\/\/shop_images\/red-plaid-shirt_925x_828e23c1-f21c-4904-9109-ea1ecfc62771.jpg",
         "button_link": "#",
         "button_text": "Discover",
         "ar_heading": "تفاصيل تعكس ذوقكِ الرفيع",
         "ar_content_alignment": "left",
-        "ar_image": "shopify://shop_images/acoon_banner_2.png",
+        "ar_image": "shopify:\/\/shop_images\/acoon_banner_2.png",
         "ar_button_link": "#",
         "ar_button_text": "تسوقي الآن"
       }
@@ -61,7 +52,7 @@
           "type": "single_colleciton",
           "settings": {
             "collection": "collections",
-            "ar_image": "shopify://shop_images/2024.12.04_Akoon341396_1.png",
+            "ar_image": "shopify:\/\/shop_images\/2024.12.04_Akoon341396_1.png",
             "ar_collection": "outfits"
           }
         },
@@ -69,7 +60,7 @@
           "type": "single_colleciton",
           "settings": {
             "collection": "the-collar",
-            "ar_image": "shopify://shop_images/2024.12.04_Akoon341486_1.png",
+            "ar_image": "shopify:\/\/shop_images\/2024.12.04_Akoon341486_1.png",
             "ar_collection": "collections"
           }
         },
@@ -77,7 +68,7 @@
           "type": "single_colleciton",
           "settings": {
             "collection": "outfits",
-            "ar_image": "shopify://shop_images/2024.12.04_Akoon341776_1.png",
+            "ar_image": "shopify:\/\/shop_images\/2024.12.04_Akoon341776_1.png",
             "ar_collection": "collections"
           }
         },
@@ -85,7 +76,7 @@
           "type": "single_colleciton",
           "settings": {
             "collection": "sueded-stretch",
-            "ar_image": "shopify://shop_images/2024.12.04_Akoon341034_1.png",
+            "ar_image": "shopify:\/\/shop_images\/2024.12.04_Akoon341034_1.png",
             "ar_collection": "sueded-stretch"
           }
         },
@@ -93,7 +84,7 @@
           "type": "single_colleciton",
           "settings": {
             "collection": "sweat-tees",
-            "ar_image": "shopify://shop_images/2024.12.04_Akoon341296_1.png",
+            "ar_image": "shopify:\/\/shop_images\/2024.12.04_Akoon341296_1.png",
             "ar_collection": "the-collar"
           }
         }
@@ -114,13 +105,13 @@
           "type": "video_slider",
           "settings": {
             "title": "For him",
-            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
-            "mobile_video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+            "video": "shopify:\/\/files\/videos\/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+            "mobile_video": "shopify:\/\/files\/videos\/cafae12fffda29e71029a92136dede0e245448c6.mp4",
             "button_link": "#",
             "button_text": "Discover",
             "ar_title": "إطلالات مميزة",
-            "ar_image": "shopify://shop_images/image_1.png",
-            "ar_mobile_image": "shopify://shop_images/image_1.png",
+            "ar_image": "shopify:\/\/shop_images\/image_1.png",
+            "ar_mobile_image": "shopify:\/\/shop_images\/image_1.png",
             "ar_button_link": "#",
             "ar_button_text": "تسوقي الآن"
           }
@@ -129,13 +120,13 @@
           "type": "video_slider",
           "settings": {
             "title": "For her",
-            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
-            "mobile_video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+            "video": "shopify:\/\/files\/videos\/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+            "mobile_video": "shopify:\/\/files\/videos\/cafae12fffda29e71029a92136dede0e245448c6.mp4",
             "button_link": "#",
             "button_text": "Discover",
             "ar_title": "لحظات متألقة",
-            "ar_image": "shopify://shop_images/3c1bcacd4d6745f330d3e9ee5b4d16e3.png",
-            "ar_mobile_image": "shopify://shop_images/3c1bcacd4d6745f330d3e9ee5b4d16e3.png",
+            "ar_image": "shopify:\/\/shop_images\/3c1bcacd4d6745f330d3e9ee5b4d16e3.png",
+            "ar_mobile_image": "shopify:\/\/shop_images\/3c1bcacd4d6745f330d3e9ee5b4d16e3.png",
             "ar_button_link": "#",
             "ar_button_text": "تسوقي الآن"
           }
@@ -144,13 +135,13 @@
           "type": "video_slider",
           "settings": {
             "title": "Jewellery",
-            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
-            "mobile_video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+            "video": "shopify:\/\/files\/videos\/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+            "mobile_video": "shopify:\/\/files\/videos\/cafae12fffda29e71029a92136dede0e245448c6.mp4",
             "button_link": "#",
             "button_text": "Discover",
             "ar_title": "الإيقاع اليومي",
-            "ar_video": "shopify://files/videos/a7195a12c03c3b11a8ae6eb2ceba7cc356849146.mp4",
-            "ar_mobile_video": "shopify://files/videos/a7195a12c03c3b11a8ae6eb2ceba7cc356849146.mp4",
+            "ar_video": "shopify:\/\/files\/videos\/a7195a12c03c3b11a8ae6eb2ceba7cc356849146.mp4",
+            "ar_mobile_video": "shopify:\/\/files\/videos\/a7195a12c03c3b11a8ae6eb2ceba7cc356849146.mp4",
             "ar_button_link": "#",
             "ar_button_text": "تسوقي الآن"
           }

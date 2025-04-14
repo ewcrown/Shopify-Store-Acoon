@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "15.2.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "Color Swatches",
@@ -46,7 +46,7 @@
         "label": "Button link"
       },
       {
-          "type": "text",
+        "type": "text",
         "id": "button_text",
         "label": "Button Text",
         "default": "Discover"

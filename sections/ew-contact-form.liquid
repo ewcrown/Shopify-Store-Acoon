@@ -1,14 +1,36 @@
 {{ 'ew-contact-form.css' | asset_url | stylesheet_tag }}
 
+{% assign s = section.settings %}
+
+{% if request.locale.iso_code contains 'ar' %}
+  {% assign name = "الاسم" %}
+  {% assign email = "البريد الإلكتروني" %}
+  {% assign phone = "رقم الهاتف" %}
+  {% assign message = "رسالة" %}
+  {% assign submit = "إرسال" %}
+{% else %}
+  {% assign name = "Name" %}
+  {% assign email = "Email Address" %}
+  {% assign phone = "Phone Number" %}
+  {% assign message = "Message" %}
+  {% assign submit = "Submit" %}
+{% endif %}
+
 <section class="ew-contact-form ew-contact-form-{{ section.id }}" id="ew-contact-form">
   <div class="ew-contact-form-row">
     <div class="page-width">
       <div class="ew-contact-form-wrap">
-
         <div class="ew-contact-form-inner">
-          <h6>Contact</h6>
-          <h3>Get in Touch</h3>
-          <p>Please tell us more about your inquiry using the form below and click to submit your information.</p>
+
+          <h6>
+            {% render 'ew-text-lang', english_text: s.subheading, arabic_text: s.ar_subheading %}
+          </h6>
+          <h3>
+            {% render 'ew-text-lang', english_text: s.heading, arabic_text: s.ar_heading %}
+          </h3>
+          <p>
+            {% render 'ew-text-lang', english_text: s.description, arabic_text: s.ar_description %}
+          </p>
 
           {%- form 'contact' -%}
             {%- if form.posted_successfully? -%}
@@ -36,48 +58,47 @@
             {%- endif -%}
 
             <div class="ew-contact-form-fields">
-
               <div class="ew-contact-form-field">
-                <label for="ContactForm-name" class="visually-hidden">Name</label>
+                <label for="ContactForm-name" class="visually-hidden">{{ name }}</label>
                 <input 
                   type="text"
                   id="ContactForm-name"
-                  name="contact[Name]"
-                  placeholder="Name"
+                  name="contact[{{ name }}]"
+                  placeholder="{{ name }}"
                   autocomplete="name"
                 />
               </div>
 
               <div class="ew-contact-form-field">
-                <label for="ContactForm-email" class="visually-hidden">Email Address</label>
+                <label for="ContactForm-email" class="visually-hidden">{{ email }}</label>
                 <input 
                   type="email"
                   id="ContactForm-email"
-                  name="contact[Email Address]"
-                  placeholder="Email Address"
+                  name="contact[{{ email }}]"
+                  placeholder="{{ email }}"
                   autocomplete="email"
                   required
                 />
               </div>
 
               <div class="ew-contact-form-field">
-                <label for="ContactForm-phone" class="visually-hidden">Phone Number</label>
+                <label for="ContactForm-phone" class="visually-hidden">{{ phone }}</label>
                 <input 
                   type="tel"
                   id="ContactForm-phone"
-                  name="contact[Phone number]"
-                  placeholder="Phone number"
+                  name="contact[{{ phone }}]"
+                  placeholder="{{ phone }}"
                   autocomplete="tel"
                   required
                 />
               </div>
 
               <div class="ew-contact-form-field">
-                <label for="ContactForm-comment" class="visually-hidden">Message</label>
+                <label for="ContactForm-comment" class="visually-hidden">{{ message }}</label>
                 <textarea 
                   id="ContactForm-comment"
-                  name="contact[Comment]"
-                  placeholder="Message"
+                  name="contact[{{ message }}]"
+                  placeholder="{{ message }}"
                   autocomplete="off"
                   required
                 ></textarea>
@@ -85,14 +106,11 @@
             </div>
 
             <div class="ew-contact__button">
-              <button type="submit" class="">
-                Submit
-              </button>
+              <button type="submit">{{ submit }}</button>
             </div>
           {%- endform -%}
           
         </div>
-        
       </div>
     </div>
   </div>
@@ -101,7 +119,52 @@
 {% schema %}
 {
   "name": "<> Contact Form",
-  "settings": [],
+  "settings": [
+    {
+      "type": "header",
+      "content": "ENG CONTENT"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Contact"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Get in Touch"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description",
+      "default": "Please tell us more about your inquiry using the form below and click to submit your information."
+    },
+    {
+      "type": "header",
+      "content": "AR CONTENT"
+    },
+    {
+      "type": "text",
+      "id": "ar_subheading",
+      "label": "Subheading",
+      "default": "اتصل"
+    },
+    {
+      "type": "text",
+      "id": "ar_heading",
+      "label": "Heading",
+      "default": "ابقى على تواصل"
+    },
+    {
+      "type": "text",
+      "id": "ar_description",
+      "label": "Description",
+      "default": "يرجى إخبارنا بمزيد من التفاصيل حول استفسارك باستخدام النموذج أدناه ثم الضغط للإرسال."
+    }
+  ],
   "presets": [
     {
       "name": "<> Contact Form"

@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -37,7 +28,7 @@
         "custom_liquid_gJW9Pf": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"ew-product-flat-rate\">\nFree Standard Shipping on $75+\n</div>"
+            "custom_liquid": "<div class=\"ew-product-flat-rate\">\nFree Standard Shipping on $75+\n<\/div>"
           }
         },
         "product_set_TYnYGi": {
@@ -56,7 +47,7 @@
           "settings": {
             "heading": "Product Details",
             "icon": "none",
-            "content": "<p>Aliquam maximus massa justo, et volutpat mauris volutpat non. Aliquam ullamcorper aliquet ipsum, in commodo magna tincidunt at. Nullam finibus consequat feugiat. Mauris a auctor arcu. In tellus augue, condimentum in urna nec, tempor sollicitudin nisl. Ut porttitor felis ac nunc pellentesque ornare. Curabitur dolor nibh, maximus sed turpis non, accumsan efficitur lorem. Nunc eget sollicitudin dolor. Aenean ac urna ac justo dignissim scelerisque. Cras tincidunt nulla vel urna ornare feugiat sit amet sed turpis. Vestibulum commodo hendrerit suscipit. Maecenas condimentum sed urna a ultrices.</p>",
+            "content": "<p>Aliquam maximus massa justo, et volutpat mauris volutpat non. Aliquam ullamcorper aliquet ipsum, in commodo magna tincidunt at. Nullam finibus consequat feugiat. Mauris a auctor arcu. In tellus augue, condimentum in urna nec, tempor sollicitudin nisl. Ut porttitor felis ac nunc pellentesque ornare. Curabitur dolor nibh, maximus sed turpis non, accumsan efficitur lorem. Nunc eget sollicitudin dolor. Aenean ac urna ac justo dignissim scelerisque. Cras tincidunt nulla vel urna ornare feugiat sit amet sed turpis. Vestibulum commodo hendrerit suscipit. Maecenas condimentum sed urna a ultrices.<\/p>",
             "page": ""
           }
         },
@@ -65,7 +56,7 @@
           "settings": {
             "heading": "Shipping and Returns",
             "icon": "none",
-            "content": "<p>Aliquam maximus massa justo, et volutpat mauris volutpat non. Aliquam ullamcorper aliquet ipsum, in commodo magna tincidunt at. Nullam finibus consequat feugiat. Mauris a auctor arcu. In tellus augue, condimentum in urna nec, tempor sollicitudin nisl. Ut porttitor felis ac nunc pellentesque ornare. Curabitur dolor nibh, maximus sed turpis non, accumsan efficitur lorem. Nunc eget sollicitudin dolor. Aenean ac urna ac justo dignissim scelerisque. Cras tincidunt nulla vel urna ornare feugiat sit amet sed turpis. Vestibulum commodo hendrerit suscipit. Maecenas condimentum sed urna a ultrices.</p>",
+            "content": "<p>Aliquam maximus massa justo, et volutpat mauris volutpat non. Aliquam ullamcorper aliquet ipsum, in commodo magna tincidunt at. Nullam finibus consequat feugiat. Mauris a auctor arcu. In tellus augue, condimentum in urna nec, tempor sollicitudin nisl. Ut porttitor felis ac nunc pellentesque ornare. Curabitur dolor nibh, maximus sed turpis non, accumsan efficitur lorem. Nunc eget sollicitudin dolor. Aenean ac urna ac justo dignissim scelerisque. Cras tincidunt nulla vel urna ornare feugiat sit amet sed turpis. Vestibulum commodo hendrerit suscipit. Maecenas condimentum sed urna a ultrices.<\/p>",
             "page": ""
           }
         }

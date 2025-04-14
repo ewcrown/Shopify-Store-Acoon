@@ -1,17 +1,9 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
       "type": "main-page",
       "settings": {
+        "sub_heading": "",
         "padding_top": 28,
         "padding_bottom": 0
       }
@@ -24,8 +16,12 @@
           "settings": {
             "heading": "Shipping Methods",
             "icon": "none",
-            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.</p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.</p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.</p>",
-            "page": ""
+            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.<\/p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.<\/p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.<\/p>",
+            "page": "",
+            "ar_heading": "طرق الشحن",
+            "ar_icon": "none",
+            "ar_row_content": "<p>بشكل عام، العناصر المعروضة على موقعنا متاحة للبيع وجاهزة للشحن. في حالات نادرة، حيث تتم إضافة عنصر إلى أكياس تسوق متعددة في نفس الوقت، قد يتلقى عميل واحد رسالة نفاد المخزون عند الخروج.<\/p><p>يرجى ملاحظة: تشير أوقات الشحن المقدرة إلى الوقت المتوقع لمغادرة السلعة مستودعاتنا، وليس متى ستصل إلى وجهتها النهائية.<\/p><p>بمجرد شحن طلبك، ستعتمد أوقات التسليم على طريقة الشحن المحددة عند الخروج وموقع عنوان الشحن الخاص بك.<\/p>",
+            "ar_page": ""
           }
         },
         "collapsible_row_bwpxgX": {
@@ -33,8 +29,12 @@
           "settings": {
             "heading": "Shipping Charges",
             "icon": "none",
-            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.</p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.</p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.</p>",
-            "page": ""
+            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.<\/p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.<\/p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.<\/p>",
+            "page": "",
+            "ar_heading": "رسوم الشحن",
+            "ar_icon": "none",
+            "ar_row_content": "<p>بشكل عام، العناصر المعروضة على موقعنا متاحة للبيع وجاهزة للشحن. في حالات نادرة، حيث تتم إضافة عنصر إلى أكياس تسوق متعددة في نفس الوقت، قد يتلقى عميل واحد رسالة نفاد المخزون عند الخروج.<\/p><p>يرجى ملاحظة: تشير أوقات الشحن المقدرة إلى الوقت المتوقع لمغادرة السلعة مستودعاتنا، وليس متى ستصل إلى وجهتها النهائية.<\/p><p>بمجرد شحن طلبك، ستعتمد أوقات التسليم على طريقة الشحن المحددة عند الخروج وموقع عنوان الشحن الخاص بك.<\/p>",
+            "ar_page": ""
           }
         },
         "collapsible_row_Gz7UkX": {
@@ -42,8 +42,12 @@
           "settings": {
             "heading": "Estimated Delivery Dates",
             "icon": "none",
-            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.</p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.</p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.</p>",
-            "page": ""
+            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.<\/p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.<\/p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.<\/p>",
+            "page": "",
+            "ar_heading": "مواعيد التسليم المقدرة",
+            "ar_icon": "none",
+            "ar_row_content": "<p>بشكل عام، العناصر المعروضة على موقعنا متاحة للبيع وجاهزة للشحن. في حالات نادرة، حيث تتم إضافة عنصر إلى أكياس تسوق متعددة في نفس الوقت، قد يتلقى عميل واحد رسالة نفاد المخزون عند الخروج.<\/p><p>يرجى ملاحظة: تشير أوقات الشحن المقدرة إلى الوقت المتوقع لمغادرة السلعة مستودعاتنا، وليس متى ستصل إلى وجهتها النهائية.<\/p><p>بمجرد شحن طلبك، ستعتمد أوقات التسليم على طريقة الشحن المحددة عند الخروج وموقع عنوان الشحن الخاص بك.<\/p>",
+            "ar_page": ""
           }
         },
         "collapsible_row_UKkGWa": {
@@ -51,8 +55,12 @@
           "settings": {
             "heading": "Item Availability",
             "icon": "none",
-            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.</p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.</p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.</p>",
-            "page": ""
+            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.<\/p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.<\/p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.<\/p>",
+            "page": "",
+            "ar_heading": "توفر السلعة",
+            "ar_icon": "none",
+            "ar_row_content": "<p>بشكل عام، العناصر المعروضة على موقعنا متاحة للبيع وجاهزة للشحن. في حالات نادرة، حيث تتم إضافة عنصر إلى أكياس تسوق متعددة في نفس الوقت، قد يتلقى عميل واحد رسالة نفاد المخزون عند الخروج.<\/p><p>يرجى ملاحظة: تشير أوقات الشحن المقدرة إلى الوقت المتوقع لمغادرة السلعة مستودعاتنا، وليس متى ستصل إلى وجهتها النهائية.<\/p><p>بمجرد شحن طلبك، ستعتمد أوقات التسليم على طريقة الشحن المحددة عند الخروج وموقع عنوان الشحن الخاص بك.<\/p>",
+            "ar_page": ""
           }
         },
         "collapsible_row_33nqj6": {
@@ -60,8 +68,12 @@
           "settings": {
             "heading": "Shipping Rules & Restrictions",
             "icon": "none",
-            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.</p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.</p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.</p>",
-            "page": ""
+            "row_content": "<p>Generally, items featured on our website are available for sale and ready to ship. In rare cases where an item is added to multiple shopping bags at the same time, one customer may receive an out-of-stock message at checkout.<\/p><p>Please note: estimated shipment times refer to when an item is expected to leave our warehouse, not when it will arrive at its final destination.<\/p><p>Once your order ships, delivery times will depend on the shipping method selected at checkout and the location of your shipping address.<\/p>",
+            "page": "",
+            "ar_heading": "قواعد الشحن والقيود",
+            "ar_icon": "none",
+            "ar_row_content": "<p>بشكل عام، العناصر المعروضة على موقعنا متاحة للبيع وجاهزة للشحن. في حالات نادرة، حيث تتم إضافة عنصر إلى أكياس تسوق متعددة في نفس الوقت، قد يتلقى عميل واحد رسالة نفاد المخزون عند الخروج.<\/p><p>يرجى ملاحظة: تشير أوقات الشحن المقدرة إلى الوقت المتوقع لمغادرة السلعة مستودعاتنا، وليس متى ستصل إلى وجهتها النهائية.<\/p><p>بمجرد شحن طلبك، ستعتمد أوقات التسليم على طريقة الشحن المحددة عند الخروج وموقع عنوان الشحن الخاص بك.<\/p>",
+            "ar_page": ""
           }
         }
       },

@@ -7,6 +7,11 @@
   margin-right: auto;
 }
 
+#ew-arabic-content .ew-contact-form-inner {
+  margin-left: auto;
+  margin-right: 0;
+}
+
 .ew-contact-form-inner h6 {
   color: #969696;
   font-family: "Abhaya Libre";

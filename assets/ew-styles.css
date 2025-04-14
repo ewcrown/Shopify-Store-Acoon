@@ -823,3 +823,8 @@ li::marker {
 #CartDrawer cart-remove-button .button {
   color: #fff;
 }
+
+#ew-arabic-content summary .icon-caret {
+  left: 1.5rem;
+  right: auto;
+}

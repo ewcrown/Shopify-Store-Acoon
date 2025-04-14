@@ -1,17 +1,10 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
       "type": "main-page",
       "settings": {
+        "sub_heading": "FAQs",
+        "ar_sub_heading": "الأسئلة الشائعة",
         "padding_top": 28,
         "padding_bottom": 0
       }
@@ -24,8 +17,12 @@
           "settings": {
             "heading": "What is your return and exchange policy?",
             "icon": "none",
-            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.</p>",
-            "page": ""
+            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.<\/p>",
+            "page": "",
+            "ar_heading": "ما هي سياسة الإرجاع والاستبدال الخاصة بكم؟",
+            "ar_icon": "none",
+            "ar_row_content": "<p>نحن نقبل المرتجعات والاستبدالات خلال 30 يومًا من تاريخ الشراء. يجب أن تكون العناصر غير ملبوسة وغير مغسولة وفي عبواتها الأصلية. يرجى زيارة صفحة المرتجعات لدينا لمزيد من التفاصيل.<\/p>",
+            "ar_page": ""
           }
         },
         "collapsible_row_UqaDPN": {
@@ -33,8 +30,12 @@
           "settings": {
             "heading": "How long will it take to receive my order?",
             "icon": "none",
-            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.</p>",
-            "page": ""
+            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.<\/p>",
+            "page": "",
+            "ar_heading": "كم من الوقت سيستغرق استلام طلبي؟",
+            "ar_icon": "none",
+            "ar_row_content": "<p>نحن نقبل المرتجعات والاستبدالات خلال 30 يومًا من تاريخ الشراء. يجب أن تكون العناصر غير ملبوسة وغير مغسولة وفي عبواتها الأصلية. يرجى زيارة صفحة المرتجعات لدينا لمزيد من التفاصيل.<\/p>",
+            "ar_page": ""
           }
         },
         "collapsible_row_TMBVhr": {
@@ -42,8 +43,12 @@
           "settings": {
             "heading": "Do you offer international shipping?",
             "icon": "none",
-            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.</p>",
-            "page": ""
+            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.<\/p>",
+            "page": "",
+            "ar_heading": "هل تقدمون الشحن الدولي؟",
+            "ar_icon": "none",
+            "ar_row_content": "<p>نحن نقبل المرتجعات والاستبدالات خلال 30 يومًا من تاريخ الشراء. يجب أن تكون العناصر غير ملبوسة وغير مغسولة وفي عبواتها الأصلية. يرجى زيارة صفحة المرتجعات لدينا لمزيد من التفاصيل.<\/p>",
+            "ar_page": ""
           }
         },
         "collapsible_row_NGGGjX": {
@@ -51,8 +56,12 @@
           "settings": {
             "heading": "What sizes are available, and how can I find my size?",
             "icon": "none",
-            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.</p>",
-            "page": ""
+            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.<\/p>",
+            "page": "",
+            "ar_heading": "ما هي المقاسات المتوفرة وكيف يمكنني العثور على مقاسي؟",
+            "ar_icon": "none",
+            "ar_row_content": "<p>نحن نقبل المرتجعات والاستبدالات خلال 30 يومًا من تاريخ الشراء. يجب أن تكون العناصر غير ملبوسة وغير مغسولة وفي عبواتها الأصلية. يرجى زيارة صفحة المرتجعات لدينا لمزيد من التفاصيل.<\/p>",
+            "ar_page": ""
           }
         },
         "collapsible_row_Y7FNzV": {
@@ -60,8 +69,12 @@
           "settings": {
             "heading": "How can I track my order?",
             "icon": "none",
-            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.</p>",
-            "page": ""
+            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.<\/p>",
+            "page": "",
+            "ar_heading": "كيف يمكنني تتبع طلبي؟",
+            "ar_icon": "none",
+            "ar_row_content": "<p>نحن نقبل المرتجعات والاستبدالات خلال 30 يومًا من تاريخ الشراء. يجب أن تكون العناصر غير ملبوسة وغير مغسولة وفي عبواتها الأصلية. يرجى زيارة صفحة المرتجعات لدينا لمزيد من التفاصيل.<\/p>",
+            "ar_page": ""
           }
         },
         "collapsible_row_iT88T7": {
@@ -69,8 +82,12 @@
           "settings": {
             "heading": "What payment methods do you accept?",
             "icon": "none",
-            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.</p>",
-            "page": ""
+            "row_content": "<p>We accept returns and exchanges within 30 days of purchase. Items must be unworn, unwashed, and in original packaging. Please visit our Returns page for more details.<\/p>",
+            "page": "",
+            "ar_heading": "ما هي طرق الدفع التي تقبلونها؟",
+            "ar_icon": "none",
+            "ar_row_content": "<p>نحن نقبل المرتجعات والاستبدالات خلال 30 يومًا من تاريخ الشراء. يجب أن تكون العناصر غير ملبوسة وغير مغسولة وفي عبواتها الأصلية. يرجى زيارة صفحة المرتجعات لدينا لمزيد من التفاصيل.<\/p>",
+            "ar_page": ""
           }
         }
       },

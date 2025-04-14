@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -20,7 +11,14 @@
     },
     "ew_contact_form_8bkMXy": {
       "type": "ew-contact-form",
-      "settings": {}
+      "settings": {
+        "subheading": "Contact",
+        "heading": "Get in Touch",
+        "description": "Please tell us more about your inquiry using the form below and click to submit your information.",
+        "ar_subheading": "اتصل",
+        "ar_heading": "ابقى على تواصل",
+        "ar_description": "يرجى إخبارنا بمزيد من التفاصيل حول استفسارك باستخدام النموذج أدناه ثم الضغط للإرسال."
+      }
     },
     "ew_info_blocks_cnjbpe": {
       "type": "ew-info-blocks",
@@ -30,10 +28,10 @@
           "settings": {
             "heading": "Email Address",
             "email_phone": "help@info.com",
-            "details": "<p>Assistance hours: </p><p>Monday - Friday 6 am to 8 pm EST</p>",
-            "heading_ar": "Email Address",
+            "details": "<p>Assistance hours: <\/p><p>Monday - Friday 6 am to 8 pm EST<\/p>",
+            "heading_ar": "عنوان البريد الإلكتروني",
             "email_phone_ar": "help@info.com",
-            "details_ar": "<p>Assistance hours: </p><p>Monday - Friday 6 am to 8 pm EST</p>"
+            "details_ar": "<p>ساعات المساعدة: <\/p><p>الاثنين - الجمعة من 6 صباحًا حتى 8 مساءً بالتوقيت الشرقي<\/p>"
           }
         },
         "block_nUVAAK": {
@@ -41,10 +39,10 @@
           "settings": {
             "heading": "Number",
             "email_phone": "(808) 998-34256",
-            "details": "<p>Assistance hours: </p><p>Monday - Friday 6 am to 8 pm EST</p>",
-            "heading_ar": "Email Address",
+            "details": "<p>Assistance hours: <\/p><p>Monday - Friday 6 am to 8 pm EST<\/p>",
+            "heading_ar": "رقم",
             "email_phone_ar": "help@info.com",
-            "details_ar": "<p>Assistance hours: </p><p>Monday - Friday 6 am to 8 pm EST</p>"
+            "details_ar": "<p>ساعات المساعدة: <\/p><p>الاثنين - الجمعة من 6 صباحًا حتى 8 مساءً بالتوقيت الشرقي<br\/><\/p>"
           }
         },
         "block_UhFyG4": {
@@ -52,10 +50,10 @@
           "settings": {
             "heading": "Address",
             "email_phone": "(808) 998-34256",
-            "details": "<p>Assistance hours: </p><p>Monday - Friday 6 am to 8 pm EST</p>",
-            "heading_ar": "Email Address",
+            "details": "<p>Assistance hours: <\/p><p>Monday - Friday 6 am to 8 pm EST<\/p>",
+            "heading_ar": "عنوان",
             "email_phone_ar": "help@info.com",
-            "details_ar": "<p>Assistance hours: </p><p>Monday - Friday 6 am to 8 pm EST</p>"
+            "details_ar": "<p>ساعات المساعدة: <\/p><p>الاثنين - الجمعة من 6 صباحًا حتى 8 مساءً بالتوقيت الشرقي<\/p>"
           }
         }
       },

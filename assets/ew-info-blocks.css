@@ -37,6 +37,12 @@
   background: #000;
 }
 
+
+#ew-arabic-content .ew-contact-inner-block h3::before {
+  left: auto;
+  right: 0;
+}
+
 .ew-contact-inner-block a {
   color: #000;
   font-family: "Abhaya Libre";
@@ -67,9 +73,11 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
+
   .ew-contact-inner-block {
     padding: 30px;
   }
+
   .ew-contact-blocks-row {
     margin-bottom: 40px;
   }
