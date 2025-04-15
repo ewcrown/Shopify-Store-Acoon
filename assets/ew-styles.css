@@ -818,6 +818,7 @@ li::marker {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 15px;
 }
 
 #CartDrawer .product-option {
@@ -845,4 +846,65 @@ li::marker {
 
 #ew-arabic-content .facet-filters__field .select__select {
   text-align: left;
+}
+
+.drawer__heading {
+  margin: 60px 0;
+}
+
+.drawer__heading span {
+  margin-left: 28px;
+  color: #FFF;
+  font-family: "Abhaya Libre";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cart-drawer .cart-item {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 0.519px solid #CACACA;
+}
+
+.cart-drawer .cart-items td {
+  padding-top: 0;
+}
+
+.cart-drawer .cart-item__price-wrapper {
+  color: #FFF;
+  text-align: right;
+  font-family: "Abhaya Libre";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cart-item__quantity-wrapper {
+  justify-content: space-between;
+}
+
+cart-remove-button .svg-wrapper {
+  width: auto;
+  color: #969696;
+  font-family: "Abhaya Libre";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  height: auto;
+  gap: 4px;
+}
+
+cart-remove-button .svg-wrapper>svg {
+  height: 20px;
+  width: 20px;
+}
+
+cart-remove-button .button {
+  min-height: auto;
+  min-width: auto;
 }

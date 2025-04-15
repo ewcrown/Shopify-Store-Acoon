@@ -62,7 +62,10 @@
         </div>
       {%- endif -%}
       <div class="drawer__header">
-        <h2 class="drawer__heading">{{ 'sections.cart.title' | t }}</h2>
+        <h2 class="drawer__heading">
+          Shopping Bag
+          <span>({{ cart.item_count }} items)</span>
+        </h2>
         <button
           class="drawer__close"
           type="button"
@@ -143,27 +146,6 @@
                             {{- item.product.title | escape -}}
                           </a>
 
-                          {%- if item.original_price != item.final_price -%}
-                            <div class="cart-item__discounted-prices">
-                              <span class="visually-hidden">
-                                {{ 'products.product.price.regular_price' | t }}
-                              </span>
-                              <s class="cart-item__old-price product-option">
-                                {{- item.original_price | money -}}
-                              </s>
-                              <span class="visually-hidden">
-                                {{ 'products.product.price.sale_price' | t }}
-                              </span>
-                              <strong class="cart-item__final-price product-option">
-                                {{ item.final_price | money }}
-                              </strong>
-                            </div>
-                          {%- else -%}
-                            <div class="product-option">
-                              {{ item.original_price | money }}
-                            </div>
-                          {%- endif -%}
-
                           {%- if item.product.has_only_default_variant == false
                             or item.properties.size != 0
                             or item.selling_plan_allocation != null
@@ -171,7 +153,7 @@
                             <dl>
                               {%- if item.product.has_only_default_variant == false -%}
                                 {%- for option in item.options_with_values -%}
-                                  <div class="product-option">
+                                  <div class="hello product-option">
                                     <dt>{{ option.name }}:</dt>
                                     <dd>
                                       {{ option.value -}}
@@ -184,7 +166,7 @@
                               {%- for property in item.properties -%}
                                 {%- assign property_first_char = property.first | slice: 0 -%}
                                 {%- if property.last != blank and property_first_char != '_' -%}
-                                  <div class="product-option">
+                                  <div class="hello2 product-option">
                                     <dt>{{ property.first }}:</dt>
                                     <dd>
                                       {%- if property.last contains '/uploads/' -%}
@@ -338,7 +320,20 @@
                                   data-variant-id="{{ item.variant.id }}"
                                 >
                                   <span class="svg-wrapper">
-                                    {{- 'icon-remove.svg' | inline_asset_content -}}
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                                      <g clip-path="url(#clip0_146_704)">
+                                        <path d="M6.71209 4.03119C6.57776 4.03119 6.46889 4.14006 6.46889 4.27439V8.87086C6.46889 9.00509 6.57776 9.11406 6.71209 9.11406C6.84642 9.11406 6.95529 9.00509 6.95529 8.87086V4.27439C6.95529 4.14006 6.84642 4.03119 6.71209 4.03119Z" fill="#969696"/>
+                                        <path d="M3.84162 4.03143C3.70729 4.03143 3.59842 4.1403 3.59842 4.27463V8.8711C3.59842 9.00534 3.70729 9.1143 3.84162 9.1143C3.97595 9.1143 4.08482 9.00534 4.08482 8.8711V4.27463C4.08482 4.1403 3.97595 4.03143 3.84162 4.03143Z" fill="#969696"/>
+                                        <path d="M1.75042 3.36058V9.35248C1.75042 9.70664 1.88028 10.0392 2.10714 10.2779C2.33295 10.5172 2.64721 10.653 2.9761 10.6536H7.57749C7.90648 10.653 8.22074 10.5172 8.44646 10.2779C8.67331 10.0392 8.80318 9.70664 8.80318 9.35248V3.36058C9.25414 3.24088 9.54636 2.80521 9.48603 2.34247C9.42561 1.87982 9.03146 1.53374 8.56482 1.53365H7.31967V1.22965C7.32109 0.974005 7.22001 0.728526 7.03904 0.547932C6.85806 0.367433 6.6122 0.266924 6.35656 0.269014H4.19703C3.94139 0.266924 3.69553 0.367433 3.51456 0.547932C3.33358 0.728526 3.2325 0.974005 3.23393 1.22965V1.53365H1.98877C1.52213 1.53374 1.12798 1.87982 1.06756 2.34247C1.00724 2.80521 1.29945 3.24088 1.75042 3.36058ZM7.57749 10.1672H2.9761C2.56029 10.1672 2.23681 9.81 2.23681 9.35248V3.38196H8.31678V9.35248C8.31678 9.81 7.99331 10.1672 7.57749 10.1672ZM3.72033 1.22965C3.71871 1.10301 3.76849 0.98113 3.85836 0.891735C3.94813 0.802341 4.0703 0.753226 4.19703 0.755411H6.35656C6.48329 0.753226 6.60546 0.802341 6.69523 0.891735C6.7851 0.981035 6.83488 1.10301 6.83327 1.22965V1.53365H3.72033V1.22965ZM1.98877 2.02004H8.56482C8.8066 2.02004 9.00258 2.21603 9.00258 2.4578C9.00258 2.69958 8.8066 2.89556 8.56482 2.89556H1.98877C1.747 2.89556 1.55101 2.69958 1.55101 2.4578C1.55101 2.21603 1.747 2.02004 1.98877 2.02004Z" fill="#969696"/>
+                                        <path d="M5.27711 4.03119C5.14278 4.03119 5.03391 4.14006 5.03391 4.27439V8.87086C5.03391 9.00509 5.14278 9.11406 5.27711 9.11406C5.41144 9.11406 5.5203 9.00509 5.5203 8.87086V4.27439C5.5203 4.14006 5.41144 4.03119 5.27711 4.03119Z" fill="#969696"/>
+                                      </g>
+                                      <defs>
+                                        <clipPath id="clip0_146_704">
+                                          <rect width="10.3846" height="10.3846" fill="white" transform="translate(0.0865326 0.269226)"/>
+                                        </clipPath>
+                                      </defs>
+                                    </svg>
+                                    Remove Item
                                   </span>
                                 </button>
                               </cart-remove-button>
