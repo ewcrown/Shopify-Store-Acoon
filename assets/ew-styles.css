@@ -908,3 +908,66 @@ cart-remove-button .button {
   min-height: auto;
   min-width: auto;
 }
+
+#CartDrawer .product-option dt {
+  color: #969696;
+  font-family: "Abhaya Libre";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.ew-product-option-color {
+  display: block !important;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  margin-top: 6px;
+  border-radius: 50%;
+}
+
+.product-option-wrap {
+  margin-bottom: 15px;
+}
+
+.product-form__input-color input:checked+label {
+  border: 4px solid #000 !important;
+}
+
+.ew-cart-item-quantity-inner-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.ew-qty-title,
+.ew-cart-item-label h4 {
+  color: #969696;
+  font-family: "Abhaya Libre";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 12px;
+}
+
+.ew-cart-item-inps {
+  border: 0.832px solid #FFF;
+  width: 40px;
+  color: #FFF;
+  font-family: "Abhaya Libre";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 9px;
+  text-align: center;
+}
+
+.quantity-popover-container {
+  flex-direction: column;
+  align-items: flex-start !important;
+}
+
+.quantity {
+  min-height: 37px !important;
+}
