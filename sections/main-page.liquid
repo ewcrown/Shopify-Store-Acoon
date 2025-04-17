@@ -17,6 +17,22 @@
 <div class="page-width section-{{ section.id }}-padding">
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
   
+    {% if section.settings.symbol != blank %}
+      <div class="main-page-symbol">
+    <img 
+      class="ew-img-fluid"
+      src="{{ section.settings.symbol | image_url: width: 250 }}" 
+      loading="lazy" 
+      srcset="
+        {{ section.settings.symbol | image_url: width: 620 }} 620w,
+        {{ section.settings.symbol | image_url: width: 800 }} 800w,
+        {{ section.settings.symbol | image_url: width: 1100 }} 1100w,
+        {{ section.settings.symbol | image_url: width: 1280 }} 1280w"
+      sizes="(max-width: 600px) 600px, 100vw"
+      alt="{{ page.title }}">
+    </div>
+    {% endif %}
+
     {% capture eng_content %}
       {% if section.settings.sub_heading != blank %}
         <span class="main-page-title-subtitle">{{ section.settings.sub_heading }}</span>
@@ -34,7 +50,9 @@
       arabic_text: ar_content
     %}
 
-    {{ page.title | escape }}
+    {% if section.settings.show_page_title %}
+      {{ page.title | escape }}
+    {% endif %}
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
@@ -52,6 +70,17 @@
       "content": "t:sections.all.padding.section_padding_heading"
     },
     {
+      "type": "image_picker",
+      "id": "symbol",
+      "label": "Symbol Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_page_title",
+      "label": "Show Page Title",
+      "default": true
+    },
+    {
       "type": "text",
       "id": "sub_heading",
       "label": "Subtitle"
@@ -59,7 +88,7 @@
     {
       "type": "text",
       "id": "ar_sub_heading",
-      "label": "Subtitle"
+      "label": "AR Subtitle"
     },
     {
       "type": "range",

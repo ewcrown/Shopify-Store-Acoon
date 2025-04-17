@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -29,19 +38,19 @@
         "footer_shop_L7FkDi": {
           "type": "footer_shop",
           "settings": {
-            "shop_img": "shopify:\/\/shop_images\/image_2.png"
+            "shop_img": "shopify://shop_images/image_2.png"
           }
         },
         "footer_shop_c6aW4L": {
           "type": "footer_shop",
           "settings": {
-            "shop_img": "shopify:\/\/shop_images\/Layer_1_2.png"
+            "shop_img": "shopify://shop_images/Layer_1_2.png"
           }
         },
         "footer_shop_tEJCqW": {
           "type": "footer_shop",
           "settings": {
-            "shop_img": "shopify:\/\/shop_images\/Layer_1_2.png"
+            "shop_img": "shopify://shop_images/Layer_1_2.png"
           }
         }
       },
@@ -54,9 +63,10 @@
         "footer_shop_tEJCqW"
       ],
       "settings": {
-        "logo": "shopify:\/\/shop_images\/Layer_1_99adb27a-632b-4a95-a8f0-fff8b2249340.png",
+        "logo": "shopify://shop_images/ACOON_Logotype-black_2.png",
         "shop_ttl": "Shop Acoon at",
-        "copyright_txt": "<p>© 2020 Accon. All rights reserved. <a href=\"\/pages\/contact\" title=\"Contact\">Privacy Policy<\/a> <a href=\"\/products\/black-leather-bag\" title=\"Black Leather Bag\">Terms & Conditions<\/a>  <a href=\"\/pages\/contact\" title=\"Contact\">Shipping<\/a><\/p>"
+        "copyright_txt": "<p>© 2020 Accon. All rights reserved. <a href=\"/pages/contact\" title=\"Contact\">Privacy Policy</a> <a href=\"/products/black-leather-bag\" title=\"Black Leather Bag\">Terms & Conditions</a>  <a href=\"/pages/contact\" title=\"Contact\">Shipping</a></p>",
+        "ar_copyright_txt": "<p>Acoon by Beige The Label © 2024 – All Rights Reserved </p>"
       }
     },
     "footer": {
@@ -87,7 +97,7 @@
           "type": "text",
           "settings": {
             "heading": "Heading",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
           }
         },
         "brand_information_qR7ADp": {

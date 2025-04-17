@@ -971,3 +971,8 @@ cart-remove-button .button {
 .quantity {
   min-height: 37px !important;
 }
+
+.main-page-symbol img{
+  max-width: 150px;
+  margin: auto;
+}
