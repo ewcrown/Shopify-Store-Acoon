@@ -18,6 +18,16 @@
     ]
   },
   {
+    "name": "Drawer Menu",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "drawer_menu",
+        "label": "Drawer Menu"
+      }
+    ]
+  },
+  {
     "name": "Splash Screen",
     "settings": [
       {

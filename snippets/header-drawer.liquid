@@ -135,9 +135,9 @@
               {%- endfor -%}
             </ul>
             
-            {% if section.settings.drawer_menu != blank %}
+            {% if settings.drawer_menu != blank %}
             <div class="accon-drawer-menu-footer">
-              {%- for link in section.settings.drawer_menu.links -%}
+              {%- for link in settings.drawer_menu.links -%}
                 <span class="menu-drawer__menu-item accon-menu-drawer__menu-item"> <a href="{{ link.url }}"> {{ link.title }} </a> </span>
               {%- endfor -%}
             </div>

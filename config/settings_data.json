@@ -10,6 +10,7 @@
 {
   "current": {
     "color_swatches": "--black: #000000;\n--red: #ff0000;\n--blue: #0000FF;\n--green: #008000;\n--pink: #FFC0CB;\n--white: #FFFFFF;\n--purple: #A020F0;\n--silver:#c0c0c0;\n--grey:#808080;\n--gold:#FFD700;\n--yellow: #FFFF00;",
+    "drawer_menu": "drawer-manu",
     "splash_image": "shopify://shop_images/Group_1606.png",
     "heading": "ACOON Winter Holiday",
     "button_link": "#",
