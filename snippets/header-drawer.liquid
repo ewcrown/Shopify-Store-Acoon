@@ -134,11 +134,15 @@
                 </li>
               {%- endfor -%}
             </ul>
+            
+            {% if section.settings.drawer_menu != blank %}
             <div class="accon-drawer-menu-footer">
-              <span class="menu-drawer__menu-item accon-menu-drawer__menu-item"> <a href="#"> Size Guide </a> </span>
-              <span class="menu-drawer__menu-item accon-menu-drawer__menu-item"> <a href="#"> Brand Story </a> </span>
-              <span class="menu-drawer__menu-item accon-menu-drawer__menu-item"> <a href="#"> Contact us </a> </span>
+              {%- for link in section.settings.drawer_menu.links -%}
+                <span class="menu-drawer__menu-item accon-menu-drawer__menu-item"> <a href="{{ link.url }}"> {{ link.title }} </a> </span>
+              {%- endfor -%}
             </div>
+            {% endif %}
+            
           </nav>
 
           <div class="menu-drawer__utility-links">
