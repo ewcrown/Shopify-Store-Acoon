@@ -58,6 +58,7 @@
         "single_colleciton_et9UCG": {
           "type": "single_colleciton",
           "settings": {
+            "image": "shopify://shop_images/2024.12.04_Akoon341776_1.png",
             "collection": "collections",
             "ar_image": "shopify://shop_images/2024.12.04_Akoon341396_1.png",
             "ar_collection": "outfits"
@@ -66,6 +67,7 @@
         "single_colleciton_a3nYaj": {
           "type": "single_colleciton",
           "settings": {
+            "image": "shopify://shop_images/2024.12.04_Akoon341486_1.png",
             "collection": "the-collar",
             "ar_image": "shopify://shop_images/2024.12.04_Akoon341486_1.png",
             "ar_collection": "collections"
@@ -74,6 +76,7 @@
         "single_colleciton_qTbkT9": {
           "type": "single_colleciton",
           "settings": {
+            "image": "shopify://shop_images/2024.12.04_Akoon341396_1.png",
             "collection": "outfits",
             "ar_image": "shopify://shop_images/2024.12.04_Akoon341776_1.png",
             "ar_collection": "collections"
