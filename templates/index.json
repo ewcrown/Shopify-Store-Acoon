@@ -14,10 +14,8 @@
       "settings": {
         "heading": "Your Presence is Captivating",
         "content_alignment": "center",
-        "image": "shopify://shop_images/image.png",
-        "mobile_image": "shopify://shop_images/red-plaid-shirt_925x_828e23c1-f21c-4904-9109-ea1ecfc62771.jpg",
-        "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
-        "mobile_video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+        "image": "shopify://shop_images/top-banner_1.png",
+        "video": "shopify://files/videos/ACOON_FINAL_1920x1080.mp4",
         "button_link": "#",
         "button_text": "Discover",
         "ar_heading": "ضوءك الداخلي يتألق",
