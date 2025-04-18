@@ -82,6 +82,7 @@
         "single_colleciton_6YVjFf": {
           "type": "single_colleciton",
           "settings": {
+            "image": "shopify://shop_images/2024.12.04_Akoon341296_1.png",
             "collection": "sueded-stretch",
             "ar_image": "shopify://shop_images/2024.12.04_Akoon341034_1.png",
             "ar_collection": "sueded-stretch"
@@ -90,6 +91,7 @@
         "single_colleciton_eRGmjM": {
           "type": "single_colleciton",
           "settings": {
+            "image": "shopify://shop_images/2024.12.04_Akoon341034_1.png",
             "collection": "sweat-tees",
             "ar_image": "shopify://shop_images/2024.12.04_Akoon341296_1.png",
             "ar_collection": "the-collar"
