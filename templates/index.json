@@ -138,13 +138,11 @@
           "type": "video_slider",
           "settings": {
             "title": "Jewellery",
-            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
-            "mobile_video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+            "image": "shopify://shop_images/2024.12.04_Akoon342892.jpg",
             "button_link": "#",
             "button_text": "Discover",
             "ar_title": "الإيقاع اليومي",
-            "ar_video": "shopify://files/videos/a7195a12c03c3b11a8ae6eb2ceba7cc356849146.mp4",
-            "ar_mobile_video": "shopify://files/videos/a7195a12c03c3b11a8ae6eb2ceba7cc356849146.mp4",
+            "ar_image": "shopify://shop_images/2024.12.04_Akoon342892.jpg",
             "ar_button_link": "#",
             "ar_button_text": "تسوقي الآن"
           }
