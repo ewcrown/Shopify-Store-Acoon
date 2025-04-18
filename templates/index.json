@@ -42,8 +42,7 @@
       "settings": {
         "heading": "ACOON Winter Holiday",
         "content_alignment": "left",
-        "image": "shopify://shop_images/image.png",
-        "mobile_image": "shopify://shop_images/red-plaid-shirt_925x_828e23c1-f21c-4904-9109-ea1ecfc62771.jpg",
+        "image": "shopify://shop_images/acoon_banner_2.png",
         "button_link": "#",
         "button_text": "Discover",
         "ar_heading": "تفاصيل تعكس ذوقكِ الرفيع",
@@ -113,13 +112,11 @@
           "type": "video_slider",
           "settings": {
             "title": "For him",
-            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
-            "mobile_video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+            "image": "shopify://shop_images/2024.12.04_Akoon341564.jpg",
             "button_link": "#",
             "button_text": "Discover",
             "ar_title": "إطلالات مميزة",
-            "ar_image": "shopify://shop_images/image_1.png",
-            "ar_mobile_image": "shopify://shop_images/image_1.png",
+            "ar_image": "shopify://shop_images/2024.12.04_Akoon341564.jpg",
             "ar_button_link": "#",
             "ar_button_text": "تسوقي الآن"
           }
@@ -128,13 +125,11 @@
           "type": "video_slider",
           "settings": {
             "title": "For her",
-            "video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
-            "mobile_video": "shopify://files/videos/cafae12fffda29e71029a92136dede0e245448c6.mp4",
+            "image": "shopify://shop_images/2024.12.04_Akoon342282.jpg",
             "button_link": "#",
             "button_text": "Discover",
             "ar_title": "لحظات متألقة",
-            "ar_image": "shopify://shop_images/3c1bcacd4d6745f330d3e9ee5b4d16e3.png",
-            "ar_mobile_image": "shopify://shop_images/3c1bcacd4d6745f330d3e9ee5b4d16e3.png",
+            "ar_image": "shopify://shop_images/2024.12.04_Akoon342282.jpg",
             "ar_button_link": "#",
             "ar_button_text": "تسوقي الآن"
           }
