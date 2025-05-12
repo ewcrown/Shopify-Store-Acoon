@@ -116,7 +116,7 @@
           "settings": {
             "title": "Signature Looks",
             "image": "shopify://shop_images/2024.12.04_Akoon341564.jpg",
-            "button_link": "#",
+            "button_link": "shopify://collections/signature-looks",
             "button_text": "Discover",
             "ar_title": "إطلالات مميزة",
             "ar_image": "shopify://shop_images/2024.12.04_Akoon341564.jpg",
@@ -129,7 +129,7 @@
           "settings": {
             "title": "Daily Rhythm",
             "image": "shopify://shop_images/2024.12.04_Akoon342282.jpg",
-            "button_link": "#",
+            "button_link": "shopify://collections/daily-rhythm",
             "button_text": "Discover",
             "ar_title": "لحظات متألقة",
             "ar_image": "shopify://shop_images/2024.12.04_Akoon342282.jpg",
@@ -140,9 +140,9 @@
         "video_slider_4kJCgm": {
           "type": "video_slider",
           "settings": {
-            "title": "Daily Rhythm",
+            "title": "Radiant Moments",
             "image": "shopify://shop_images/2024.12.04_Akoon342892.jpg",
-            "button_link": "#",
+            "button_link": "shopify://collections/radiant-moments",
             "button_text": "Discover",
             "ar_title": "الإيقاع اليومي",
             "ar_image": "shopify://shop_images/2024.12.04_Akoon342892.jpg",
