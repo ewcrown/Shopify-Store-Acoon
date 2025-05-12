@@ -5,10 +5,7 @@
     <div class="ew-splash-content">
       {% if settings.video_url != blank %}
         <div class="ew-splash-video">
-          <video class="ew-video-fluid" autoplay muted loop playsinline>
-            <source src="{{ settings.video_url }}" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+          {{  if settings.video_ur | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: 1920 }}
         </div>
       {% elsif settings.splash_image != blank %}
         <picture>
