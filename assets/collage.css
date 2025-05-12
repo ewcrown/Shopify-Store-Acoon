@@ -103,7 +103,7 @@
   }
   .collage__item--equal {
     grid-column: span 1;
-    grid-row: span 1;
+    grid-row: auto;
   }
   .collage__item--collection:only-child,
   .collage__item--product:only-child {
