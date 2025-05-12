@@ -35,7 +35,7 @@
         "content": "ENG CONTENT"
       },
       {
-        "type": "text",
+        "type": "video",
         "id": "video_url",
         "label": "Splash Video URL (MP4 format)"
       },
