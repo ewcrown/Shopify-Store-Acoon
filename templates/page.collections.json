@@ -20,20 +20,19 @@
         "padding_bottom": 28
       }
     },
-    "video_ppyMJn": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
+    "ew_hero_section_VbfXy9": {
+      "type": "ew-hero-section",
+      "name": "<> Banner Text",
       "settings": {
         "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": true,
+        "content_alignment": "center",
         "video": "shopify://files/videos/ACOON_FINAL_1920x1080.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 0
+        "button_link": "",
+        "button_text": "Discover",
+        "ar_heading": "Your Presence is Captivating",
+        "ar_content_alignment": "center",
+        "ar_button_link": "",
+        "ar_button_text": "Discover"
       }
     },
     "collage_RtFGqF": {
@@ -41,11 +40,15 @@
       "blocks": {
         "image_A6dPmh": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/2024.12.04_Akoon341021.jpg"
+          }
         },
         "image_ML3X4e": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/2024.12.04_Akoon340939.jpg"
+          }
         }
       },
       "block_order": [
@@ -67,7 +70,7 @@
   },
   "order": [
     "main",
-    "video_ppyMJn",
+    "ew_hero_section_VbfXy9",
     "collage_RtFGqF"
   ]
 }
