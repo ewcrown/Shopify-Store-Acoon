@@ -1,9 +1,16 @@
 {{ 'ew-splash-screen.css' | asset_url | stylesheet_tag }}
 
 <div id="ew-splash-intro">
-  {% capture eng_content %}
+  {% capture splash_content %}
     <div class="ew-splash-content">
-      {% if settings.splash_image != blank %}
+      {% if settings.video_url != blank %}
+        <div class="ew-splash-video">
+          <video class="ew-video-fluid" autoplay muted loop playsinline>
+            <source src="{{ settings.video_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      {% elsif settings.splash_image != blank %}
         <picture>
           {% if settings.splash_image_mob != blank %}
             <source media="(max-width: 600px)" srcset="{{ settings.splash_image_mob | image_url: width: 1920 }}">
@@ -33,40 +40,8 @@
     </div>
   {% endcapture %}
 
-  {% capture ar_content %}
-    <div class="ew-splash-content">
-      {% if settings.ar_splash_image != blank %}
-        <picture>
-          {% if settings.ar_splash_image_mob != blank %}
-            <source media="(max-width: 600px)" srcset="{{ settings.ar_splash_image_mob | image_url: width: 1920 }}">
-          {% endif %}
-          <img 
-            class="ew-img-fluid"
-            src="{{ settings.ar_splash_image | image_url: width: 1280 }}" 
-            loading="lazy" 
-            srcset="
-              {{ settings.ar_splash_image | image_url: width: 620 }} 620w,
-              {{ settings.ar_splash_image | image_url: width: 800 }} 800w,
-              {{ settings.ar_splash_image | image_url: width: 1100 }} 1100w,
-              {{ settings.ar_splash_image | image_url: width: 1280 }} 1280w"
-            sizes="(max-width: 600px) 600px, 100vw"
-            alt="{{ settings.ar_heading | escape }}">
-        </picture>
-      {% endif %}
-
-      <div class="ew-splash-content-inner">
-        <h3>{{ settings.ar_heading }}</h3>
-        <div class="ew-btn ew-text-center">
-          {% if settings.ar_button_link != blank %}
-            <a class="ew-btn-primary" href="{{ settings.ar_button_link }}">{{ settings.ar_button_text }}</a>
-          {% endif %}
-        </div>
-      </div>
-    </div>
-  {% endcapture %}
-
   {% render 'ew-text-lang',
-    arabic_text: ar_content,
-    english_text: eng_content
+    arabic_text: splash_content,
+    english_text: splash_content
   %}
 </div>
