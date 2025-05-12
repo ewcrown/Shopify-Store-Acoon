@@ -5,7 +5,7 @@
     <div class="ew-splash-content">
       {% if settings.video_url != blank %}
         <div class="ew-splash-video">
-          {{  if settings.video_ur | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: 1920 }}
+          {{  if settings.video_url | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: 1920 }}
         </div>
       {% elsif settings.splash_image != blank %}
         <picture>
