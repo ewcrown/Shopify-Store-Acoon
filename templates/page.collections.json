@@ -34,10 +34,39 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collage_RtFGqF": {
+      "type": "collage",
+      "blocks": {
+        "image_A6dPmh": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_ML3X4e": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_A6dPmh",
+        "image_ML3X4e"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h1",
+        "desktop_layout": "right",
+        "mobile_layout": "column",
+        "card_styles": "none",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "video_ppyMJn"
+    "video_ppyMJn",
+    "collage_RtFGqF"
   ]
 }
