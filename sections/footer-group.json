@@ -65,8 +65,8 @@
       "settings": {
         "logo": "shopify://shop_images/ACOON_Logotype-black_2.png",
         "shop_ttl": "Shop Acoon at",
-        "copyright_txt": "<p>© 2020 Accon. All rights reserved. <a href=\"/pages/contact\" title=\"Contact\">Privacy Policy</a> <a href=\"/products/black-leather-bag\" title=\"Black Leather Bag\">Terms & Conditions</a>  <a href=\"/pages/contact\" title=\"Contact\">Shipping</a></p>",
-        "ar_copyright_txt": "<p>Acoon by Beige The Label © 2024 – All Rights Reserved </p>"
+        "copyright_txt": "<p>© 2020 Accon. All rights reserved. Privacy Policy Terms & Conditions  Shipping</p>",
+        "ar_copyright_txt": "<p>Acoon by Beige The Label © 2025 – All Rights Reserved </p>"
       }
     },
     "footer": {
