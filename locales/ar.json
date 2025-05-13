@@ -10,5 +10,9 @@
 {
   "newsletter": {
     "button_label": "اشتركي"
+  },
+  "localization": {
+    "country_label": "البلد/المنطقة",
+    "language_label": "لغة"
   }
 }
