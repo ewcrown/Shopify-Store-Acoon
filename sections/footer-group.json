@@ -25,14 +25,14 @@
           "type": "link_list",
           "settings": {
             "heading": "ACOON",
-            "menu": "footer"
+            "menu": "acoon"
           }
         },
         "link_list_BThLxt": {
           "type": "link_list",
           "settings": {
             "heading": "Acoon Magazine",
-            "menu": "footer"
+            "menu": "acoon-magazine"
           }
         },
         "footer_shop_L7FkDi": {
