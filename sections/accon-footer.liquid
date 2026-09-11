@@ -106,10 +106,7 @@
             <div class="accon-footer-bottom-left ">
               <div class="accon-footer-bottom-col">
                 <span class="accon-footer-bottom-copyright">
-                  {% render 'ew-text-lang',
-                    arabic_text: section.settings.ar_copyright_txt.
-                    english_text: section.settings.copyright_txt
-                  %}
+                  {% render 'ew-text-lang', arabic_text: section.settings.ar_copyright_txt, english_text: section.settings.copyright_txt %}
                 </span>
               </div>
             </div>
@@ -217,3 +214,18 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {% render 'ew-text-lang',
+                        arabic_text: section.settings.ar_copyright_txt.
+                        english_text: section.settings.copyright_txt
+                      %}
+  to: "{% render 'ew-text-lang', arabic_text: section.settings.ar_copyright_txt, english_text:
+    section.settings.copyright_txt %}"
+  position: 4918..5039
+{% endcomment %}

@@ -66,10 +66,7 @@
               <div class="facet-filters__field">
                 <h2 class="facet-filters__label caption-large text-body">
                   <label for="SortBy">
-                  {% render 'ew-text-lang',
-                    arabic_text: "فرز حسب".
-                    english_text: "Sort By"
-                  %}    
+                  {% render 'ew-text-lang', arabic_text: "فرز حسب", english_text: "Sort By" %}    
                   </label>
                 </h2>
                 <div class="select">
@@ -409,3 +406,18 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {% render 'ew-text-lang',
+                        arabic_text: "فرز حسب".
+                        english_text: "Sort By"
+                      %}
+  to: '{% render ''ew-text-lang'', arabic_text: "فرز حسب", english_text: "Sort By"
+    %}'
+  position: 3149..3225
+{% endcomment %}

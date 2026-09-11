@@ -83,16 +83,10 @@
           <div class="ew-main-product-details">
             <div class="ew-main-product-title-wrap">
               <h6>
-                {% render 'ew-text-lang',
-                  arabic_text: "عن الملابس الحديثة".
-                  english_text: "About the Modern clothes"
-                %}   
+                {% render 'ew-text-lang', arabic_text: "عن الملابس الحديثة", english_text: "About the Modern clothes" %}   
               </h6>
               <p>
-                {% render 'ew-text-lang',
-                  arabic_text: "مصنوع من القطن الناعم المسامي مع لمسة من التمدد، هذا الفستان هو إصدار محدود لهذا الموسم.".
-                  english_text: "Made from soft, breathable cotton with a hint of stretch, this dress is a limited-edition style for the season."
-                %}     
+                {% render 'ew-text-lang', arabic_text: "مصنوع من القطن الناعم المسامي مع لمسة من التمدد، هذا الفستان هو إصدار محدود لهذا الموسم.", english_text: "Made from soft, breathable cotton with a hint of stretch, this dress is a limited-edition style for the season." %}     
               </p>
             </div>
             {%- for block in section.blocks -%}
@@ -573,16 +567,10 @@
                   <div class="ew-main-product-details">
                     <div class="ew-main-product-title-wrap">
                       <h6>
-                {% render 'ew-text-lang',
-                  arabic_text: "عن الملابس الحديثة".
-                  english_text: "About the Modern clothes"
-                %}   
+                {% render 'ew-text-lang', arabic_text: "عن الملابس الحديثة", english_text: "About the Modern clothes" %}   
               </h6>
               <p>
-                {% render 'ew-text-lang',
-                  arabic_text: "مصنوع من القطن الناعم المسامي مع لمسة من التمدد، هذا الفستان هو إصدار محدود لهذا الموسم.".
-                  english_text: "Made from soft, breathable cotton with a hint of stretch, this dress is a limited-edition style for the season."
-                %}     
+                {% render 'ew-text-lang', arabic_text: "مصنوع من القطن الناعم المسامي مع لمسة من التمدد، هذا الفستان هو إصدار محدود لهذا الموسم.", english_text: "Made from soft, breathable cotton with a hint of stretch, this dress is a limited-edition style for the season." %}     
               </p>
                     </div>
                     {%- for block in section.blocks -%}
@@ -2642,3 +2630,46 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {% render 'ew-text-lang',
+                      arabic_text: "عن الملابس الحديثة".
+                      english_text: "About the Modern clothes"
+                    %}
+  to: '{% render ''ew-text-lang'', arabic_text: "عن الملابس الحديثة", english_text:
+    "About the Modern clothes" %}'
+  position: 3706..3810
+- from: |-
+    {% render 'ew-text-lang',
+                      arabic_text: "مصنوع من القطن الناعم المسامي مع لمسة من التمدد، هذا الفستان هو إصدار محدود لهذا الموسم.".
+                      english_text: "Made from soft, breathable cotton with a hint of stretch, this dress is a limited-edition style for the season."
+                    %}
+  to: '{% render ''ew-text-lang'', arabic_text: "مصنوع من القطن الناعم المسامي مع
+    لمسة من التمدد، هذا الفستان هو إصدار محدود لهذا الموسم.", english_text: "Made
+    from soft, breathable cotton with a hint of stretch, this dress is a limited-edition
+    style for the season." %}'
+  position: 3868..4129
+- from: |-
+    {% render 'ew-text-lang',
+                      arabic_text: "عن الملابس الحديثة".
+                      english_text: "About the Modern clothes"
+                    %}
+  to: '{% render ''ew-text-lang'', arabic_text: "عن الملابس الحديثة", english_text:
+    "About the Modern clothes" %}'
+  position: 31442..31546
+- from: |-
+    {% render 'ew-text-lang',
+                      arabic_text: "مصنوع من القطن الناعم المسامي مع لمسة من التمدد، هذا الفستان هو إصدار محدود لهذا الموسم.".
+                      english_text: "Made from soft, breathable cotton with a hint of stretch, this dress is a limited-edition style for the season."
+                    %}
+  to: '{% render ''ew-text-lang'', arabic_text: "مصنوع من القطن الناعم المسامي مع
+    لمسة من التمدد، هذا الفستان هو إصدار محدود لهذا الموسم.", english_text: "Made
+    from soft, breathable cotton with a hint of stretch, this dress is a limited-edition
+    style for the season." %}'
+  position: 31604..31865
+{% endcomment %}

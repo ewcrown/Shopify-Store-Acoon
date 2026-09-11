@@ -50,10 +50,7 @@
           >
             {%- if filter_type == 'horizontal' and results.filters != empty -%}
               <h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
-                {% render 'ew-text-lang',
-                arabic_text: "المرشحات".
-                english_text: "Filter"
-              %}    
+                {% render 'ew-text-lang', arabic_text: "المرشحات", english_text: "Filter" %}    
               </h2>
             {%- endif -%}
             {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
@@ -66,10 +63,7 @@
                       id="verticalTitle"
                       tabindex="-1"
                     >
-                    {% render 'ew-text-lang',
-                    arabic_text: "المرشحات".
-                    english_text: "Filter"
-                  %} 
+                    {% render 'ew-text-lang', arabic_text: "المرشحات", english_text: "Filter" %} 
                     </h2>
                   {%- endunless -%}
                   <facet-remove class="active-facets__button-wrapper">
@@ -941,3 +935,26 @@
     </facet-filters-form>
   {%- endif -%}
 </div>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {% render 'ew-text-lang',
+                    arabic_text: "المرشحات".
+                    english_text: "Filter"
+                  %}
+  to: '{% render ''ew-text-lang'', arabic_text: "المرشحات", english_text: "Filter"
+    %}'
+  position: 2197..2273
+- from: |-
+    {% render 'ew-text-lang',
+                        arabic_text: "المرشحات".
+                        english_text: "Filter"
+                      %}
+  to: '{% render ''ew-text-lang'', arabic_text: "المرشحات", english_text: "Filter"
+    %}'
+  position: 2894..2970
+{% endcomment %}
